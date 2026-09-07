@@ -1,0 +1,24 @@
+Model : Bigram neural network (gradient descent)
+NLL   : 2.4810
+Date  : 2026-09-06
+------------------------------
+cexze
+momasurailezityha
+konimittain
+llayn
+ka
+da
+staiyaubrtthrigotai
+moliellavo
+ke
+teda
+ka
+emimmsade
+enkaviyny
+fobspehinivenvtahlasu
+dsor
+br
+jol
+pen
+aisan
+ja
