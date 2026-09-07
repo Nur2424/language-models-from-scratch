@@ -1,24 +1,24 @@
 Model: MLP character-level language model (Bengio et al. 2003)
-Train NLL: 2.1292  |  Dev NLL: 2.1762  |  Parameters: 11897
+Train NLL: 2.1261  |  Dev NLL: 2.1760  |  Parameters: 11897
 Generated: 2026-09-07
 
-ceri
-karmon
+dexbe
+mouly
 railah
-tyha
-kolimitta
-noluwan
-katan
+tyhammalimitta
+nolly
+kamandr
 samiyah
-javariiotai
-moziella
-kinz
-tedo
-kaley
-maside
-eniaviyah
-fobte
-huniven
-tah
-asu
-judra
+javar
+gotti
+moziellah
+jazith
+arek
+emil
+sadey
+niavirny
+folli
+hunity
+vor
+lus
+kasdra
