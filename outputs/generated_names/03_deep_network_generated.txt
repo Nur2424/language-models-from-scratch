@@ -1,0 +1,24 @@
+Model: 6-layer deep MLP with BatchNorm (Karpathy makemore lecture 3)
+Train NLL: 1.9999  |  Val NLL: 2.0771  |  Parameters: 47024
+Generated: 2026-09-08
+
+dex
+mariah
+makilah
+tyhammilissana
+noluwak
+kata
+kreezyne
+jaxsy
+gotti
+moriella
+kinzie
+darette
+kamside
+enkavion
+rylls
+millie
+broah
+ash
+del
+del
