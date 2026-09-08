@@ -10,6 +10,5 @@ build/
 venv/
 scratch.txt
 
-04_wavenet.ipynb
 05_transformer_name_generation.ipynb
 mlp_practice.ipynb
