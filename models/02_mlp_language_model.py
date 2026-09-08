@@ -59,9 +59,8 @@ def build_dataset(word_list):
         for ch in w + '.':
             ix = stoi[ch]
             X.append(context)
-            Y.append(ix)
-            # slide: drop oldest char, append newest
-            context = context[1:] + [ix]
+            Y.append(ix)                                            
+            context = context[1:] + [ix]  # slide drop oldest char, append newest
     return torch.tensor(X), torch.tensor(Y)
 
 # 80/10/10 split random.seed(42) fixes the shuffle for reproducibility
@@ -76,8 +75,8 @@ print(f'Train: {Xtr.shape}  Dev: {Xdev.shape}  Test: {Xte.shape}')
 
 # ---- LR search (one-time calibration) ------------
 # Run once on a short-lived model.  Read the chart, pick the rate (~0.1 from
-# the sweet spot near log10(lr) = -1), then discard this model state.
-# The LR search uses the intermediate architecture: C(27,2), hidden=100.
+# the sweet spot near log10(lr) = -1), then discard this model state
+# The LR search uses the intermediate architecture: C(27,2), hidden=100
 
 g_lr  = torch.Generator().manual_seed(INIT_SEED)
 C_lr  = torch.randn((vocab_size, emb_dim_2d),               generator=g_lr, requires_grad=True)
@@ -114,7 +113,7 @@ print('LR search done.')
 # ---- Intermediate model train C(27,2) for embedding scatter ------------
 # Two-dimensional embeddings can be plotted directly.  The geometry the model
 # finds (vowels clustering, '.' isolated) emerges purely from which characters
-# co-occur across 32k names the model is never told about phonetics.
+# co-occur across 32k names the model is never told about phonetics
 
 g_mid = torch.Generator().manual_seed(INIT_SEED)
 C2    = torch.randn((vocab_size, emb_dim_2d),               generator=g_mid, requires_grad=True)
@@ -133,7 +132,7 @@ for i in range(max_iters_mid):
     for p in params_mid:
         p.grad = None
     loss.backward()
-    # Two-phase LR: explicit if-branch; no scheduler object
+    # Two-phase LR, explicit if-branch and no scheduler object
     lr = lr_high if i < lr_decay_at_mid else lr_low
     for p in params_mid:
         p.data += -lr * p.grad
@@ -142,8 +141,8 @@ print('Intermediate 2D model trained.')
 
 # ---- Model initialization (final model) ------------
 # C is the embedding table: shape (vocab_size, emb_dim).
-# C[ix] == one_hot(ix) @ C -- embedding lookup IS a linear layer accessed by
-# index instead of matmul, which is both faster and more memory efficient.
+# C[ix] == one_hot(ix) @ C embedding lookup IS a linear layer accessed by
+# index instead of matmul, which is both faster and more memory efficient 
 
 g_final = torch.Generator().manual_seed(INIT_SEED)
 C  = torch.randn((vocab_size, emb_dim),              generator=g_final, requires_grad=True)

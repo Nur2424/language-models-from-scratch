@@ -13,3 +13,4 @@ scratch.txt
 03_activations_gradients_batchnorm.ipynb
 04_wavenet.ipynb
 05_transformer_name_generation.ipynb
+mlp_practice.ipynb

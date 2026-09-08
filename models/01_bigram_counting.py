@@ -7,7 +7,8 @@ import os
 
 # ------------- Data loading ----------------
 
-words = open('data/names.txt', 'r').read().splitlines()
+with open("../language-models-from-scratch/data/names.txt", "r", encoding="utf-8") as file:
+    words = file.read().splitlines()
 print(f'Loaded {len(words)} names')
 
 
@@ -92,7 +93,7 @@ for _ in range(20):
 
 os.makedirs('outputs/generated', exist_ok=True)
 
-out_path = 'outputs/generated/01_bigram_counting_generated.txt'
+out_path = 'outputs/generated_names/01_bigram_counting_generated.txt'
 with open(out_path, 'w') as f:
     f.write(f'Model : Bigram counting (statistical)\n')
     f.write(f'NLL   : {nll:.4f}\n')
