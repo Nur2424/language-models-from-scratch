@@ -10,5 +10,4 @@ build/
 venv/
 scratch.txt
 
-05_transformer_name_generation.ipynb
 mlp_practice.ipynb
