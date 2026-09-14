@@ -258,8 +258,6 @@ All four functions accept `save_path=None` and `show=False` so they work in both
 - Ioffe and Szegedy 2015 — [Batch Normalization](https://arxiv.org/abs/1502.03167)
 - He et al. 2015 — [Delving Deep into Rectifiers (Kaiming init)](https://arxiv.org/abs/1502.01852)
 
-Built while working through Andrej Karpathy's [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html).
-
 ---
 
 ## Related repositories
