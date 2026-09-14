@@ -1,6 +1,6 @@
 # language-models-from-scratch
 
-A ground-up implementation of character-level language models in PyTorch, progressing from bigram counting statistics to a GPT-style Transformer. Every model is trained on the same 32,033 names, evaluated on the same 80/10/10 split, and scored with the same negative log-likelihood metric so the numbers are directly comparable.
+A ground-up implementation of character-level language models in PyTorch, progressing from bigram counting statistics to a Decoder-only Transformer with causal self-attention. Every model is trained on the same 32,033 names, evaluated on the same 80/10/10 split, and scored with the same negative log-likelihood metric so the numbers are directly comparable.
 
 The goal is to understand why each architecture works, not just how to run it. Each model is introduced because the previous one had a concrete limitation, and each notebook documents the reasoning behind every design decision alongside the code.
 
