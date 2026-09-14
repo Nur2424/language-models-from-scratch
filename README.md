@@ -71,6 +71,20 @@ Each script saves its plots to `outputs/plots/` and generated names to `outputs/
 
 ---
 
+## Key Findings
+
+- Increasing context from 1 -> 3 characters substantially improves NLL.
+- Increasing depth without increasing context eventually hits an information bottleneck.
+- BatchNorm and careful initialization stabilize deep MLP training.
+- WaveNet increases receptive field hierarchically without requiring direct
+  connections between all positions.
+- Self-attention provides direct access to all previous positions and learns
+  interpretable attention patterns.
+- On this small dataset, the Transformer does not significantly outperform
+  WaveNet despite having substantially more parameters.
+
+---
+
 ## Model 01 — Bigram (counting and neural)
 
 **The limitation it starts from:** no model at all. We need a baseline.
