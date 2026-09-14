@@ -1,0 +1,33 @@
+Model    : Transformer character-level language model (Vaswani et al. 2017)
+Train NLL: 1.9090  |  Dev NLL: 2.0006  |  Parameters: 303,387
+--------------------------------
+garne
+calleig
+dasire
+brinerea
+oracore
+lednence
+callety
+deyari
+sefie
+aaelynn
+toopane
+lannir
+farlen
+ahmar
+maril
+beerdan
+slek
+tylora
+bailey
+anad
+julieth
+cyert
+amario
+kayleigh
+jainie
+deitika
+taiyia
+dourttin
+dako
+ailaniss

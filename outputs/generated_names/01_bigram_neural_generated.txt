@@ -1,24 +1,24 @@
-Model : Bigram neural network (gradient descent)
-NLL   : 2.4810
-Date  : 2026-09-06
-------------------------------
+Model: Bigram neural network (gradient descent)
+Loss  : 2.4947  |  Parameters: 729
+Generated: 2026-09-14
+
 cexze
 momasurailezityha
 konimittain
 llayn
 ka
 da
-staiyaubrtthrigotai
+staiyauelalerigotai
 moliellavo
 ke
 teda
 ka
-emimmsade
+emim
+sade
 enkaviyny
-fobspehinivenvtahlasu
-dsor
+fobspmhinivenvtahlasu
+dsdr
 br
 jol
-pen
-aisan
+pyawaisan
 ja

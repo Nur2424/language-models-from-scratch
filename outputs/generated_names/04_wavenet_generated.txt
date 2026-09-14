@@ -1,0 +1,23 @@
+Model    : WaveNet character-level language model (van den Oord et al. 2016)
+Train NLL: 1.7687  |  Dev NLL: 1.9931  |  Parameters: 76,579
+--------------------------------
+dexten
+jaleiya
+carity
+kellie
+janaiya
+kays
+katal
+samiyah
+javery
+mariellza
+daniy
+keith
+adelle
+kamsidgu
+niami
+nyra
+brithika
+evviah
+aschard
+delayna
