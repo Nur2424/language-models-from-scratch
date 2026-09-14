@@ -1,6 +1,5 @@
 Model : Bigram counting (statistical)
 NLL   : 2.4546
-Date  : 2026-09-14
 ------------------------------
 cexze
 momasurailezitynn
