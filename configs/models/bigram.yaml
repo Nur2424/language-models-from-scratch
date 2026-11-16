@@ -1,0 +1,13 @@
+# Statistical character bigram model (models/statistical/bigram.py).
+# Load with: load_config(default_config_paths("bigram"), model_config_cls=BigramConfig)
+#
+# alpha: additive smoothing pseudo-count, alpha >= 0.
+#   0.0 -> unsmoothed maximum-likelihood estimate (the specified default). Unseen transitions
+#          get probability 0, so held-out NLL is +inf if any occur; evaluate() reports the count.
+#   > 0 -> P(j|i) = (C_ij + alpha) / (N_i + alpha * V).
+# Choosing alpha for experiments (e.g. by dev NLL) is an experiment decision, not a model default.
+
+model:
+  name: bigram
+  params:
+    alpha: 0.0

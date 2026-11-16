@@ -1,0 +1,11 @@
+# Neural bigram: bias-free softmax regression on the previous token (models/feedforward/neural_bigram.py).
+# Specification: models/feedforward/neural_bigram_spec.md
+# Load with: load_config(default_config_paths("neural_bigram"), model_config_cls=NeuralBigramConfig)
+#
+# The architecture has no hyperparameters: W is [V, V] with V from the vocabulary, zero-initialised.
+# params is empty on purpose; NeuralBigramConfig rejects any key placed here.
+# Training settings (lr, steps, weight_decay) are arguments of train_full_batch, not model config.
+
+model:
+  name: neural_bigram
+  params: {}

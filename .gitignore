@@ -19,8 +19,11 @@ venv/
 PROJECT_RESEARCH_RECORD.md
 RESEARCH_PROJECT_HANDOFF.md
 
-# Results: ignored until the study blocks decide what to publish
-results/
+# Results: everything ignored except the small result files each study publishes
+results/*
+!results/experiments/
+results/experiments/*
+!results/experiments/bigram_study/
 
 # Scratch
 scratch.txt

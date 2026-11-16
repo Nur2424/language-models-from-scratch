@@ -1,0 +1,369 @@
+{
+  "description": "Statistical and neural bigram on the standard split; descriptive, nothing selected; test split not used.",
+  "created_at": "2026-11-16T22:43:49.617592+00:00",
+  "script": "training/bigram_study/run_bigram_study.py",
+  "environment": {
+    "python": "3.12.6",
+    "platform": "macOS-26.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": 8,
+    "torch": "2.10.0",
+    "numpy": "2.3.4",
+    "cuda_available": false,
+    "cuda_version": null,
+    "cudnn_version": null,
+    "gpus": [],
+    "mps_available": true,
+    "torch_num_threads": 4
+  },
+  "dataset": {
+    "path": "data/names.txt",
+    "file_sha256": "0a30b5557f192f32ab962680889aac5f6fda0f4cecf40a6d0b5694f58ea8cc4d",
+    "num_bytes": 228145,
+    "num_names": 32033,
+    "num_unique_names": 29494,
+    "min_length": 2,
+    "max_length": 15,
+    "names_sha256": "816d2a728695db28a20e17eae61c9c423091a511b3df09a06a489dccbf0876c7"
+  },
+  "split": {
+    "seed": 42,
+    "fractions": [
+      0.8,
+      0.1,
+      0.1
+    ],
+    "duplicate_policy": "group",
+    "sizes": {
+      "train": 25640,
+      "dev": 3196,
+      "test": 3197
+    },
+    "sha256": {
+      "train": "91d09a03c05c4922fd89262f77c7f4cb0ab0cdb26d636611b2450185002654fd",
+      "dev": "858861425119f01937a9cb4613027128f9409f677151a7e03e09b099087b635a",
+      "test": "acccad6abeaa422b5642f3f57a8ca3c8ae60dbc0c1bd054acd038b306187b418"
+    }
+  },
+  "vocabulary_size": 27,
+  "statistical_bigram": {
+    "alphas": [
+      {
+        "alpha": 0.0,
+        "train_nll": 2.4536149489874126,
+        "dev_nll": "inf",
+        "dev_zero_probability_events": 9
+      },
+      {
+        "alpha": 0.01,
+        "train_nll": 2.453621091458709,
+        "dev_nll": 2.458179532697361,
+        "dev_zero_probability_events": 0
+      },
+      {
+        "alpha": 0.03,
+        "train_nll": 2.4536335322150467,
+        "dev_nll": 2.457756498809823,
+        "dev_zero_probability_events": 0
+      },
+      {
+        "alpha": 0.1,
+        "train_nll": 2.453678413178632,
+        "dev_nll": 2.45732008371221,
+        "dev_zero_probability_events": 0
+      },
+      {
+        "alpha": 0.3,
+        "train_nll": 2.4538164472645345,
+        "dev_nll": 2.4570097011237033,
+        "dev_zero_probability_events": 0
+      },
+      {
+        "alpha": 1.0,
+        "train_nll": 2.454379410832037,
+        "dev_nll": 2.457066553550605,
+        "dev_zero_probability_events": 0
+      },
+      {
+        "alpha": 3.0,
+        "train_nll": 2.456317722074304,
+        "dev_nll": 2.4585651269654822,
+        "dev_zero_probability_events": 0
+      },
+      {
+        "alpha": 10.0,
+        "train_nll": 2.4641402894654174,
+        "dev_nll": 2.4660847950523337,
+        "dev_zero_probability_events": 0
+      }
+    ],
+    "lowest_dev_nll_alpha": 0.3
+  },
+  "neural_bigram": {
+    "lr": 25.0,
+    "weight_decay": 0.0,
+    "initialisation": "zeros",
+    "counting_model_train_nll": 2.4536149489874126,
+    "checkpoints": [
+      {
+        "step": 0,
+        "train_nll": 3.295837416377432,
+        "dev_nll": 3.2958371480417528,
+        "excess_train_nll": 0.8422224673900196,
+        "max_abs_p_minus_q_observed": 0.7187233346479911,
+        "unseen_target_mass": 0.0481362259635173,
+        "p_eos_given_bos": 0.037037037037037035,
+        "seconds": 0.008021584002563031
+      },
+      {
+        "step": 1,
+        "train_nll": 3.1655066487468932,
+        "dev_nll": 3.166143686132187,
+        "excess_train_nll": 0.7118916997594806,
+        "max_abs_p_minus_q_observed": 0.7179246107101652,
+        "unseen_target_mass": 0.04669167316288456,
+        "p_eos_given_bos": 0.03231105514242226,
+        "seconds": 0.46531700000195997
+      },
+      {
+        "step": 2,
+        "train_nll": 3.0603694037204514,
+        "dev_nll": 3.0614741403885795,
+        "excess_train_nll": 0.6067544547330388,
+        "max_abs_p_minus_q_observed": 0.7171102868854996,
+        "unseen_target_mass": 0.04532867201311723,
+        "p_eos_given_bos": 0.028358714229897823,
+        "seconds": 0.48988754200036055
+      },
+      {
+        "step": 5,
+        "train_nll": 2.8666110551498365,
+        "dev_nll": 2.8682286070238145,
+        "excess_train_nll": 0.4129961061624239,
+        "max_abs_p_minus_q_observed": 0.7145713427679253,
+        "unseen_target_mass": 0.041648839557739556,
+        "p_eos_given_bos": 0.020191115329535148,
+        "seconds": 0.5421043750029639
+      },
+      {
+        "step": 10,
+        "train_nll": 2.719446113398224,
+        "dev_nll": 2.720790240833735,
+        "excess_train_nll": 0.26583116441081156,
+        "max_abs_p_minus_q_observed": 0.7100056193554141,
+        "unseen_target_mass": 0.03654894876549908,
+        "p_eos_given_bos": 0.013637688769102776,
+        "seconds": 0.6135483750003914
+      },
+      {
+        "step": 20,
+        "train_nll": 2.6077971543691767,
+        "dev_nll": 2.608999125586597,
+        "excess_train_nll": 0.15418220538176408,
+        "max_abs_p_minus_q_observed": 0.6995143609982108,
+        "unseen_target_mass": 0.0291552332411256,
+        "p_eos_given_bos": 0.00846904364711168,
+        "seconds": 0.7442507920022763
+      },
+      {
+        "step": 50,
+        "train_nll": 2.521560696845609,
+        "dev_nll": 2.5231969677865007,
+        "excess_train_nll": 0.06794574785819618,
+        "max_abs_p_minus_q_observed": 0.6552550509655946,
+        "unseen_target_mass": 0.018293716996549046,
+        "p_eos_given_bos": 0.004129635724667709,
+        "seconds": 1.1086805420018209
+      },
+      {
+        "step": 100,
+        "train_nll": 2.4879070612483987,
+        "dev_nll": 2.4896509473268718,
+        "excess_train_nll": 0.03429211226098605,
+        "max_abs_p_minus_q_observed": 0.5359004791735114,
+        "unseen_target_mass": 0.011756592369879925,
+        "p_eos_given_bos": 0.0022873643374617244,
+        "seconds": 1.72476800000004
+      },
+      {
+        "step": 200,
+        "train_nll": 2.470221264493666,
+        "dev_nll": 2.471698746765493,
+        "excess_train_nll": 0.016606315506253466,
+        "max_abs_p_minus_q_observed": 0.2686887838548118,
+        "unseen_target_mass": 0.007095932299645992,
+        "p_eos_given_bos": 0.0012268847763171533,
+        "seconds": 2.9221932090003975
+      },
+      {
+        "step": 500,
+        "train_nll": 2.4598291759276494,
+        "dev_nll": 2.4612664329415375,
+        "excess_train_nll": 0.006214226940236767,
+        "max_abs_p_minus_q_observed": 0.06835142065149849,
+        "unseen_target_mass": 0.0034245173220624338,
+        "p_eos_given_bos": 0.0005212112157643084,
+        "seconds": 6.509630459000618
+      },
+      {
+        "step": 1000,
+        "train_nll": 2.456527897912036,
+        "dev_nll": 2.458288219266699,
+        "excess_train_nll": 0.0029129489246235707,
+        "max_abs_p_minus_q_observed": 0.04256567182212477,
+        "unseen_target_mass": 0.0019385062498022635,
+        "p_eos_given_bos": 0.00026731731031275026,
+        "seconds": 12.80981845900169
+      },
+      {
+        "step": 2000,
+        "train_nll": 2.4549652781579496,
+        "dev_nll": 2.457153400618394,
+        "excess_train_nll": 0.0013503291705370124,
+        "max_abs_p_minus_q_observed": 0.019461854239981875,
+        "unseen_target_mass": 0.0010721495396588759,
+        "p_eos_given_bos": 0.0001354344073702576,
+        "seconds": 26.10480808400098
+      },
+      {
+        "step": 5000,
+        "train_nll": 2.4541314475600275,
+        "dev_nll": 2.4568513647975965,
+        "excess_train_nll": 0.0005164985726149318,
+        "max_abs_p_minus_q_observed": 0.0049808223809434116,
+        "unseen_target_mass": 0.000479808011880689,
+        "p_eos_given_bos": 5.459804124012688e-05,
+        "seconds": 66.4455510000007
+      },
+      {
+        "step": 10000,
+        "train_nll": 2.453883898755105,
+        "dev_nll": 2.456918007982106,
+        "excess_train_nll": 0.0002689497676922059,
+        "max_abs_p_minus_q_observed": 0.0031198104664760147,
+        "unseen_target_mass": 0.00026060726110371563,
+        "p_eos_given_bos": 2.7373373065862928e-05,
+        "seconds": 135.35886591700182
+      },
+      {
+        "step": 20000,
+        "train_nll": 2.4537576437322763,
+        "dev_nll": 2.457058832397702,
+        "excess_train_nll": 0.00014269474486372502,
+        "max_abs_p_minus_q_observed": 0.001399848843045697,
+        "unseen_target_mass": 0.00013990419140552773,
+        "p_eos_given_bos": 1.3715037559582399e-05,
+        "seconds": 273.8036780000002
+      },
+      {
+        "step": 50000,
+        "train_nll": 2.4536743291033907,
+        "dev_nll": 2.4573252338164995,
+        "excess_train_nll": 5.9380115978058257e-05,
+        "max_abs_p_minus_q_observed": 0.0005454324925752005,
+        "unseen_target_mass": 5.886250172106428e-05,
+        "p_eos_given_bos": 5.503783760590394e-06,
+        "seconds": 740.9219927090016
+      },
+      {
+        "step": 100000,
+        "train_nll": 2.453644732736251,
+        "dev_nll": 2.4575661086684795,
+        "excess_train_nll": 2.9783748838330126e-05,
+        "max_abs_p_minus_q_observed": 0.00024815994880134085,
+        "unseen_target_mass": 2.9783010276600442e-05,
+        "p_eos_given_bos": 2.7510998124527696e-06,
+        "seconds": 1476.1336465420027
+      }
+    ],
+    "lowest_dev_nll_step": 5000
+  },
+  "samples": {
+    "generator_seed": "derive_seed(0, 'generation')",
+    "statistical_bigram_alpha_0": [
+      {
+        "text": "ash",
+        "finished": true
+      },
+      {
+        "text": "tine",
+        "finished": true
+      },
+      {
+        "text": "sta",
+        "finished": true
+      },
+      {
+        "text": "s",
+        "finished": true
+      },
+      {
+        "text": "hilarlliomehaka",
+        "finished": true
+      },
+      {
+        "text": "jei",
+        "finished": true
+      },
+      {
+        "text": "m",
+        "finished": true
+      },
+      {
+        "text": "a",
+        "finished": true
+      },
+      {
+        "text": "fwadekatos",
+        "finished": true
+      },
+      {
+        "text": "kan",
+        "finished": true
+      }
+    ],
+    "neural_bigram_final_step": [
+      {
+        "text": "ash",
+        "finished": true
+      },
+      {
+        "text": "tine",
+        "finished": true
+      },
+      {
+        "text": "sta",
+        "finished": true
+      },
+      {
+        "text": "s",
+        "finished": true
+      },
+      {
+        "text": "hilarlliomehaka",
+        "finished": true
+      },
+      {
+        "text": "jei",
+        "finished": true
+      },
+      {
+        "text": "m",
+        "finished": true
+      },
+      {
+        "text": "a",
+        "finished": true
+      },
+      {
+        "text": "fwadekatos",
+        "finished": true
+      },
+      {
+        "text": "kan",
+        "finished": true
+      }
+    ]
+  }
+}
