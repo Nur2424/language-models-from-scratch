@@ -1,0 +1,13 @@
+# Template for configs/models/<name>.yaml — copy it when a model is implemented.
+#
+# <name> must match the model file stem and results/runs/<name>/ (e.g. lstm, transformer).
+# `params` is architecture-specific. It is validated strictly only when the model's
+# config dataclass is passed to utils.config.load_config(model_config_cls=...).
+# Do not fill in values until the model and its experiments are designed.
+#
+# Any key from configs/base.yaml may also be overridden here, e.g. a model that
+# cannot run on MPS can pin `device: {device: cpu}`.
+
+model:
+  name: example_model
+  params: {}

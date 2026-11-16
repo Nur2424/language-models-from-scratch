@@ -1,13 +1,27 @@
+# Python
 __pycache__/
 *.pyc
 *.pyo
-.DS_Store
-.ipynb_checkpoints/
 *.egg-info/
 dist/
 build/
 .env
 venv/
-scratch.txt
+.venv/
 
+# Tool caches and OS files
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Local-only project documents
+PROJECT_RESEARCH_RECORD.md
+RESEARCH_PROJECT_HANDOFF.md
+
+# Results: ignored until the study blocks decide what to publish
+results/
+
+# Scratch
+scratch.txt
 mlp_practice.ipynb

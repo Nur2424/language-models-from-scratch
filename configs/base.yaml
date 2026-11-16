@@ -1,0 +1,50 @@
+# Shared defaults for every experiment.
+# Merged first; configs/models/<name>.yaml and command-line overrides are applied on top.
+# Every key here is validated by utils/config.py — unknown keys are errors.
+#
+# This file holds infrastructure settings only. Model hyperparameters live in
+# configs/models/, training-loop settings will be added by the training-pipeline task.
+
+run:
+  name: null              # optional human-readable label
+  results_root: results   # relative to the repository root
+  notes: ""
+
+data:
+  path: data/names.txt                 # relative to the repository root
+  split_fractions: [0.8, 0.1, 0.1]     # train, dev, test — applied to unique names
+  split_seed: 42                       # fixes the split independently of the training seed
+  duplicate_policy: group              # group | dedupe | none  (see utils/data.py)
+
+reproducibility:
+  seed: 0                 # base seed; init/data/generation streams are derived from it
+  deterministic: false    # true: deterministic kernels (slower; see utils/reproducibility.py)
+  warn_only: true         # with deterministic=true: warn instead of raising on non-deterministic ops
+
+device:
+  device: auto            # auto | cpu | cuda | cuda:N | mps   (explicit choices never fall back)
+  dtype: float32          # float32 | float64 (not on MPS) | bfloat16 | float16
+
+logging:
+  level: INFO
+  console: true
+  jsonl: true
+
+checkpoint:
+  save_best: true                 # model_best.pt  — weights at best dev metric
+  save_final: true                # model_final.pt — weights at end of training
+  resume_every_n_steps: null      # checkpoint_last.pt cadence; null = only at the end / on interrupt
+
+diagnostics:
+  enabled: false          # diagnostics are opt-in: they cost syncs and memory
+  every_n_steps: 100
+  gradients: true
+  parameters: true        # measured update norms (copies parameters on collection steps)
+  activations: false
+
+generation:
+  temperature: 1.0
+  top_k: null
+  top_p: null
+  num_samples: 20
+  max_new_tokens: 32      # safety cap for sampling loops; longest training name has 15 characters
