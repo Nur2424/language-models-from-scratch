@@ -57,7 +57,7 @@ Everything is in [`results/experiments/rnn_study/`](../../results/experiments/rn
 - the test freeze and the test result;
 - the analysis scripts and their outputs, including the same summary computed on a second machine (`summary_mac.json`).
 
-Two kinds of file are not on GitHub because of their size: the raw per-row diagnostic arrays (`research_diagnostics/raw/`, 3.9 GB) and the per-step training logs (`diagnostics/steps.jsonl`, 226 MB). They are kept unchanged and will be archived in full, with a permanent DOI.
+Two kinds of file are not on GitHub because of their size: the raw per-row diagnostic arrays (`research_diagnostics/raw/`, 3.9 GB) and the per-step training logs (`diagnostics/steps.jsonl`, 226 MB). They are kept unchanged outside the repository.
 
 ## Checking the results
 
@@ -85,7 +85,7 @@ Run directories `run_001` to `run_010` hold seeds 0 to 9. Each seed's recorded d
 Some checks need more than GitHub holds:
 
 - **`verify_runs.py` and the analysis scripts** also read the raw arrays and the step logs, so they need the full archive.
-- **The study drivers** check every decision they depend on against the decision table in `PROJECT_RESEARCH_RECORD.md`. That record is kept locally. Its decision table is published as `DECISIONS.md` at the repository root, with each row byte for byte as the drivers pinned it. To let the drivers run, copy it into place first: `cp DECISIONS.md PROJECT_RESEARCH_RECORD.md`. They also refuse to overwrite existing outputs, so a rerun goes into a new study folder (`--root`).
+- **The study drivers no longer run, by design.** Before every stage they checked each decision they depend on against the decision table in the project's research record, which is kept locally. That table is published as [`DECISIONS.md`](../../DECISIONS.md), each row byte for byte. Anyone can therefore check that the 17 rows pinned in `study_conditions.json` and `freeze.json` match their recorded SHA-256. The drivers also refuse to run when the record holds decisions newer than the study conditions were reviewed against (D-59). The study was closed by later decisions (D-60 to D-63), so every driver now refuses. Rerunning the study would need new study conditions under a new decision.
 
 ## Run the tests
 

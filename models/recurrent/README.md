@@ -55,7 +55,7 @@ The implementation was then accepted on 2026-11-15, after independent verificati
 - an independent source review, whose major findings were fixed;
 - 38 deliberately planted defects, every one caught by the tests.
 
-**Decision identifiers.** The documents cite decision identifiers (D-xx) and "the record". They refer to the project's internal research record, which is not published. The published evidence for each decision is in the documents themselves and in [`results/experiments/rnn_study/`](../../results/experiments/rnn_study/).
+**Decision identifiers.** The documents cite decision identifiers (D-xx) and "the record". They refer to the project's internal research record. Its decision table is published as [`DECISIONS.md`](../../DECISIONS.md); the rest of the record is not. The published evidence for each decision is in the documents themselves and in [`results/experiments/rnn_study/`](../../results/experiments/rnn_study/).
 
 ## Results in brief
 

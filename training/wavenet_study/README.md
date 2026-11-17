@@ -95,4 +95,4 @@ python3 -m pytest -q tests/training/wavenet_study    # about 3 minutes
 
 ## A note on decision identifiers
 
-Some module comments and the epoch-budget protocol cite decision identifiers (D-xx) and "the record". They refer to the project's internal research record, which is not published. The published evidence for each decision is in the files above.
+Some module comments and the epoch-budget protocol cite decision identifiers (D-xx) and "the record". They refer to the project's internal research record. Its decision table is published as [`DECISIONS.md`](../../DECISIONS.md); the rest of the record is not. The published evidence for each decision is in the files above.

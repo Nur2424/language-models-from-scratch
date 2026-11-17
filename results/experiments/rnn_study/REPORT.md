@@ -5,14 +5,13 @@
 **Report date:** 16 November 2026  
 **Status:** **COMPLETED — study formally closed**  
 **Canonical closure:** D-62  
-**Post-closure analysis:** D-63  
-**Roadmap transition:** D-64
+**Post-closure analysis:** D-63
 
 ---
 
 ## 1. Executive summary
 
-The Vanilla RNN research stage is complete. The architecture was specified and approved, implemented, independently verified, tested, studied under a predeclared experimental plan, evaluated once on the protected test split, analysed, and formally closed by D-62. D-63 added an accepted extended analysis without reopening the experiment. D-64 subsequently recorded the project roadmap transition: Transformer is the next priority; GRU and LSTM are deferred, not cancelled.
+The Vanilla RNN research stage is complete. The architecture was specified and approved, implemented, independently verified, tested, studied under a predeclared experimental plan, evaluated once on the protected test split, analysed, and formally closed by D-62. D-63 added an accepted extended analysis without reopening the experiment.
 
 The model is a single-layer Elman RNN with hidden size 128 and 23,451 trainable parameters. The study focused on recurrent-state dynamics, temporal Jacobian products, loss-projected gradients, context dependence, and the evolution of the learning signal. Predictive performance was recorded as an outcome, not treated as the primary scientific objective.
 
@@ -361,9 +360,8 @@ The Vanilla RNN stage progressed from agenda to closure through the following de
 | D-61 | 15 Nov 2026 | One-time test evaluation authorised and completed |
 | **D-62** | **15 Nov 2026** | **Formal Vanilla RNN study completion and closure accepted by the user** |
 | D-63 | 15 Nov 2026 | Extended analysis and correction to M6-HC1 accepted |
-| D-64 | 16 Nov 2026 | Roadmap updated: Transformer next; GRU and LSTM deferred, not cancelled |
 
-D-62 is the formal closure decision. D-63 adds analysis to the closed study; it does not reopen training or test evaluation. D-64 is a project-level roadmap decision and does not change the completed status of Model 6.
+D-62 is the formal closure decision. D-63 adds analysis to the closed study; it does not reopen training or test evaluation.
 
 ---
 
@@ -398,9 +396,7 @@ D-62 is the formal closure decision. D-63 adds analysis to the closed study; it 
 
 **Model 6 — Vanilla RNN is COMPLETED and FORMALLY CLOSED.** The architecture, implementation, verification, controlled study, one-time test evaluation and accepted analyses are complete. The final performance and mechanistic findings are recorded above, together with the limitations and unresolved questions that constrain their interpretation.
 
-No further Vanilla RNN implementation or experiment is required for the current project roadmap. Any future RNN-family work, such as GRU or LSTM, is a separate deferred model stage and must not be treated as unfinished Vanilla RNN work. Any new Vanilla RNN experiment or modification to frozen study infrastructure would require a new, explicit decision and a separately recorded protocol.
-
-**Next project priority:** prepare and discuss the Transformer research agenda/specification. Transformer implementation has not been authorised by D-64.
+Any new Vanilla RNN experiment, or any change to the frozen study infrastructure, would require a new explicit decision and a separately recorded protocol.
 
 ---
 
@@ -413,4 +409,4 @@ This report was first written from a reconstruction of the project's research re
 - **Recorded only:** the test-suite counts, the 48/48 independent verification and the 38/38 mutation result (§5). No standalone logs of these were kept, so they cannot be checked from the published files.
 - **Integrity:** all 42 code, specification and utility files pinned in `study_conditions.json` still match their recorded SHA-256.
 
-**Decision identifiers.** The report cites decisions D-38 to D-64. They are rows of the project's decision table, which records each decision, its date and its rationale before the corresponding result was produced. The table is published as `DECISIONS.md` at the repository root.
+**Decision identifiers.** The report cites decisions D-38 to D-63. They are rows of the project's decision table, which records each decision, its date and its rationale before the corresponding result was produced. The table is published as `DECISIONS.md` at the repository root.

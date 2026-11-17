@@ -21,7 +21,7 @@ The "pending" statements above (v0.5 status, v0.6 addendum) are retained as writ
 4. Results: reported in `results/experiments/wavenet_study/final/analysis/final/REPORT.md` and accepted (D-35); the study was closed on 2026-11-13 (D-36). No further final runs or test evaluations take place.
 5. Acceptance criteria (§17): ticked at closure.
 
-*Decision identifiers.* The identifiers D-xx, the references to `PROJECT_RESEARCH_RECORD.md` and the record sections cited in this document refer to the project's internal research record, which is not published. They are kept so that the history of this specification stays traceable. The published evidence for every decision is in `results/experiments/wavenet_study/` and in `training/wavenet_study/`.
+*Decision identifiers.* The identifiers D-xx, the references to `PROJECT_RESEARCH_RECORD.md` and the record sections cited in this document refer to the project's internal research record. Its decision table is published as `DECISIONS.md` at the repository root; the rest of the record, including the sections cited here, is not. They are kept so that the history of this specification stays traceable. The published evidence for every decision is in `results/experiments/wavenet_study/` and in `training/wavenet_study/`.
 
 **Governing standard:** `UNIVERSAL_MODEL_IMPLEMENTATION_STANDARD_v1.1.md`
 **Template:** `MODEL_SPECIFICATION_TEMPLATE.md` (its 18 sections map onto the 18 required sections below; see §18.4)
