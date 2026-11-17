@@ -1,0 +1,18 @@
+# WaveNet (baseline): hierarchical context-merging model without normalisation (models/hierarchical/wavenet.py).
+# Specification: models/hierarchical/wavenet_spec.md (v0.4)
+# Load with: load_config(default_config_paths("wavenet"), model_config_cls=WaveNetConfig)
+#
+# Model identity: model.name "wavenet" <-> normalization "none" (model.model_name is derived from it).
+# Architecture: shared embedding [27, 10]; three levels of pair merging -> Linear(no bias) -> tanh
+# (68 units, shared across groups); [B, 1, 68] -> [B, 68] -> Linear(68, 27); 21,989 parameters.
+# Not the full WaveNet paper architecture: no gates, residual or skip connections, no convolutions.
+#
+# Training settings live in the model-local WaveNetTrainingConfig (lr and max_epochs PENDING PILOT).
+
+model:
+  name: wavenet
+  params:
+    context_length: 8
+    embedding_dim: 10
+    hidden_dim: 68
+    normalization: none

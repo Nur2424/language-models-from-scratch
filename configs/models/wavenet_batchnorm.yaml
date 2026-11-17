@@ -1,0 +1,20 @@
+# WaveNet-BN (experimental variant): the WaveNet hierarchy with BatchNorm at every level
+# (models/hierarchical/wavenet.py, normalization "batchnorm").
+# Specification: models/hierarchical/wavenet_spec.md (v0.4)
+# Load with: load_config(default_config_paths("wavenet_batchnorm"), model_config_cls=WaveNetConfig)
+#
+# Model identity: model.name "wavenet_batchnorm" <-> normalization "batchnorm".
+# Per level: pair merging -> Linear(no bias) -> BatchNorm (statistics pooled over batch x groups) -> tanh;
+# 22,397 parameters (+408 = 3 levels x (68 gamma + 68 beta)). BatchNorm eps 1e-5 and momentum 0.1 are
+# fixed in code; evaluation uses statistics recalibrated sequentially per level over the full training
+# set after every epoch.
+#
+# Training settings live in the model-local WaveNetTrainingConfig (lr and max_epochs PENDING PILOT).
+
+model:
+  name: wavenet_batchnorm
+  params:
+    context_length: 8
+    embedding_dim: 10
+    hidden_dim: 68
+    normalization: batchnorm
