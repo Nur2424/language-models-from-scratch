@@ -1,0 +1,105 @@
+{
+ "authorisation": {
+  "id": "D-61",
+  "row_sha256": "25bcb0d55cea7ba8b8cb81b56eb9cdfd8014149a3e87f46073c6487ced7b1da3"
+ },
+ "checkpoints": {
+  "0": {
+   "attempt_id": "L7_research:0.1:0:1",
+   "best_dev_nll": 2.0508911298778014,
+   "best_epoch": 38,
+   "model_best_sha256": "51e8705a1555ca048ba1c51952f89ac946208fe7d0f02bc8ff45878140d8b497",
+   "param_sha256": "836689e4d585f47a822b11ac7957eeb9e95e562098a9cbf185a0c53b9c182e7e",
+   "run_dir": "results/experiments/rnn_study/L7_research/runs/rnn/run_001"
+  },
+  "1": {
+   "attempt_id": "L7_research:0.1:1:1",
+   "best_dev_nll": 2.0542399070695914,
+   "best_epoch": 38,
+   "model_best_sha256": "3373a5e12fd8d06a6ede8723faf6206d0b35d0e0c93e3fe9e27938a1abaf74ef",
+   "param_sha256": "8cb6941663c41a37e057014feaff9e70f73903685a623d07c2697d6a527725fc",
+   "run_dir": "results/experiments/rnn_study/L7_research/runs/rnn/run_002"
+  },
+  "2": {
+   "attempt_id": "L7_research:0.1:2:1",
+   "best_dev_nll": 2.0520925810031634,
+   "best_epoch": 30,
+   "model_best_sha256": "49c0d1956f2ddb5e4b1d3bbd153ba11513e40cacb40e0a6a646dea7260cf5070",
+   "param_sha256": "1197d0c14bab9463cade794c1d2d935fd58780d5601017dcd1c672da92aa86e6",
+   "run_dir": "results/experiments/rnn_study/L7_research/runs/rnn/run_003"
+  },
+  "3": {
+   "attempt_id": "L7_research:0.1:3:1",
+   "best_dev_nll": 2.0567989132706623,
+   "best_epoch": 35,
+   "model_best_sha256": "07241b38ae5b001375e7b739cb721a04ff4c7484c5145f04c22226a1eee7a734",
+   "param_sha256": "0baa79540b577e5662832e0cd26236409fe3d9c3ed818f449dfe5833722247da",
+   "run_dir": "results/experiments/rnn_study/L7_research/runs/rnn/run_004"
+  },
+  "4": {
+   "attempt_id": "L7_research:0.1:4:1",
+   "best_dev_nll": 2.0536941803368,
+   "best_epoch": 33,
+   "model_best_sha256": "3c6f8f020634aba9474a04ede74627cc7573fb5a1f4c67a43bf2fdca04d40d8d",
+   "param_sha256": "7784acbecbe27fc2b7849e1a4647d0bd6a4d094861566b08c972ac3a7d21e08b",
+   "run_dir": "results/experiments/rnn_study/L7_research/runs/rnn/run_005"
+  },
+  "5": {
+   "attempt_id": "L7_research:0.1:5:1",
+   "best_dev_nll": 2.056457195630811,
+   "best_epoch": 34,
+   "model_best_sha256": "cc6c6755a398861f7d33921b3bd139a75652bbf970952ed13ac3a9aeb4b74b77",
+   "param_sha256": "4f922a4012f405e20a9a4875211da10aaaaf1aa7fb6b684a542ef2d95677f99e",
+   "run_dir": "results/experiments/rnn_study/L7_research/runs/rnn/run_006"
+  },
+  "6": {
+   "attempt_id": "L7_research:0.1:6:1",
+   "best_dev_nll": 2.0524063200695695,
+   "best_epoch": 37,
+   "model_best_sha256": "32774ddf998bc309b38f9ba2aee8f8c2bc245b99f5f77dbe7f9959c5d14bbfca",
+   "param_sha256": "5057e8c57b6755cac01798d98db624eaf630ab248455cfb6f94bbb7a134d8c13",
+   "run_dir": "results/experiments/rnn_study/L7_research/runs/rnn/run_007"
+  },
+  "7": {
+   "attempt_id": "L7_research:0.1:7:1",
+   "best_dev_nll": 2.047018533401084,
+   "best_epoch": 30,
+   "model_best_sha256": "f9c8bf7cbed43a1f39121132d3618d899cda127ce3a46d80bf6e9c50e7a50b56",
+   "param_sha256": "67aa59a185e781812586c2114f7cc2558be837bc81737b0bbff0f86a07894061",
+   "run_dir": "results/experiments/rnn_study/L7_research/runs/rnn/run_008"
+  },
+  "8": {
+   "attempt_id": "L7_research:0.1:8:1",
+   "best_dev_nll": 2.0488385219364007,
+   "best_epoch": 38,
+   "model_best_sha256": "7004fc1064a585913bc47a026f5938ccfa83c8c974f8d07f8c8148e1fb4ec656",
+   "param_sha256": "e420a548c6c16516ec93341b7baec24bc9fb2e07d36141a1ebc3167ab4aca76c",
+   "run_dir": "results/experiments/rnn_study/L7_research/runs/rnn/run_009"
+  },
+  "9": {
+   "attempt_id": "L7_research:0.1:9:1",
+   "best_dev_nll": 2.04719164078604,
+   "best_epoch": 36,
+   "model_best_sha256": "7c04e05d1eadd17225ca8740eb29f137b96a25c8f9de53204798b3c2870bc5e6",
+   "param_sha256": "8f7c47a2df1f2542dcee51fb70ea5f86faa090707cfe86a15e76b02b1a541a02",
+   "run_dir": "results/experiments/rnn_study/L7_research/runs/rnn/run_010"
+  }
+ },
+ "code_sha256": {
+  "models/recurrent/rnn.py": "2066dec3b0b363983b2d2600e059be3ed6b25e9a1b27df645fcc469ea407c132",
+  "models/recurrent/rnn_training.py": "76f210cb00a36930923615d2616f0c2a796cea7f803491ccab8c8085d0be0b2c",
+  "results/experiments/rnn_study/test_evaluation/evaluate_test.py": "a56401510a35e439e04d3dbef6de48cc07197f59f7092a5088b49b6c7b4d2728",
+  "training/rnn_study/common.py": "cfbf917e1d1ef26da03619eabf0a1b48d6335e7826cfc4de9f74281071f87291",
+  "utils/checkpoint.py": "8990ba704469b353e4e0063fb5121e972dd525ba945948e12bedec7c00a50a31",
+  "utils/data.py": "0c2893d21f7ae61a7b322682a379f3814e5aafb4a53ddefc13ac23e92badd61d",
+  "utils/metrics.py": "5cdb400d31cceb35344ecb515a13b74ab9a06d477d5b72198c74b997ef180cf4",
+  "utils/vocabulary.py": "a72b88a357a76cf30202cd2c4e92256a876a80211d0e90ef8b9acd6298d97e81"
+ },
+ "endpoint": "test NLL (nats per character, token-weighted, all valid targets incl. EOS) of model_best.pt, rnn_training.evaluate_nll, batch 1024; per seed and mean \u00b1 SE (SD/sqrt(10)) over seeds 0-9",
+ "eval_batch_size": 1024,
+ "format": "m6_test_freeze/1",
+ "threads": [
+  4,
+  8
+ ]
+}

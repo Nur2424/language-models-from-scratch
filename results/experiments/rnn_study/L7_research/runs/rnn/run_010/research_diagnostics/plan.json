@@ -1,0 +1,383 @@
+{
+ "diagnostics_by_kind": {
+  "early": [
+   "H1",
+   "G1",
+   "G2",
+   "G3",
+   "C1"
+  ],
+  "epoch_end": [
+   "H1",
+   "G1",
+   "G2",
+   "G3",
+   "C1"
+  ],
+  "posthoc_best": [
+   "G1"
+  ],
+  "start": [
+   "H1",
+   "G1"
+  ]
+ },
+ "max_epochs": 38,
+ "optional": {
+  "h1_on_dev": false,
+  "spectral_at_powers_of_two": false
+ },
+ "points": [
+  {
+   "completed_epochs": 0,
+   "kind": "start",
+   "point_id": 0,
+   "sigma": 0,
+   "spectral": true
+  },
+  {
+   "completed_epochs": 0,
+   "kind": "early",
+   "point_id": 1,
+   "sigma": 1,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 0,
+   "kind": "early",
+   "point_id": 2,
+   "sigma": 2,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 0,
+   "kind": "early",
+   "point_id": 3,
+   "sigma": 4,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 0,
+   "kind": "early",
+   "point_id": 4,
+   "sigma": 8,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 0,
+   "kind": "early",
+   "point_id": 5,
+   "sigma": 16,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 0,
+   "kind": "early",
+   "point_id": 6,
+   "sigma": 32,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 0,
+   "kind": "early",
+   "point_id": 7,
+   "sigma": 64,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 0,
+   "kind": "early",
+   "point_id": 8,
+   "sigma": 128,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 0,
+   "kind": "early",
+   "point_id": 9,
+   "sigma": 256,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 0,
+   "kind": "early",
+   "point_id": 10,
+   "sigma": 512,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 1,
+   "kind": "epoch_end",
+   "point_id": 11,
+   "sigma": 802,
+   "spectral": true
+  },
+  {
+   "completed_epochs": 2,
+   "kind": "epoch_end",
+   "point_id": 12,
+   "sigma": 1604,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 3,
+   "kind": "epoch_end",
+   "point_id": 13,
+   "sigma": 2406,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 4,
+   "kind": "epoch_end",
+   "point_id": 14,
+   "sigma": 3208,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 5,
+   "kind": "epoch_end",
+   "point_id": 15,
+   "sigma": 4010,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 6,
+   "kind": "epoch_end",
+   "point_id": 16,
+   "sigma": 4812,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 7,
+   "kind": "epoch_end",
+   "point_id": 17,
+   "sigma": 5614,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 8,
+   "kind": "epoch_end",
+   "point_id": 18,
+   "sigma": 6416,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 9,
+   "kind": "epoch_end",
+   "point_id": 19,
+   "sigma": 7218,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 10,
+   "kind": "epoch_end",
+   "point_id": 20,
+   "sigma": 8020,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 11,
+   "kind": "epoch_end",
+   "point_id": 21,
+   "sigma": 8822,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 12,
+   "kind": "epoch_end",
+   "point_id": 22,
+   "sigma": 9624,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 13,
+   "kind": "epoch_end",
+   "point_id": 23,
+   "sigma": 10426,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 14,
+   "kind": "epoch_end",
+   "point_id": 24,
+   "sigma": 11228,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 15,
+   "kind": "epoch_end",
+   "point_id": 25,
+   "sigma": 12030,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 16,
+   "kind": "epoch_end",
+   "point_id": 26,
+   "sigma": 12832,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 17,
+   "kind": "epoch_end",
+   "point_id": 27,
+   "sigma": 13634,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 18,
+   "kind": "epoch_end",
+   "point_id": 28,
+   "sigma": 14436,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 19,
+   "kind": "epoch_end",
+   "point_id": 29,
+   "sigma": 15238,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 20,
+   "kind": "epoch_end",
+   "point_id": 30,
+   "sigma": 16040,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 21,
+   "kind": "epoch_end",
+   "point_id": 31,
+   "sigma": 16842,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 22,
+   "kind": "epoch_end",
+   "point_id": 32,
+   "sigma": 17644,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 23,
+   "kind": "epoch_end",
+   "point_id": 33,
+   "sigma": 18446,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 24,
+   "kind": "epoch_end",
+   "point_id": 34,
+   "sigma": 19248,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 25,
+   "kind": "epoch_end",
+   "point_id": 35,
+   "sigma": 20050,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 26,
+   "kind": "epoch_end",
+   "point_id": 36,
+   "sigma": 20852,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 27,
+   "kind": "epoch_end",
+   "point_id": 37,
+   "sigma": 21654,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 28,
+   "kind": "epoch_end",
+   "point_id": 38,
+   "sigma": 22456,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 29,
+   "kind": "epoch_end",
+   "point_id": 39,
+   "sigma": 23258,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 30,
+   "kind": "epoch_end",
+   "point_id": 40,
+   "sigma": 24060,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 31,
+   "kind": "epoch_end",
+   "point_id": 41,
+   "sigma": 24862,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 32,
+   "kind": "epoch_end",
+   "point_id": 42,
+   "sigma": 25664,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 33,
+   "kind": "epoch_end",
+   "point_id": 43,
+   "sigma": 26466,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 34,
+   "kind": "epoch_end",
+   "point_id": 44,
+   "sigma": 27268,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 35,
+   "kind": "epoch_end",
+   "point_id": 45,
+   "sigma": 28070,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 36,
+   "kind": "epoch_end",
+   "point_id": 46,
+   "sigma": 28872,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 37,
+   "kind": "epoch_end",
+   "point_id": 47,
+   "sigma": 29674,
+   "spectral": false
+  },
+  {
+   "completed_epochs": 38,
+   "kind": "epoch_end",
+   "point_id": 48,
+   "sigma": 30476,
+   "spectral": true
+  }
+ ],
+ "probe_sha256": "2229c8ce6b4f5b46460320116d7585f0b36a5e35a17c2eb02ac85732d825d618",
+ "recurrent_gain": 1.0,
+ "schema": "m6_diagnostics/3",
+ "steps_per_epoch": 802,
+ "threads": {
+  "inter_op": 8,
+  "intra_op": 4
+ }
+}

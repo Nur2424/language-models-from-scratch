@@ -1,0 +1,16 @@
+{
+ "seconds": {
+  "H1": 0.057307125000079395,
+  "G1_frobenius": 0.8198682500005816,
+  "G1_spectral": 19.749265334001393,
+  "G2": 0.18485554099970614,
+  "G3": 2.01618312500068,
+  "C1": 0.7550108340001316
+ },
+ "seed": 1000,
+ "threads": [
+  4,
+  8
+ ],
+ "note": "untrained model (G2 and G3 are degenerate at V = 0); timing only"
+}

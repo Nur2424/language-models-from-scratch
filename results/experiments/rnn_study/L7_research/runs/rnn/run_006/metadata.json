@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "run_id": "rnn/run_006",
+  "run_uid": "64ca27954160412a80ce85adbf053cc0",
+  "model_name": "rnn",
+  "run_number": 6,
+  "status": "completed",
+  "created_at": "2026-11-15T16:09:07.216903+00:00",
+  "started_at": "2026-11-15T16:09:07.227692+00:00",
+  "ended_at": "2026-11-15T16:14:01.717272+00:00",
+  "active_duration_seconds": 294.48961987499933,
+  "sessions": [
+    {
+      "started_at": "2026-11-15T16:09:07.227692+00:00",
+      "ended_at": "2026-11-15T16:14:01.717272+00:00",
+      "duration_seconds": 294.48961987499933,
+      "outcome": "completed"
+    }
+  ],
+  "error": null,
+  "git": {
+    "available": false,
+    "reason": "git disabled by project policy"
+  },
+  "environment": {
+    "python": "3.12.6",
+    "platform": "macOS-26.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": 8,
+    "torch": "2.10.0",
+    "numpy": "2.3.4",
+    "cuda_available": false,
+    "cuda_version": null,
+    "cudnn_version": null,
+    "gpus": [],
+    "mps_available": true
+  },
+  "dataset": null,
+  "command": [
+    "training/rnn_study/research_runs.py"
+  ],
+  "outcome": "completed",
+  "diagnostics_status": "complete",
+  "invalid_diagnostic_points": [],
+  "loss_normalizer_C": 227.97628705148205,
+  "best_epoch": 34
+}

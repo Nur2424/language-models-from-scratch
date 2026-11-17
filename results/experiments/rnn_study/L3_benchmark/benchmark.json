@@ -1,0 +1,25 @@
+{
+ "rows": [
+  {
+   "intra_op": 1,
+   "inter_op": 8,
+   "seconds": 1.8369723750001867
+  },
+  {
+   "intra_op": 2,
+   "inter_op": 8,
+   "seconds": 1.3304715000012948
+  },
+  {
+   "intra_op": 4,
+   "inter_op": 8,
+   "seconds": 1.3123223330003384
+  },
+  {
+   "intra_op": 8,
+   "inter_op": 8,
+   "seconds": 1.5054654590021528
+  }
+ ],
+ "note": "timing only; parameters discarded; no decision made"
+}

@@ -1,0 +1,90 @@
+{
+ "endpoint": "test NLL (nats per character, token-weighted, all valid targets incl. EOS) of model_best.pt, rnn_training.evaluate_nll, batch 1024; per seed and mean \u00b1 SE (SD/sqrt(10)) over seeds 0-9",
+ "format": "m6_test_result/1",
+ "freeze_sha256": "e280f168e14f944bfb35266ac2e42c43315f7d8c23a100f8e340365c1e1f49a8",
+ "per_seed": {
+  "0": {
+   "best_epoch": 38,
+   "dev_nll": 2.0508911298778014,
+   "dev_nll_recorded": 2.0508911298778014,
+   "test_nll": 2.0680694721369437,
+   "test_nll_sum": 46901.74755859375,
+   "test_tokens": 22679
+  },
+  "1": {
+   "best_epoch": 38,
+   "dev_nll": 2.0542399070695914,
+   "dev_nll_recorded": 2.0542399070695914,
+   "test_nll": 2.0639861800839983,
+   "test_nll_sum": 46809.142578125,
+   "test_tokens": 22679
+  },
+  "2": {
+   "best_epoch": 30,
+   "dev_nll": 2.0520925810031634,
+   "dev_nll_recorded": 2.0520925810031634,
+   "test_nll": 2.0602799339938653,
+   "test_nll_sum": 46725.088623046875,
+   "test_tokens": 22679
+  },
+  "3": {
+   "best_epoch": 35,
+   "dev_nll": 2.0567989132706623,
+   "dev_nll_recorded": 2.0567989132706623,
+   "test_nll": 2.062267571752089,
+   "test_nll_sum": 46770.166259765625,
+   "test_tokens": 22679
+  },
+  "4": {
+   "best_epoch": 33,
+   "dev_nll": 2.0536941803368,
+   "dev_nll_recorded": 2.0536941803368,
+   "test_nll": 2.065856198878919,
+   "test_nll_sum": 46851.552734375,
+   "test_tokens": 22679
+  },
+  "5": {
+   "best_epoch": 34,
+   "dev_nll": 2.056457195630811,
+   "dev_nll_recorded": 2.056457195630811,
+   "test_nll": 2.0645318605937764,
+   "test_nll_sum": 46821.51806640625,
+   "test_tokens": 22679
+  },
+  "6": {
+   "best_epoch": 37,
+   "dev_nll": 2.0524063200695695,
+   "dev_nll_recorded": 2.0524063200695695,
+   "test_nll": 2.065201759044022,
+   "test_nll_sum": 46836.710693359375,
+   "test_tokens": 22679
+  },
+  "7": {
+   "best_epoch": 30,
+   "dev_nll": 2.047018533401084,
+   "dev_nll_recorded": 2.047018533401084,
+   "test_nll": 2.0578553642859307,
+   "test_nll_sum": 46670.101806640625,
+   "test_tokens": 22679
+  },
+  "8": {
+   "best_epoch": 38,
+   "dev_nll": 2.0488385219364007,
+   "dev_nll_recorded": 2.0488385219364007,
+   "test_nll": 2.0588962264443427,
+   "test_nll_sum": 46693.70751953125,
+   "test_tokens": 22679
+  },
+  "9": {
+   "best_epoch": 36,
+   "dev_nll": 2.04719164078604,
+   "dev_nll_recorded": 2.04719164078604,
+   "test_nll": 2.061436186749719,
+   "test_nll_sum": 46751.311279296875,
+   "test_tokens": 22679
+  }
+ },
+ "test_names": 3197,
+ "test_nll_mean": 2.0628380753963604,
+ "test_nll_se": 0.0010298385583280686
+}
