@@ -1,0 +1,191 @@
+{
+  "context_length": 8,
+  "definition_sha256": "b9289bab154d61613beeee4a36bd801867bed3d87c6e428d08e5f5d89a571813",
+  "frequency": {
+    "categories": [
+      {
+        "dev_support": 4914,
+        "hi": 0,
+        "id": "unseen",
+        "insufficient_dev_support": false,
+        "kind": "nominal",
+        "lo": 0
+      },
+      {
+        "dev_support": 6006,
+        "hi": 17,
+        "id": "seen:low",
+        "insufficient_dev_support": false,
+        "kind": "ordinal",
+        "lo": 1,
+        "members": [
+          "low"
+        ]
+      },
+      {
+        "dev_support": 5953,
+        "hi": 999,
+        "id": "seen:mid",
+        "insufficient_dev_support": false,
+        "kind": "ordinal",
+        "lo": 18,
+        "members": [
+          "mid"
+        ]
+      },
+      {
+        "dev_support": 5928,
+        "hi": null,
+        "id": "seen:high",
+        "insufficient_dev_support": false,
+        "kind": "ordinal",
+        "lo": 1000,
+        "members": [
+          "high"
+        ]
+      }
+    ],
+    "dev_seen": 17887,
+    "dev_unseen": 4914,
+    "steps": [],
+    "tercile_thresholds": [
+      17,
+      999
+    ]
+  },
+  "min_support": 500,
+  "real_context_length": {
+    "categories": [
+      {
+        "dev_support": 3196,
+        "hi": 0,
+        "id": "r:0",
+        "insufficient_dev_support": false,
+        "kind": "ordinal",
+        "lo": 0,
+        "members": [
+          "0"
+        ]
+      },
+      {
+        "dev_support": 3196,
+        "hi": 1,
+        "id": "r:1",
+        "insufficient_dev_support": false,
+        "kind": "ordinal",
+        "lo": 1,
+        "members": [
+          "1"
+        ]
+      },
+      {
+        "dev_support": 3196,
+        "hi": 2,
+        "id": "r:2",
+        "insufficient_dev_support": false,
+        "kind": "ordinal",
+        "lo": 2,
+        "members": [
+          "2"
+        ]
+      },
+      {
+        "dev_support": 3188,
+        "hi": 3,
+        "id": "r:3",
+        "insufficient_dev_support": false,
+        "kind": "ordinal",
+        "lo": 3,
+        "members": [
+          "3"
+        ]
+      },
+      {
+        "dev_support": 3136,
+        "hi": 4,
+        "id": "r:4",
+        "insufficient_dev_support": false,
+        "kind": "ordinal",
+        "lo": 4,
+        "members": [
+          "4"
+        ]
+      },
+      {
+        "dev_support": 2874,
+        "hi": 5,
+        "id": "r:5",
+        "insufficient_dev_support": false,
+        "kind": "ordinal",
+        "lo": 5,
+        "members": [
+          "5"
+        ]
+      },
+      {
+        "dev_support": 2134,
+        "hi": 6,
+        "id": "r:6",
+        "insufficient_dev_support": false,
+        "kind": "ordinal",
+        "lo": 6,
+        "members": [
+          "6"
+        ]
+      },
+      {
+        "dev_support": 1147,
+        "hi": 7,
+        "id": "r:7",
+        "insufficient_dev_support": false,
+        "kind": "ordinal",
+        "lo": 7,
+        "members": [
+          "7"
+        ]
+      },
+      {
+        "dev_support": 734,
+        "hi": 8,
+        "id": "r:8",
+        "insufficient_dev_support": false,
+        "kind": "ordinal",
+        "lo": 8,
+        "members": [
+          "8"
+        ]
+      }
+    ],
+    "steps": []
+  },
+  "schema": "wavenet_study.context_buckets/1",
+  "sources": {
+    "dev_fingerprint": "913aa35dd683d6a9d93718ee125bc98fad5322a21368d8dd2b37ac0b891acd15",
+    "dev_windows": 22801,
+    "train_fingerprint": "a8e5d865ef1319f5ae84e8f3a1ca60f8f55d909cc6858e146a90dcc3b14e55a7",
+    "train_windows": 182666
+  },
+  "target_position": {
+    "categories": [
+      {
+        "dev_support": 3196,
+        "id": "first",
+        "insufficient_dev_support": false,
+        "kind": "nominal"
+      },
+      {
+        "dev_support": 16409,
+        "id": "interior",
+        "insufficient_dev_support": false,
+        "kind": "nominal"
+      },
+      {
+        "dev_support": 3196,
+        "id": "eos",
+        "insufficient_dev_support": false,
+        "kind": "nominal"
+      }
+    ],
+    "steps": []
+  }
+}

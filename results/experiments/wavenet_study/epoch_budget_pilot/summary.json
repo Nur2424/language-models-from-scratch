@@ -1,0 +1,3905 @@
+{
+  "mode": "selection",
+  "root": "/Users/nurtaabaldiev/Documents/Ml_Projects/language-models-from-scratch/results/experiments/wavenet_study/epoch_budget_pilot",
+  "generated_at": "2026-11-12T19:23:14.468665+00:00",
+  "blocking": [],
+  "integrity_problems": [],
+  "conditions_sha256": "cc05d01b32251c9c0d8357bba61a5e074e5e3b6e610211667f9bb9b0302ebcd2",
+  "conditions": {
+    "status": "pass",
+    "recorded_document_changes": [
+      [
+        "checksums",
+        "recorded",
+        "PROJECT_RESEARCH_RECORD.md"
+      ],
+      [
+        "checksums",
+        "recorded",
+        "models/hierarchical/wavenet_spec.md"
+      ]
+    ]
+  },
+  "records": {
+    "manifest_lines": 24,
+    "manifest_head": "409843791a4cf3702dcc53b898844b3a97ba06cb51f7cbc9f4d302a762ebf425",
+    "unrecorded_tail": 0,
+    "invocation_records": 28,
+    "orphans": []
+  },
+  "category_b": {
+    "heads": {
+      "events": "0000000000000000000000000000000000000000000000000000000000000000",
+      "resolutions": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "events": []
+  },
+  "attempts": [
+    {
+      "attempt_id": "A-c30-s100-a1",
+      "arm": "A",
+      "cap": 30,
+      "seed": 100,
+      "status": "completed",
+      "stage": "validation",
+      "retry_of": null,
+      "retry_reason": null,
+      "retry_authorized_by": null,
+      "run_dir": "results/experiments/wavenet_study/epoch_budget_pilot/runs/mlp/run_001",
+      "latest": true,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "30 rows, cap 30"
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "configuration",
+            "blocking checksums"
+          ]
+        },
+        "G3": {
+          "gate": "G3",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "attempt 'completed', metadata 'completed'"
+          ]
+        },
+        "G4": {
+          "gate": "G4",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "model_best.pt loads",
+            "model_final.pt loads",
+            "checkpoint_last.pt loads",
+            "is_best flags follow strict improvement",
+            "epoch / step / best metric / best epoch agree with history",
+            "BatchNorm counters equal each checkpoint's own step / epoch (A3)"
+          ]
+        },
+        "G5": {
+          "gate": "G5",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "epochs 1-10"
+          ]
+        },
+        "G6": {
+          "gate": "G6",
+          "status": "not_applicable",
+          "detail": "cap 30 run",
+          "first_mismatch": null,
+          "checks": []
+        },
+        "G7": {
+          "gate": "G7",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "one state-hash record per epoch 0..29",
+            "model_best.pt matches the record of epoch 25",
+            "model_final.pt matches the record of epoch 29",
+            "checkpoint_last.pt matches the record of epoch 29"
+          ]
+        }
+      },
+      "timing": {
+        "wall_seconds": 141.80968829100038,
+        "training_call_seconds": 141.80952191599954,
+        "finiteness_totals": {
+          "parameter_checks": 171270,
+          "parameter_check_seconds": 17.251214750263898,
+          "module_checks_training": 685080,
+          "module_checks_evaluation": 6840,
+          "module_check_seconds": 24.709174192742466
+        }
+      },
+      "peak_rss_bytes": 327237632,
+      "category_a_records": [],
+      "category_c": {
+        "structural_null": 5,
+        "epsilon_regularised": 3
+      },
+      "epsilon_regularised": [
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "hidden.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 7735033153.276963
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.weight",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 59485425815.31393
+        }
+      ],
+      "category_a": null
+    },
+    {
+      "attempt_id": "B-c30-s100-a1",
+      "arm": "B",
+      "cap": 30,
+      "seed": 100,
+      "status": "completed",
+      "stage": "validation",
+      "retry_of": null,
+      "retry_reason": null,
+      "retry_authorized_by": null,
+      "run_dir": "results/experiments/wavenet_study/epoch_budget_pilot/runs/batchnorm_mlp/run_001",
+      "latest": true,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "30 rows, cap 30"
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "configuration",
+            "blocking checksums"
+          ]
+        },
+        "G3": {
+          "gate": "G3",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "attempt 'completed', metadata 'completed'"
+          ]
+        },
+        "G4": {
+          "gate": "G4",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "model_best.pt loads",
+            "model_final.pt loads",
+            "checkpoint_last.pt loads",
+            "is_best flags follow strict improvement",
+            "epoch / step / best metric / best epoch agree with history",
+            "BatchNorm counters equal each checkpoint's own step / epoch (A3)"
+          ]
+        },
+        "G5": {
+          "gate": "G5",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "epochs 1-10"
+          ]
+        },
+        "G6": {
+          "gate": "G6",
+          "status": "not_applicable",
+          "detail": "cap 30 run",
+          "first_mismatch": null,
+          "checks": []
+        },
+        "G7": {
+          "gate": "G7",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "one state-hash record per epoch 0..29",
+            "model_best.pt matches the record of epoch 27",
+            "model_final.pt matches the record of epoch 29",
+            "checkpoint_last.pt matches the record of epoch 29"
+          ]
+        }
+      },
+      "timing": {
+        "wall_seconds": 178.29109437500028,
+        "training_call_seconds": 178.29084912500002,
+        "finiteness_totals": {
+          "parameter_checks": 171270,
+          "parameter_check_seconds": 18.82149597307307,
+          "module_checks_training": 856350,
+          "module_checks_evaluation": 11250,
+          "module_check_seconds": 39.11654275693127
+        }
+      },
+      "peak_rss_bytes": 366641152,
+      "category_a_records": [],
+      "category_c": {
+        "structural_null": 6,
+        "epsilon_regularised": 3
+      },
+      "epsilon_regularised": [
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "bn.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 7735033153.276963
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.weight",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 47562817928.38952
+        }
+      ],
+      "category_a": null
+    },
+    {
+      "attempt_id": "C-c30-s100-a1",
+      "arm": "C",
+      "cap": 30,
+      "seed": 100,
+      "status": "completed",
+      "stage": "validation",
+      "retry_of": null,
+      "retry_reason": null,
+      "retry_authorized_by": null,
+      "run_dir": "results/experiments/wavenet_study/epoch_budget_pilot/runs/wavenet/run_001",
+      "latest": true,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "30 rows, cap 30"
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "configuration",
+            "blocking checksums"
+          ]
+        },
+        "G3": {
+          "gate": "G3",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "attempt 'completed', metadata 'completed'"
+          ]
+        },
+        "G4": {
+          "gate": "G4",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "model_best.pt loads",
+            "model_final.pt loads",
+            "checkpoint_last.pt loads",
+            "is_best flags follow strict improvement",
+            "epoch / step / best metric / best epoch agree with history",
+            "BatchNorm counters equal each checkpoint's own step / epoch (A3)"
+          ]
+        },
+        "G5": {
+          "gate": "G5",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "epochs 1-10"
+          ]
+        },
+        "G6": {
+          "gate": "G6",
+          "status": "not_applicable",
+          "detail": "cap 30 run",
+          "first_mismatch": null,
+          "checks": []
+        },
+        "G7": {
+          "gate": "G7",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "one state-hash record per epoch 0..29",
+            "model_best.pt matches the record of epoch 29",
+            "model_final.pt matches the record of epoch 29",
+            "checkpoint_last.pt matches the record of epoch 29"
+          ]
+        }
+      },
+      "timing": {
+        "wall_seconds": 226.79366074999962,
+        "training_call_seconds": 226.79342970800008,
+        "finiteness_totals": {
+          "parameter_checks": 171270,
+          "parameter_check_seconds": 18.535233163044722,
+          "module_checks_training": 1370160,
+          "module_checks_evaluation": 15120,
+          "module_check_seconds": 53.077042822431395
+        }
+      },
+      "peak_rss_bytes": 314261504,
+      "category_a_records": [],
+      "category_c": {
+        "structural_null": 36,
+        "epsilon_regularised": 2
+      },
+      "epsilon_regularised": [
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 7735033153.276963
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.weight",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 20800084507.605328
+        }
+      ],
+      "category_a": null
+    },
+    {
+      "attempt_id": "D-c30-s100-a1",
+      "arm": "D",
+      "cap": 30,
+      "seed": 100,
+      "status": "completed",
+      "stage": "validation",
+      "retry_of": null,
+      "retry_reason": null,
+      "retry_authorized_by": null,
+      "run_dir": "results/experiments/wavenet_study/epoch_budget_pilot/runs/wavenet_batchnorm/run_001",
+      "latest": true,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "30 rows, cap 30"
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "configuration",
+            "blocking checksums"
+          ]
+        },
+        "G3": {
+          "gate": "G3",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "attempt 'completed', metadata 'completed'"
+          ]
+        },
+        "G4": {
+          "gate": "G4",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "model_best.pt loads",
+            "model_final.pt loads",
+            "checkpoint_last.pt loads",
+            "is_best flags follow strict improvement",
+            "epoch / step / best metric / best epoch agree with history",
+            "BatchNorm counters equal each checkpoint's own step / epoch (A3)"
+          ]
+        },
+        "G5": {
+          "gate": "G5",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "epochs 1-10"
+          ]
+        },
+        "G6": {
+          "gate": "G6",
+          "status": "not_applicable",
+          "detail": "cap 30 run",
+          "first_mismatch": null,
+          "checks": []
+        },
+        "G7": {
+          "gate": "G7",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "one state-hash record per epoch 0..29",
+            "model_best.pt matches the record of epoch 27",
+            "model_final.pt matches the record of epoch 29",
+            "checkpoint_last.pt matches the record of epoch 29"
+          ]
+        }
+      },
+      "timing": {
+        "wall_seconds": 408.840833792,
+        "training_call_seconds": 408.84050337499957,
+        "finiteness_totals": {
+          "parameter_checks": 171270,
+          "parameter_check_seconds": 28.068391682180845,
+          "module_checks_training": 1883970,
+          "module_checks_evaluation": 36990,
+          "module_check_seconds": 110.99175669649321
+        }
+      },
+      "peak_rss_bytes": 331251712,
+      "category_a_records": [],
+      "category_c": {
+        "structural_null": 12,
+        "epsilon_regularised": 5
+      },
+      "epsilon_regularised": [
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "bn1.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "bn2.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "bn3.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 7735033153.276963
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.weight",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 28350161779.634743
+        }
+      ],
+      "category_a": null
+    },
+    {
+      "attempt_id": "A-c30-s101-a1",
+      "arm": "A",
+      "cap": 30,
+      "seed": 101,
+      "status": "completed",
+      "stage": "completion",
+      "retry_of": null,
+      "retry_reason": null,
+      "retry_authorized_by": null,
+      "run_dir": "results/experiments/wavenet_study/epoch_budget_pilot/runs/mlp/run_002",
+      "latest": true,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "30 rows, cap 30"
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "configuration",
+            "blocking checksums"
+          ]
+        },
+        "G3": {
+          "gate": "G3",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "attempt 'completed', metadata 'completed'"
+          ]
+        },
+        "G4": {
+          "gate": "G4",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "model_best.pt loads",
+            "model_final.pt loads",
+            "checkpoint_last.pt loads",
+            "is_best flags follow strict improvement",
+            "epoch / step / best metric / best epoch agree with history",
+            "BatchNorm counters equal each checkpoint's own step / epoch (A3)"
+          ]
+        },
+        "G5": {
+          "gate": "G5",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "epochs 1-10"
+          ]
+        },
+        "G6": {
+          "gate": "G6",
+          "status": "not_applicable",
+          "detail": "cap 30 run",
+          "first_mismatch": null,
+          "checks": []
+        },
+        "G7": {
+          "gate": "G7",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "one state-hash record per epoch 0..29",
+            "model_best.pt matches the record of epoch 24",
+            "model_final.pt matches the record of epoch 29",
+            "checkpoint_last.pt matches the record of epoch 29"
+          ]
+        }
+      },
+      "timing": {
+        "wall_seconds": 138.49152341699937,
+        "training_call_seconds": 138.49137833399982,
+        "finiteness_totals": {
+          "parameter_checks": 171270,
+          "parameter_check_seconds": 17.163985159173535,
+          "module_checks_training": 685080,
+          "module_checks_evaluation": 6840,
+          "module_check_seconds": 24.576209059158828
+        }
+      },
+      "peak_rss_bytes": 398901248,
+      "category_a_records": [],
+      "category_c": {
+        "structural_null": 5,
+        "epsilon_regularised": 3
+      },
+      "epsilon_regularised": [
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "hidden.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 7735032918.114502
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.weight",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 49406382657.51782
+        }
+      ],
+      "category_a": null
+    },
+    {
+      "attempt_id": "A-c30-s102-a1",
+      "arm": "A",
+      "cap": 30,
+      "seed": 102,
+      "status": "completed",
+      "stage": "completion",
+      "retry_of": null,
+      "retry_reason": null,
+      "retry_authorized_by": null,
+      "run_dir": "results/experiments/wavenet_study/epoch_budget_pilot/runs/mlp/run_003",
+      "latest": true,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "30 rows, cap 30"
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "configuration",
+            "blocking checksums"
+          ]
+        },
+        "G3": {
+          "gate": "G3",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "attempt 'completed', metadata 'completed'"
+          ]
+        },
+        "G4": {
+          "gate": "G4",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "model_best.pt loads",
+            "model_final.pt loads",
+            "checkpoint_last.pt loads",
+            "is_best flags follow strict improvement",
+            "epoch / step / best metric / best epoch agree with history",
+            "BatchNorm counters equal each checkpoint's own step / epoch (A3)"
+          ]
+        },
+        "G5": {
+          "gate": "G5",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "epochs 1-10"
+          ]
+        },
+        "G6": {
+          "gate": "G6",
+          "status": "not_applicable",
+          "detail": "cap 30 run",
+          "first_mismatch": null,
+          "checks": []
+        },
+        "G7": {
+          "gate": "G7",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "one state-hash record per epoch 0..29",
+            "model_best.pt matches the record of epoch 23",
+            "model_final.pt matches the record of epoch 29",
+            "checkpoint_last.pt matches the record of epoch 29"
+          ]
+        }
+      },
+      "timing": {
+        "wall_seconds": 138.5025686250001,
+        "training_call_seconds": 138.50239970799976,
+        "finiteness_totals": {
+          "parameter_checks": 171270,
+          "parameter_check_seconds": 16.924985620069492,
+          "module_checks_training": 685080,
+          "module_checks_evaluation": 6840,
+          "module_check_seconds": 24.233035656076936
+        }
+      },
+      "peak_rss_bytes": 424673280,
+      "category_a_records": [],
+      "category_c": {
+        "structural_null": 5,
+        "epsilon_regularised": 3
+      },
+      "epsilon_regularised": [
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "hidden.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 8897565285.040754
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.weight",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 57834667389.22071
+        }
+      ],
+      "category_a": null
+    },
+    {
+      "attempt_id": "B-c30-s101-a1",
+      "arm": "B",
+      "cap": 30,
+      "seed": 101,
+      "status": "completed",
+      "stage": "completion",
+      "retry_of": null,
+      "retry_reason": null,
+      "retry_authorized_by": null,
+      "run_dir": "results/experiments/wavenet_study/epoch_budget_pilot/runs/batchnorm_mlp/run_002",
+      "latest": true,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "30 rows, cap 30"
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "configuration",
+            "blocking checksums"
+          ]
+        },
+        "G3": {
+          "gate": "G3",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "attempt 'completed', metadata 'completed'"
+          ]
+        },
+        "G4": {
+          "gate": "G4",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "model_best.pt loads",
+            "model_final.pt loads",
+            "checkpoint_last.pt loads",
+            "is_best flags follow strict improvement",
+            "epoch / step / best metric / best epoch agree with history",
+            "BatchNorm counters equal each checkpoint's own step / epoch (A3)"
+          ]
+        },
+        "G5": {
+          "gate": "G5",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "epochs 1-10"
+          ]
+        },
+        "G6": {
+          "gate": "G6",
+          "status": "not_applicable",
+          "detail": "cap 30 run",
+          "first_mismatch": null,
+          "checks": []
+        },
+        "G7": {
+          "gate": "G7",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "one state-hash record per epoch 0..29",
+            "model_best.pt matches the record of epoch 24",
+            "model_final.pt matches the record of epoch 29",
+            "checkpoint_last.pt matches the record of epoch 29"
+          ]
+        }
+      },
+      "timing": {
+        "wall_seconds": 178.15053375000025,
+        "training_call_seconds": 178.15039574999992,
+        "finiteness_totals": {
+          "parameter_checks": 171270,
+          "parameter_check_seconds": 18.9079080608999,
+          "module_checks_training": 856350,
+          "module_checks_evaluation": 11250,
+          "module_check_seconds": 37.565146158119205
+        }
+      },
+      "peak_rss_bytes": 421281792,
+      "category_a_records": [],
+      "category_c": {
+        "structural_null": 6,
+        "epsilon_regularised": 3
+      },
+      "epsilon_regularised": [
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "bn.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 7735032918.114502
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.weight",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 47808637634.42676
+        }
+      ],
+      "category_a": null
+    },
+    {
+      "attempt_id": "B-c30-s102-a1",
+      "arm": "B",
+      "cap": 30,
+      "seed": 102,
+      "status": "completed",
+      "stage": "completion",
+      "retry_of": null,
+      "retry_reason": null,
+      "retry_authorized_by": null,
+      "run_dir": "results/experiments/wavenet_study/epoch_budget_pilot/runs/batchnorm_mlp/run_003",
+      "latest": true,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "30 rows, cap 30"
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "configuration",
+            "blocking checksums"
+          ]
+        },
+        "G3": {
+          "gate": "G3",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "attempt 'completed', metadata 'completed'"
+          ]
+        },
+        "G4": {
+          "gate": "G4",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "model_best.pt loads",
+            "model_final.pt loads",
+            "checkpoint_last.pt loads",
+            "is_best flags follow strict improvement",
+            "epoch / step / best metric / best epoch agree with history",
+            "BatchNorm counters equal each checkpoint's own step / epoch (A3)"
+          ]
+        },
+        "G5": {
+          "gate": "G5",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "epochs 1-10"
+          ]
+        },
+        "G6": {
+          "gate": "G6",
+          "status": "not_applicable",
+          "detail": "cap 30 run",
+          "first_mismatch": null,
+          "checks": []
+        },
+        "G7": {
+          "gate": "G7",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "one state-hash record per epoch 0..29",
+            "model_best.pt matches the record of epoch 21",
+            "model_final.pt matches the record of epoch 29",
+            "checkpoint_last.pt matches the record of epoch 29"
+          ]
+        }
+      },
+      "timing": {
+        "wall_seconds": 171.26907725,
+        "training_call_seconds": 171.2689372499999,
+        "finiteness_totals": {
+          "parameter_checks": 171270,
+          "parameter_check_seconds": 18.37276026391828,
+          "module_checks_training": 856350,
+          "module_checks_evaluation": 11250,
+          "module_check_seconds": 36.21823832002883
+        }
+      },
+      "peak_rss_bytes": 430456832,
+      "category_a_records": [],
+      "category_c": {
+        "structural_null": 6,
+        "epsilon_regularised": 3
+      },
+      "epsilon_regularised": [
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "bn.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 8897565285.040754
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.weight",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 43893425827.48733
+        }
+      ],
+      "category_a": null
+    },
+    {
+      "attempt_id": "C-c30-s101-a1",
+      "arm": "C",
+      "cap": 30,
+      "seed": 101,
+      "status": "completed",
+      "stage": "completion",
+      "retry_of": null,
+      "retry_reason": null,
+      "retry_authorized_by": null,
+      "run_dir": "results/experiments/wavenet_study/epoch_budget_pilot/runs/wavenet/run_002",
+      "latest": true,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "30 rows, cap 30"
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "configuration",
+            "blocking checksums"
+          ]
+        },
+        "G3": {
+          "gate": "G3",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "attempt 'completed', metadata 'completed'"
+          ]
+        },
+        "G4": {
+          "gate": "G4",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "model_best.pt loads",
+            "model_final.pt loads",
+            "checkpoint_last.pt loads",
+            "is_best flags follow strict improvement",
+            "epoch / step / best metric / best epoch agree with history",
+            "BatchNorm counters equal each checkpoint's own step / epoch (A3)"
+          ]
+        },
+        "G5": {
+          "gate": "G5",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "epochs 1-10"
+          ]
+        },
+        "G6": {
+          "gate": "G6",
+          "status": "not_applicable",
+          "detail": "cap 30 run",
+          "first_mismatch": null,
+          "checks": []
+        },
+        "G7": {
+          "gate": "G7",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "one state-hash record per epoch 0..29",
+            "model_best.pt matches the record of epoch 24",
+            "model_final.pt matches the record of epoch 29",
+            "checkpoint_last.pt matches the record of epoch 29"
+          ]
+        }
+      },
+      "timing": {
+        "wall_seconds": 222.3186517080003,
+        "training_call_seconds": 222.31850191600006,
+        "finiteness_totals": {
+          "parameter_checks": 171270,
+          "parameter_check_seconds": 18.14091570421624,
+          "module_checks_training": 1370160,
+          "module_checks_evaluation": 15120,
+          "module_check_seconds": 51.474345880129476
+        }
+      },
+      "peak_rss_bytes": 423215104,
+      "category_a_records": [],
+      "category_c": {
+        "structural_null": 36,
+        "epsilon_regularised": 2
+      },
+      "epsilon_regularised": [
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 7735032918.114502
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.weight",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 18187433251.2781
+        }
+      ],
+      "category_a": null
+    },
+    {
+      "attempt_id": "C-c30-s102-a1",
+      "arm": "C",
+      "cap": 30,
+      "seed": 102,
+      "status": "completed",
+      "stage": "completion",
+      "retry_of": null,
+      "retry_reason": null,
+      "retry_authorized_by": null,
+      "run_dir": "results/experiments/wavenet_study/epoch_budget_pilot/runs/wavenet/run_003",
+      "latest": true,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "30 rows, cap 30"
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "configuration",
+            "blocking checksums"
+          ]
+        },
+        "G3": {
+          "gate": "G3",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "attempt 'completed', metadata 'completed'"
+          ]
+        },
+        "G4": {
+          "gate": "G4",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "model_best.pt loads",
+            "model_final.pt loads",
+            "checkpoint_last.pt loads",
+            "is_best flags follow strict improvement",
+            "epoch / step / best metric / best epoch agree with history",
+            "BatchNorm counters equal each checkpoint's own step / epoch (A3)"
+          ]
+        },
+        "G5": {
+          "gate": "G5",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "epochs 1-10"
+          ]
+        },
+        "G6": {
+          "gate": "G6",
+          "status": "not_applicable",
+          "detail": "cap 30 run",
+          "first_mismatch": null,
+          "checks": []
+        },
+        "G7": {
+          "gate": "G7",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "one state-hash record per epoch 0..29",
+            "model_best.pt matches the record of epoch 23",
+            "model_final.pt matches the record of epoch 29",
+            "checkpoint_last.pt matches the record of epoch 29"
+          ]
+        }
+      },
+      "timing": {
+        "wall_seconds": 226.22686712499944,
+        "training_call_seconds": 226.2267114159995,
+        "finiteness_totals": {
+          "parameter_checks": 171270,
+          "parameter_check_seconds": 18.745002717003445,
+          "module_checks_training": 1370160,
+          "module_checks_evaluation": 15120,
+          "module_check_seconds": 52.01775794911191
+        }
+      },
+      "peak_rss_bytes": 375898112,
+      "category_a_records": [],
+      "category_c": {
+        "structural_null": 36,
+        "epsilon_regularised": 2
+      },
+      "epsilon_regularised": [
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 8897565285.040754
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.weight",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 21954454724.505383
+        }
+      ],
+      "category_a": null
+    },
+    {
+      "attempt_id": "D-c30-s101-a1",
+      "arm": "D",
+      "cap": 30,
+      "seed": 101,
+      "status": "completed",
+      "stage": "completion",
+      "retry_of": null,
+      "retry_reason": null,
+      "retry_authorized_by": null,
+      "run_dir": "results/experiments/wavenet_study/epoch_budget_pilot/runs/wavenet_batchnorm/run_002",
+      "latest": true,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "30 rows, cap 30"
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "configuration",
+            "blocking checksums"
+          ]
+        },
+        "G3": {
+          "gate": "G3",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "attempt 'completed', metadata 'completed'"
+          ]
+        },
+        "G4": {
+          "gate": "G4",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "model_best.pt loads",
+            "model_final.pt loads",
+            "checkpoint_last.pt loads",
+            "is_best flags follow strict improvement",
+            "epoch / step / best metric / best epoch agree with history",
+            "BatchNorm counters equal each checkpoint's own step / epoch (A3)"
+          ]
+        },
+        "G5": {
+          "gate": "G5",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "epochs 1-10"
+          ]
+        },
+        "G6": {
+          "gate": "G6",
+          "status": "not_applicable",
+          "detail": "cap 30 run",
+          "first_mismatch": null,
+          "checks": []
+        },
+        "G7": {
+          "gate": "G7",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "one state-hash record per epoch 0..29",
+            "model_best.pt matches the record of epoch 26",
+            "model_final.pt matches the record of epoch 29",
+            "checkpoint_last.pt matches the record of epoch 29"
+          ]
+        }
+      },
+      "timing": {
+        "wall_seconds": 378.92310533399996,
+        "training_call_seconds": 378.9228252080002,
+        "finiteness_totals": {
+          "parameter_checks": 171270,
+          "parameter_check_seconds": 27.94516226219548,
+          "module_checks_training": 1883970,
+          "module_checks_evaluation": 36990,
+          "module_check_seconds": 103.7657761304572
+        }
+      },
+      "peak_rss_bytes": 421380096,
+      "category_a_records": [],
+      "category_c": {
+        "structural_null": 12,
+        "epsilon_regularised": 5
+      },
+      "epsilon_regularised": [
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "bn1.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "bn2.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "bn3.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 7735032918.114502
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.weight",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 28241014655.744385
+        }
+      ],
+      "category_a": null
+    },
+    {
+      "attempt_id": "D-c30-s102-a1",
+      "arm": "D",
+      "cap": 30,
+      "seed": 102,
+      "status": "completed",
+      "stage": "completion",
+      "retry_of": null,
+      "retry_reason": null,
+      "retry_authorized_by": null,
+      "run_dir": "results/experiments/wavenet_study/epoch_budget_pilot/runs/wavenet_batchnorm/run_003",
+      "latest": true,
+      "gates": {
+        "G1": {
+          "gate": "G1",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "30 rows, cap 30"
+          ]
+        },
+        "G2": {
+          "gate": "G2",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "configuration",
+            "blocking checksums"
+          ]
+        },
+        "G3": {
+          "gate": "G3",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "attempt 'completed', metadata 'completed'"
+          ]
+        },
+        "G4": {
+          "gate": "G4",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "model_best.pt loads",
+            "model_final.pt loads",
+            "checkpoint_last.pt loads",
+            "is_best flags follow strict improvement",
+            "epoch / step / best metric / best epoch agree with history",
+            "BatchNorm counters equal each checkpoint's own step / epoch (A3)"
+          ]
+        },
+        "G5": {
+          "gate": "G5",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "epochs 1-10"
+          ]
+        },
+        "G6": {
+          "gate": "G6",
+          "status": "not_applicable",
+          "detail": "cap 30 run",
+          "first_mismatch": null,
+          "checks": []
+        },
+        "G7": {
+          "gate": "G7",
+          "status": "pass",
+          "detail": "",
+          "first_mismatch": null,
+          "checks": [
+            "one state-hash record per epoch 0..29",
+            "model_best.pt matches the record of epoch 29",
+            "model_final.pt matches the record of epoch 29",
+            "checkpoint_last.pt matches the record of epoch 29"
+          ]
+        }
+      },
+      "timing": {
+        "wall_seconds": 377.0061597080012,
+        "training_call_seconds": 377.00591695799994,
+        "finiteness_totals": {
+          "parameter_checks": 171270,
+          "parameter_check_seconds": 27.147705937019964,
+          "module_checks_training": 1883970,
+          "module_checks_evaluation": 36990,
+          "module_check_seconds": 103.37867315773201
+        }
+      },
+      "peak_rss_bytes": 402128896,
+      "category_a_records": [],
+      "category_c": {
+        "structural_null": 12,
+        "epsilon_regularised": 5
+      },
+      "epsilon_regularised": [
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "bn1.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "bn2.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "bn3.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 0.0
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.bias",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 8897565285.040754
+        },
+        {
+          "field": [
+            "updates",
+            "per_parameter",
+            "out.weight",
+            "relative_update"
+          ],
+          "step": 0,
+          "value": 25980536167.703697
+        }
+      ],
+      "category_a": null
+    }
+  ],
+  "sweep_state": {
+    "halted": [],
+    "integrity_blocked": [],
+    "unresolved": [],
+    "launched": []
+  },
+  "halted": false,
+  "selection_prerequisites": {
+    "met": true,
+    "failed": []
+  },
+  "arms": {
+    "A": {
+      "learning_rate": 0.03,
+      "caps": {
+        "30": {
+          "statistics": [
+            {
+              "epoch": 1,
+              "values": {
+                "100": 2.29437776509254,
+                "101": 2.2869496840530568,
+                "102": 2.2910594398957285
+              },
+              "mean": 2.2907956296804417,
+              "sd": 0.0037210608506915567,
+              "se": 0.0021483554838177482,
+              "epsilon": 0.0021483554838177482,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 2,
+              "values": {
+                "100": 2.2246725917997017,
+                "101": 2.2236900117113834,
+                "102": 2.2330902127716437
+              },
+              "mean": 2.2271509387609094,
+              "sd": 0.005166971815137565,
+              "se": 0.0029831525683648823,
+              "epsilon": 0.0029831525683648823,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 3,
+              "values": {
+                "100": 2.192228475279319,
+                "101": 2.1851885393938315,
+                "102": 2.2081569030689443
+              },
+              "mean": 2.1951913059140318,
+              "sd": 0.011767336423573246,
+              "se": 0.006793874851794901,
+              "epsilon": 0.006793874851794901,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 4,
+              "values": {
+                "100": 2.1717859354099054,
+                "101": 2.1566525359701876,
+                "102": 2.1664667513897418
+              },
+              "mean": 2.164968407589945,
+              "sd": 0.007677155740070998,
+              "se": 0.004432407933140672,
+              "epsilon": 0.004432407933140672,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 5,
+              "values": {
+                "100": 2.1502886686370664,
+                "101": 2.144495101640279,
+                "102": 2.1580910608018837
+              },
+              "mean": 2.1509582770264095,
+              "sd": 0.006822668680752114,
+              "se": 0.003939069599423862,
+              "epsilon": 0.003939069599423862,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 6,
+              "values": {
+                "100": 2.1293979148049975,
+                "101": 2.1301429179367135,
+                "102": 2.1449536804169775
+              },
+              "mean": 2.1348315043862294,
+              "sd": 0.008773972481986362,
+              "se": 0.0050656553743371946,
+              "epsilon": 0.0050656553743371946,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 7,
+              "values": {
+                "100": 2.128980709624852,
+                "101": 2.1164834207518313,
+                "102": 2.1343350355041992
+              },
+              "mean": 2.1265997219602943,
+              "sd": 0.009160887730499867,
+              "se": 0.0052890409972200375,
+              "epsilon": 0.0052890409972200375,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 8,
+              "values": {
+                "100": 2.1312306237939125,
+                "101": 2.133156658939027,
+                "102": 2.127811048926034
+              },
+              "mean": 2.1307327772196576,
+              "sd": 0.0027073557230951526,
+              "se": 0.0015630925555210602,
+              "epsilon": 0.0015630925555210602,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 9,
+              "values": {
+                "100": 2.1104274355085852,
+                "101": 2.103438531341827,
+                "102": 2.1144532663383733
+              },
+              "mean": 2.109439744396262,
+              "sd": 0.005573396366763856,
+              "se": 0.0032178018926515947,
+              "epsilon": 0.0032178018926515947,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 10,
+              "values": {
+                "100": 2.1026829064172077,
+                "101": 2.103396943596224,
+                "102": 2.10500728021112
+              },
+              "mean": 2.1036957100748506,
+              "sd": 0.0011906403487283745,
+              "se": 0.0006874165258463568,
+              "epsilon": 0.001,
+              "epsilon_source": "floor-derived"
+            },
+            {
+              "epoch": 11,
+              "values": {
+                "100": 2.1206582350760383,
+                "101": 2.0942890131600587,
+                "102": 2.09776773599568
+              },
+              "mean": 2.104238328077259,
+              "sd": 0.014326038794034787,
+              "se": 0.008271142354157006,
+              "epsilon": 0.008271142354157006,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 12,
+              "values": {
+                "100": 2.1417034974480287,
+                "101": 2.0952466448839964,
+                "102": 2.0943590184846608
+              },
+              "mean": 2.110436386938895,
+              "sd": 0.027081748832912728,
+              "se": 0.015635654978808,
+              "epsilon": 0.015635654978808,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 13,
+              "values": {
+                "100": 2.0875719069681704,
+                "101": 2.0940557620142757,
+                "102": 2.107862443841553
+              },
+              "mean": 2.0964967042746663,
+              "sd": 0.01036316172755437,
+              "se": 0.005983174213059143,
+              "epsilon": 0.005983174213059143,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 14,
+              "values": {
+                "100": 2.101240569732413,
+                "101": 2.0842201531045785,
+                "102": 2.10349322500932
+              },
+              "mean": 2.096317982615437,
+              "sd": 0.010537396410143037,
+              "se": 0.006083768653953879,
+              "epsilon": 0.006083768653953879,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 15,
+              "values": {
+                "100": 2.1011367502727403,
+                "101": 2.094292803598252,
+                "102": 2.1027643258862003
+              },
+              "mean": 2.0993979599190644,
+              "sd": 0.004495466203779979,
+              "se": 0.002595458622885236,
+              "epsilon": 0.002595458622885236,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 16,
+              "values": {
+                "100": 2.0978665015377613,
+                "101": 2.0854725181666924,
+                "102": 2.0918399189591463
+              },
+              "mean": 2.0917263128878667,
+              "sd": 0.006197772640647346,
+              "se": 0.0035782857024538425,
+              "epsilon": 0.0035782857024538425,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 17,
+              "values": {
+                "100": 2.107886621269352,
+                "101": 2.088238959845511,
+                "102": 2.084386546916802
+              },
+              "mean": 2.0935040426772216,
+              "sd": 0.012603737404533116,
+              "se": 0.007276771183302549,
+              "epsilon": 0.007276771183302549,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 18,
+              "values": {
+                "100": 2.108852412072113,
+                "101": 2.098000087715451,
+                "102": 2.0841598915617734
+              },
+              "mean": 2.097004130449779,
+              "sd": 0.012376352065316733,
+              "se": 0.007145490196496197,
+              "epsilon": 0.007145490196496197,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 19,
+              "values": {
+                "100": 2.093085131442974,
+                "101": 2.0892825081685014,
+                "102": 2.0794198522337286
+              },
+              "mean": 2.087262497281735,
+              "sd": 0.007053034591837153,
+              "se": 0.004072071420200922,
+              "epsilon": 0.004072071420200922,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 20,
+              "values": {
+                "100": 2.086299925853033,
+                "101": 2.086081450991733,
+                "102": 2.0881243472736943
+              },
+              "mean": 2.08683524137282,
+              "sd": 0.0011217300628969223,
+              "se": 0.000647631153771634,
+              "epsilon": 0.001,
+              "epsilon_source": "floor-derived"
+            },
+            {
+              "epoch": 21,
+              "values": {
+                "100": 2.0953944291437328,
+                "101": 2.084953763506809,
+                "102": 2.0813167202781675
+              },
+              "mean": 2.087221637642903,
+              "sd": 0.007307729575509559,
+              "se": 0.004219119637585434,
+              "epsilon": 0.004219119637585434,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 22,
+              "values": {
+                "100": 2.08789049651057,
+                "101": 2.0879277370304483,
+                "102": 2.0791393812223147
+              },
+              "mean": 2.0849858715877776,
+              "sd": 0.005063243417925733,
+              "se": 0.002923264950312023,
+              "epsilon": 0.002923264950312023,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 23,
+              "values": {
+                "100": 2.0955076711616267,
+                "101": 2.087499610248728,
+                "102": 2.074683089386156
+              },
+              "mean": 2.0858967902655037,
+              "sd": 0.01050440742996881,
+              "se": 0.006064722457369997,
+              "epsilon": 0.006064722457369997,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 24,
+              "values": {
+                "100": 2.093104790325808,
+                "101": 2.08558081334152,
+                "102": 2.0731553072302202
+              },
+              "mean": 2.083946970299183,
+              "sd": 0.010074599310172737,
+              "se": 0.005816572623705848,
+              "epsilon": 0.005816572623705848,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 25,
+              "values": {
+                "100": 2.0816902604669205,
+                "101": 2.0757636640799744,
+                "102": 2.0868260044104425
+              },
+              "mean": 2.0814266429857793,
+              "sd": 0.005535879697848218,
+              "se": 0.0031961416337540527,
+              "epsilon": 0.0031961416337540527,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 26,
+              "values": {
+                "100": 2.081607106390619,
+                "101": 2.075973444489825,
+                "102": 2.090341839276512
+              },
+              "mean": 2.082640796718985,
+              "sd": 0.007239756830014553,
+              "se": 0.004179875554676334,
+              "epsilon": 0.004179875554676334,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 27,
+              "values": {
+                "100": 2.0978567149261544,
+                "101": 2.077286220999079,
+                "102": 2.082408837605807
+              },
+              "mean": 2.0858505911770133,
+              "sd": 0.010708433864699655,
+              "se": 0.006182517174383651,
+              "epsilon": 0.006182517174383651,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 28,
+              "values": {
+                "100": 2.0867014124928733,
+                "101": 2.0891006099650236,
+                "102": 2.0809644022603173
+              },
+              "mean": 2.0855888082394047,
+              "sd": 0.0041806560636050445,
+              "se": 0.0024137029037116136,
+              "epsilon": 0.0024137029037116136,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 29,
+              "values": {
+                "100": 2.094105423179082,
+                "101": 2.0831717221832378,
+                "102": 2.076613643076236
+              },
+              "mean": 2.0846302628128517,
+              "sd": 0.00883663388218366,
+              "se": 0.005101832950608904,
+              "epsilon": 0.005101832950608904,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 30,
+              "values": {
+                "100": 2.0905753045713458,
+                "101": 2.0801433976305863,
+                "102": 2.08255974844168
+              },
+              "mean": 2.0844261502145374,
+              "sd": 0.005460655847831847,
+              "se": 0.003152711123697621,
+              "epsilon": 0.003152711123697621,
+              "epsilon_source": "SE-derived"
+            }
+          ],
+          "selection": {
+            "cap": 30,
+            "best_mean": 2.0814266429857793,
+            "best_epoch": 25,
+            "selected_epoch": 23,
+            "epsilon_at_selected": 0.006064722457369997,
+            "epsilon_source_at_selected": "SE-derived",
+            "still_improving_at_cap": false
+          },
+          "flags": {
+            "100": {
+              "dev_nll_rises": [
+                {
+                  "epoch": 8,
+                  "increase": 0.0022499141690603963
+                },
+                {
+                  "epoch": 11,
+                  "increase": 0.01797532865883067
+                },
+                {
+                  "epoch": 12,
+                  "increase": 0.021045262371990336
+                },
+                {
+                  "epoch": 14,
+                  "increase": 0.013668662764242612
+                },
+                {
+                  "epoch": 17,
+                  "increase": 0.010020119731590782
+                },
+                {
+                  "epoch": 18,
+                  "increase": 0.0009657908027609352
+                },
+                {
+                  "epoch": 21,
+                  "increase": 0.00909450329069994
+                },
+                {
+                  "epoch": 23,
+                  "increase": 0.007617174651056935
+                },
+                {
+                  "epoch": 27,
+                  "increase": 0.016249608535535476
+                },
+                {
+                  "epoch": 29,
+                  "increase": 0.007404010686208551
+                }
+              ],
+              "repeated_dev_nll_rise": true,
+              "running_train_nll_rises": [],
+              "best_epoch": 26,
+              "best_epoch_is_last": false
+            },
+            "101": {
+              "dev_nll_rises": [
+                {
+                  "epoch": 8,
+                  "increase": 0.016673238187195683
+                },
+                {
+                  "epoch": 12,
+                  "increase": 0.0009576317239377019
+                },
+                {
+                  "epoch": 15,
+                  "increase": 0.010072650493673674
+                },
+                {
+                  "epoch": 17,
+                  "increase": 0.0027664416788186763
+                },
+                {
+                  "epoch": 18,
+                  "increase": 0.0097611278699401
+                },
+                {
+                  "epoch": 22,
+                  "increase": 0.0029739735236393727
+                },
+                {
+                  "epoch": 26,
+                  "increase": 0.00020978040985042412
+                },
+                {
+                  "epoch": 27,
+                  "increase": 0.0013127765092542099
+                },
+                {
+                  "epoch": 28,
+                  "increase": 0.011814388965944556
+                }
+              ],
+              "repeated_dev_nll_rise": true,
+              "running_train_nll_rises": [],
+              "best_epoch": 25,
+              "best_epoch_is_last": false
+            },
+            "102": {
+              "dev_nll_rises": [
+                {
+                  "epoch": 13,
+                  "increase": 0.013503425356892418
+                },
+                {
+                  "epoch": 20,
+                  "increase": 0.008704495039965732
+                },
+                {
+                  "epoch": 25,
+                  "increase": 0.013670697180222291
+                },
+                {
+                  "epoch": 26,
+                  "increase": 0.003515834866069323
+                },
+                {
+                  "epoch": 30,
+                  "increase": 0.005946105365444154
+                }
+              ],
+              "repeated_dev_nll_rise": true,
+              "running_train_nll_rises": [],
+              "best_epoch": 24,
+              "best_epoch_is_last": false
+            }
+          }
+        }
+      },
+      "extension_required": false,
+      "extension_used": false,
+      "status": "selected",
+      "selection": {
+        "cap": 30,
+        "best_mean": 2.0814266429857793,
+        "best_epoch": 25,
+        "selected_epoch": 23,
+        "epsilon_at_selected": 0.006064722457369997,
+        "epsilon_source_at_selected": "SE-derived",
+        "still_improving_at_cap": false
+      }
+    },
+    "B": {
+      "learning_rate": 0.03,
+      "caps": {
+        "30": {
+          "statistics": [
+            {
+              "epoch": 1,
+              "values": {
+                "100": 2.2882426303602363,
+                "101": 2.286303467878328,
+                "102": 2.278109932472808
+              },
+              "mean": 2.284218676903791,
+              "sd": 0.005378443703814991,
+              "se": 0.0031052459202188325,
+              "epsilon": 0.0031052459202188325,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 2,
+              "values": {
+                "100": 2.2235523567017346,
+                "101": 2.2165919557735956,
+                "102": 2.222551916582606
+              },
+              "mean": 2.220898743019312,
+              "sd": 0.0037631811533448667,
+              "se": 0.0021726736518929853,
+              "epsilon": 0.0021726736518929853,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 3,
+              "values": {
+                "100": 2.188926553899774,
+                "101": 2.1875462561949037,
+                "102": 2.1828515093910354
+              },
+              "mean": 2.186441439828571,
+              "sd": 0.0031846516054783655,
+              "se": 0.0018386594616981082,
+              "epsilon": 0.0018386594616981082,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 4,
+              "values": {
+                "100": 2.170759219202283,
+                "101": 2.1621719065227403,
+                "102": 2.1586532877190145
+              },
+              "mean": 2.1638614711480124,
+              "sd": 0.006227308065016974,
+              "se": 0.0035953379876642777,
+              "epsilon": 0.0035953379876642777,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 5,
+              "values": {
+                "100": 2.150531406585786,
+                "101": 2.146762640276194,
+                "102": 2.144200325472293
+              },
+              "mean": 2.147164790778091,
+              "sd": 0.00318464139049269,
+              "se": 0.0018386535640733787,
+              "epsilon": 0.0018386535640733787,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 6,
+              "values": {
+                "100": 2.1329050338047124,
+                "101": 2.1332243514538836,
+                "102": 2.132341586237994
+              },
+              "mean": 2.13282365716553,
+              "sd": 0.00044697340485717955,
+              "se": 0.0002580602156148962,
+              "epsilon": 0.001,
+              "epsilon_source": "floor-derived"
+            },
+            {
+              "epoch": 7,
+              "values": {
+                "100": 2.12455630458231,
+                "101": 2.1148591002039385,
+                "102": 2.1170601455596794
+              },
+              "mean": 2.1188251834486427,
+              "sd": 0.005083843255951596,
+              "se": 0.002935158272341517,
+              "epsilon": 0.002935158272341517,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 8,
+              "values": {
+                "100": 2.127622490687086,
+                "101": 2.112609635747884,
+                "102": 2.11175408887631
+              },
+              "mean": 2.1173287384370933,
+              "sd": 0.008924908495359339,
+              "se": 0.005152798322288492,
+              "epsilon": 0.005152798322288492,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 9,
+              "values": {
+                "100": 2.107510254313133,
+                "101": 2.102210429367133,
+                "102": 2.1069517107596707
+              },
+              "mean": 2.1055574648133124,
+              "sd": 0.0029120400810710993,
+              "se": 0.001681267124697379,
+              "epsilon": 0.001681267124697379,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 10,
+              "values": {
+                "100": 2.0934855473375618,
+                "101": 2.097211762230823,
+                "102": 2.0986763704168676
+              },
+              "mean": 2.0964578933284175,
+              "sd": 0.0026762660184806407,
+              "se": 0.0015451429061928458,
+              "epsilon": 0.0015451429061928458,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 11,
+              "values": {
+                "100": 2.091326882078911,
+                "101": 2.0883026263582187,
+                "102": 2.0926675407945377
+              },
+              "mean": 2.0907656830772225,
+              "sd": 0.002235917652490448,
+              "se": 0.0012909076585511962,
+              "epsilon": 0.0012909076585511962,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 12,
+              "values": {
+                "100": 2.099438291323571,
+                "101": 2.0846790102750425,
+                "102": 2.0905610636594885
+              },
+              "mean": 2.091559455086034,
+              "sd": 0.007430120008977916,
+              "se": 0.004289781787294624,
+              "epsilon": 0.004289781787294624,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 13,
+              "values": {
+                "100": 2.078026063138678,
+                "101": 2.0842727695262817,
+                "102": 2.084723660352068
+              },
+              "mean": 2.082340831005676,
+              "sd": 0.0037434932808477045,
+              "se": 0.0021613068534069775,
+              "epsilon": 0.0021613068534069775,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 14,
+              "values": {
+                "100": 2.086021018129687,
+                "101": 2.075280415332661,
+                "102": 2.0834994773049975
+              },
+              "mean": 2.081600303589115,
+              "sd": 0.005616518736120777,
+              "se": 0.0032426986042079073,
+              "epsilon": 0.0032426986042079073,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 15,
+              "values": {
+                "100": 2.091701471598011,
+                "101": 2.0758378024812507,
+                "102": 2.0901224007444847
+              },
+              "mean": 2.085887224941249,
+              "sd": 0.008738794826791003,
+              "se": 0.005045345545640695,
+              "epsilon": 0.005045345545640695,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 16,
+              "values": {
+                "100": 2.0768091825742294,
+                "101": 2.0762493112966536,
+                "102": 2.0872388623648632
+              },
+              "mean": 2.080099118745249,
+              "sd": 0.00618953295307755,
+              "se": 0.003573528516617383,
+              "epsilon": 0.003573528516617383,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 17,
+              "values": {
+                "100": 2.0682970147965003,
+                "101": 2.0721213527846913,
+                "102": 2.0776555852813474
+              },
+              "mean": 2.0726913176208464,
+              "sd": 0.004705247635970163,
+              "se": 0.002716575989231224,
+              "epsilon": 0.002716575989231224,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 18,
+              "values": {
+                "100": 2.0758028533562123,
+                "101": 2.0764198167706462,
+                "102": 2.0814018659406384
+              },
+              "mean": 2.0778748453558324,
+              "sd": 0.0030700271363494156,
+              "se": 0.0017724809935907911,
+              "epsilon": 0.0017724809935907911,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 19,
+              "values": {
+                "100": 2.0709252875079494,
+                "101": 2.069314436935332,
+                "102": 2.0746065096857045
+              },
+              "mean": 2.0716154113763285,
+              "sd": 0.00271269454861569,
+              "se": 0.001566174927872499,
+              "epsilon": 0.001566174927872499,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 20,
+              "values": {
+                "100": 2.066702353892099,
+                "101": 2.07465133108197,
+                "102": 2.075278702140257
+              },
+              "mean": 2.0722107957047755,
+              "sd": 0.00478075276645059,
+              "se": 0.0027601688966392957,
+              "epsilon": 0.0027601688966392957,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 21,
+              "values": {
+                "100": 2.076953968747259,
+                "101": 2.0660391556976667,
+                "102": 2.0740718437513705
+              },
+              "mean": 2.0723549893987654,
+              "sd": 0.005656321916929006,
+              "se": 0.003265678981362142,
+              "epsilon": 0.003265678981362142,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 22,
+              "values": {
+                "100": 2.0667446054997587,
+                "101": 2.07125559100341,
+                "102": 2.0648204334513838
+              },
+              "mean": 2.0676068766515177,
+              "sd": 0.003303096552360653,
+              "se": 0.0019070436836647478,
+              "epsilon": 0.0019070436836647478,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 23,
+              "values": {
+                "100": 2.0691056630260185,
+                "101": 2.0629193895004607,
+                "102": 2.0689704921453553
+              },
+              "mean": 2.0669985148906114,
+              "sd": 0.0035332726689535996,
+              "se": 0.0020399359265407084,
+              "epsilon": 0.0020399359265407084,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 24,
+              "values": {
+                "100": 2.06537831314279,
+                "101": 2.066144581275218,
+                "102": 2.069236486680957
+              },
+              "mean": 2.066919793699655,
+              "sd": 0.0020425698249763946,
+              "se": 0.0011792782382887283,
+              "epsilon": 0.0011792782382887283,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 25,
+              "values": {
+                "100": 2.061161011646967,
+                "101": 2.05711329478422,
+                "102": 2.0699294944232163
+              },
+              "mean": 2.0627346002848013,
+              "sd": 0.006551402841948646,
+              "se": 0.00378245419436873,
+              "epsilon": 0.00378245419436873,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 26,
+              "values": {
+                "100": 2.0568036995019408,
+                "101": 2.062776016711164,
+                "102": 2.069236465266052
+              },
+              "mean": 2.062938727159719,
+              "sd": 0.006217979748589231,
+              "se": 0.003589952281663634,
+              "epsilon": 0.003589952281663634,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 27,
+              "values": {
+                "100": 2.068227930312815,
+                "101": 2.060359194772159,
+                "102": 2.0662137300036183
+              },
+              "mean": 2.064933618362864,
+              "sd": 0.004087574355506226,
+              "se": 0.0023599621544841305,
+              "epsilon": 0.0023599621544841305,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 28,
+              "values": {
+                "100": 2.054784381030437,
+                "101": 2.0604280222769833,
+                "102": 2.0657370770470593
+              },
+              "mean": 2.0603164934514933,
+              "sd": 0.005477199696680711,
+              "se": 0.0031622627192839452,
+              "epsilon": 0.0031622627192839452,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 29,
+              "values": {
+                "100": 2.0717093728413776,
+                "101": 2.06060715795771,
+                "102": 2.0698802401416057
+              },
+              "mean": 2.067398923646898,
+              "sd": 0.005952519843811017,
+              "se": 0.0034366889341808796,
+              "epsilon": 0.0034366889341808796,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 30,
+              "values": {
+                "100": 2.0617746771660235,
+                "101": 2.057859775544384,
+                "102": 2.070464588655651
+              },
+              "mean": 2.0633663471220194,
+              "sd": 0.0064513865431478495,
+              "se": 0.0037247097573327404,
+              "epsilon": 0.0037247097573327404,
+              "epsilon_source": "SE-derived"
+            }
+          ],
+          "selection": {
+            "cap": 30,
+            "best_mean": 2.0603164934514933,
+            "best_epoch": 28,
+            "selected_epoch": 25,
+            "epsilon_at_selected": 0.00378245419436873,
+            "epsilon_source_at_selected": "SE-derived",
+            "still_improving_at_cap": false
+          },
+          "flags": {
+            "100": {
+              "dev_nll_rises": [
+                {
+                  "epoch": 8,
+                  "increase": 0.0030661861047760475
+                },
+                {
+                  "epoch": 12,
+                  "increase": 0.008111409244660361
+                },
+                {
+                  "epoch": 14,
+                  "increase": 0.007994954991008996
+                },
+                {
+                  "epoch": 15,
+                  "increase": 0.005680453468323687
+                },
+                {
+                  "epoch": 18,
+                  "increase": 0.007505838559711986
+                },
+                {
+                  "epoch": 21,
+                  "increase": 0.010251614855159907
+                },
+                {
+                  "epoch": 23,
+                  "increase": 0.0023610575262598132
+                },
+                {
+                  "epoch": 27,
+                  "increase": 0.011424230810874292
+                },
+                {
+                  "epoch": 29,
+                  "increase": 0.016924991810940426
+                }
+              ],
+              "repeated_dev_nll_rise": true,
+              "running_train_nll_rises": [],
+              "best_epoch": 28,
+              "best_epoch_is_last": false
+            },
+            "101": {
+              "dev_nll_rises": [
+                {
+                  "epoch": 15,
+                  "increase": 0.0005573871485897719
+                },
+                {
+                  "epoch": 16,
+                  "increase": 0.0004115088154028612
+                },
+                {
+                  "epoch": 18,
+                  "increase": 0.004298463985954903
+                },
+                {
+                  "epoch": 20,
+                  "increase": 0.0053368941466382935
+                },
+                {
+                  "epoch": 22,
+                  "increase": 0.005216435305743339
+                },
+                {
+                  "epoch": 24,
+                  "increase": 0.003225191774757441
+                },
+                {
+                  "epoch": 26,
+                  "increase": 0.005662721926944059
+                },
+                {
+                  "epoch": 28,
+                  "increase": 6.882750482439803e-05
+                },
+                {
+                  "epoch": 29,
+                  "increase": 0.0001791356807268052
+                }
+              ],
+              "repeated_dev_nll_rise": true,
+              "running_train_nll_rises": [],
+              "best_epoch": 25,
+              "best_epoch_is_last": false
+            },
+            "102": {
+              "dev_nll_rises": [
+                {
+                  "epoch": 15,
+                  "increase": 0.006622923439487227
+                },
+                {
+                  "epoch": 18,
+                  "increase": 0.003746280659290946
+                },
+                {
+                  "epoch": 20,
+                  "increase": 0.0006721924545525226
+                },
+                {
+                  "epoch": 23,
+                  "increase": 0.004150058693971559
+                },
+                {
+                  "epoch": 24,
+                  "increase": 0.00026599453560161024
+                },
+                {
+                  "epoch": 25,
+                  "increase": 0.0006930077422593328
+                },
+                {
+                  "epoch": 29,
+                  "increase": 0.0041431630945463205
+                },
+                {
+                  "epoch": 30,
+                  "increase": 0.0005843485140455407
+                }
+              ],
+              "repeated_dev_nll_rise": true,
+              "running_train_nll_rises": [
+                24
+              ],
+              "best_epoch": 22,
+              "best_epoch_is_last": false
+            }
+          }
+        }
+      },
+      "extension_required": false,
+      "extension_used": false,
+      "status": "selected",
+      "selection": {
+        "cap": 30,
+        "best_mean": 2.0603164934514933,
+        "best_epoch": 28,
+        "selected_epoch": 25,
+        "epsilon_at_selected": 0.00378245419436873,
+        "epsilon_source_at_selected": "SE-derived",
+        "still_improving_at_cap": false
+      }
+    },
+    "C": {
+      "learning_rate": 0.03,
+      "caps": {
+        "30": {
+          "statistics": [
+            {
+              "epoch": 1,
+              "values": {
+                "100": 2.2791365201910003,
+                "101": 2.262478165362813,
+                "102": 2.2813313123944674
+              },
+              "mean": 2.2743153326494268,
+              "sd": 0.010309858157732433,
+              "se": 0.00595239938267368,
+              "epsilon": 0.00595239938267368,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 2,
+              "values": {
+                "100": 2.2095151005918052,
+                "101": 2.199808195261447,
+                "102": 2.215612609335939
+              },
+              "mean": 2.208311968396397,
+              "sd": 0.007970603576218193,
+              "se": 0.004601830120333368,
+              "epsilon": 0.004601830120333368,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 3,
+              "values": {
+                "100": 2.171953035913995,
+                "101": 2.1680819063582737,
+                "102": 2.1789404838672097
+              },
+              "mean": 2.1729918087131597,
+              "sd": 0.005503313826741645,
+              "se": 0.003177339719304278,
+              "epsilon": 0.003177339719304278,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 4,
+              "values": {
+                "100": 2.1470829644259024,
+                "101": 2.1474147669647166,
+                "102": 2.1495167255548004
+              },
+              "mean": 2.1480048189818066,
+              "sd": 0.001319817921263258,
+              "se": 0.0007619972321226342,
+              "epsilon": 0.001,
+              "epsilon_source": "floor-derived"
+            },
+            {
+              "epoch": 5,
+              "values": {
+                "100": 2.1267540306277684,
+                "101": 2.131504520429477,
+                "102": 2.1348676027778386
+              },
+              "mean": 2.1310420512783614,
+              "sd": 0.004076508499365491,
+              "se": 0.0023535732794624635,
+              "epsilon": 0.0023535732794624635,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 6,
+              "values": {
+                "100": 2.1130495193124754,
+                "101": 2.122591058746053,
+                "102": 2.11692885077683
+              },
+              "mean": 2.1175231429451196,
+              "sd": 0.00479845090384341,
+              "se": 0.002770386921027196,
+              "epsilon": 0.002770386921027196,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 7,
+              "values": {
+                "100": 2.109538245821181,
+                "101": 2.107999392159335,
+                "102": 2.1122127533126287
+              },
+              "mean": 2.109916797097715,
+              "sd": 0.0021320363162349934,
+              "se": 0.0012309317411003315,
+              "epsilon": 0.0012309317411003315,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 8,
+              "values": {
+                "100": 2.1088203753741612,
+                "101": 2.1136115534954607,
+                "102": 2.1069265054164292
+              },
+              "mean": 2.109786144762017,
+              "sd": 0.0034455768512152165,
+              "se": 0.0019893047225626485,
+              "epsilon": 0.0019893047225626485,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 9,
+              "values": {
+                "100": 2.0918935204664817,
+                "101": 2.092966171645432,
+                "102": 2.098465176623284
+              },
+              "mean": 2.0944416229117326,
+              "sd": 0.0035255330788733466,
+              "se": 0.0020354674721244567,
+              "epsilon": 0.0020354674721244567,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 10,
+              "values": {
+                "100": 2.0861953354567784,
+                "101": 2.091221606405695,
+                "102": 2.0872501266049186
+              },
+              "mean": 2.0882223561557973,
+              "sd": 0.002650428764876007,
+              "se": 0.0015302257608690898,
+              "epsilon": 0.0015302257608690898,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 11,
+              "values": {
+                "100": 2.087262226026271,
+                "101": 2.0807200796086245,
+                "102": 2.0843775526566817
+              },
+              "mean": 2.084119952763859,
+              "sd": 0.0032786717152023474,
+              "se": 0.0018929419973564873,
+              "epsilon": 0.0018929419973564873,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 12,
+              "values": {
+                "100": 2.093079841961427,
+                "101": 2.0802981417344633,
+                "102": 2.0821106778828233
+              },
+              "mean": 2.0851628871929044,
+              "sd": 0.00691592014322044,
+              "se": 0.003992908356382276,
+              "epsilon": 0.003992908356382276,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 13,
+              "values": {
+                "100": 2.069057736468521,
+                "101": 2.0779255844041926,
+                "102": 2.0834364960692513
+              },
+              "mean": 2.0768066056473216,
+              "sd": 0.007254396391681616,
+              "se": 0.004188327709545631,
+              "epsilon": 0.004188327709545631,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 14,
+              "values": {
+                "100": 2.072977799082277,
+                "101": 2.0727131965155037,
+                "102": 2.0800354236793344
+              },
+              "mean": 2.0752421397590384,
+              "sd": 0.00415321341674273,
+              "se": 0.0023978588841583807,
+              "epsilon": 0.0023978588841583807,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 15,
+              "values": {
+                "100": 2.073670763994726,
+                "101": 2.0749346716906607,
+                "102": 2.0775137971950244
+              },
+              "mean": 2.0753730776268036,
+              "sd": 0.0019586668599542076,
+              "se": 0.0011308368388473608,
+              "epsilon": 0.0011308368388473608,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 16,
+              "values": {
+                "100": 2.068107450057015,
+                "101": 2.0689904936666705,
+                "102": 2.0780507759391034
+              },
+              "mean": 2.0717162398875963,
+              "sd": 0.005503608066079919,
+              "se": 0.003177509598465437,
+              "epsilon": 0.003177509598465437,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 17,
+              "values": {
+                "100": 2.07396896654752,
+                "101": 2.067104654298331,
+                "102": 2.0665094484274262
+              },
+              "mean": 2.069194356424426,
+              "sd": 0.004145629491145523,
+              "se": 0.002393480302673319,
+              "epsilon": 0.002393480302673319,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 18,
+              "values": {
+                "100": 2.0746733884341695,
+                "101": 2.076314134214234,
+                "102": 2.0677811939786084
+              },
+              "mean": 2.0729229055423373,
+              "sd": 0.004527793064191138,
+              "se": 0.002614122544445674,
+              "epsilon": 0.002614122544445674,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 19,
+              "values": {
+                "100": 2.068268233164116,
+                "101": 2.0722913871307727,
+                "102": 2.0682779341161024
+              },
+              "mean": 2.069612518136997,
+              "sd": 0.002319973672582736,
+              "se": 0.0013394374243784874,
+              "epsilon": 0.0013394374243784874,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 20,
+              "values": {
+                "100": 2.057743942322979,
+                "101": 2.065978979814482,
+                "102": 2.065642551656177
+              },
+              "mean": 2.0631218245978795,
+              "sd": 0.0046604194337462905,
+              "se": 0.0026906944146099844,
+              "epsilon": 0.0026906944146099844,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 21,
+              "values": {
+                "100": 2.056023575925946,
+                "101": 2.0640592406514515,
+                "102": 2.0665732005997546
+              },
+              "mean": 2.062218672392384,
+              "sd": 0.005510391440430661,
+              "se": 0.0031814259814728512,
+              "epsilon": 0.0031814259814728512,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 22,
+              "values": {
+                "100": 2.0592847661560896,
+                "101": 2.063753542881891,
+                "102": 2.0575345687963247
+              },
+              "mean": 2.060190959278102,
+              "sd": 0.003206992227933144,
+              "se": 0.001851557826086238,
+              "epsilon": 0.001851557826086238,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 23,
+              "values": {
+                "100": 2.063278046330205,
+                "101": 2.0679864558434935,
+                "102": 2.061024020499375
+              },
+              "mean": 2.0640961742243578,
+              "sd": 0.0035525872851559026,
+              "se": 0.0020510872254044022,
+              "epsilon": 0.0020510872254044022,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 24,
+              "values": {
+                "100": 2.0605951656108834,
+                "101": 2.0684382246803867,
+                "102": 2.0557231676379324
+              },
+              "mean": 2.0615855193097343,
+              "sd": 0.006415120360120886,
+              "se": 0.0037037714667996426,
+              "epsilon": 0.0037037714667996426,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 25,
+              "values": {
+                "100": 2.057963809153107,
+                "101": 2.057890463103318,
+                "102": 2.05726283506617
+              },
+              "mean": 2.057705702440865,
+              "sd": 0.0003852837193962537,
+              "se": 0.0002224436591078073,
+              "epsilon": 0.001,
+              "epsilon_source": "floor-derived"
+            },
+            {
+              "epoch": 26,
+              "values": {
+                "100": 2.056994549135729,
+                "101": 2.0590451761984125,
+                "102": 2.0688725403696657
+              },
+              "mean": 2.061637421901269,
+              "sd": 0.006349131615926202,
+              "se": 0.0036656728475753563,
+              "epsilon": 0.0036656728475753563,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 27,
+              "values": {
+                "100": 2.0640043970796236,
+                "101": 2.059767393871157,
+                "102": 2.0590207632066577
+              },
+              "mean": 2.060930851385813,
+              "sd": 0.0026878200621042276,
+              "se": 0.0015518136363891525,
+              "epsilon": 0.0015518136363891525,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 28,
+              "values": {
+                "100": 2.0575791117988245,
+                "101": 2.065326232093713,
+                "102": 2.0591695539669312
+              },
+              "mean": 2.060691632619823,
+              "sd": 0.004091700231573594,
+              "se": 0.0023623442301422683,
+              "epsilon": 0.0023623442301422683,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 29,
+              "values": {
+                "100": 2.0654869081262883,
+                "101": 2.0589021032177866,
+                "102": 2.061688889056401
+              },
+              "mean": 2.062025966800159,
+              "sd": 0.0033053184377242334,
+              "se": 0.0019083264897775194,
+              "epsilon": 0.0019083264897775194,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 30,
+              "values": {
+                "100": 2.054600512655695,
+                "101": 2.065583853401441,
+                "102": 2.0569958340300314
+              },
+              "mean": 2.0590600666957224,
+              "sd": 0.005775312619925379,
+              "se": 0.0033343782957681602,
+              "epsilon": 0.0033343782957681602,
+              "epsilon_source": "SE-derived"
+            }
+          ],
+          "selection": {
+            "cap": 30,
+            "best_mean": 2.057705702440865,
+            "best_epoch": 25,
+            "selected_epoch": 25,
+            "epsilon_at_selected": 0.001,
+            "epsilon_source_at_selected": "floor-derived",
+            "still_improving_at_cap": false
+          },
+          "flags": {
+            "100": {
+              "dev_nll_rises": [
+                {
+                  "epoch": 11,
+                  "increase": 0.0010668905694926067
+                },
+                {
+                  "epoch": 12,
+                  "increase": 0.005817615935156173
+                },
+                {
+                  "epoch": 14,
+                  "increase": 0.003920062613755881
+                },
+                {
+                  "epoch": 15,
+                  "increase": 0.0006929649124489679
+                },
+                {
+                  "epoch": 17,
+                  "increase": 0.0058615164905049255
+                },
+                {
+                  "epoch": 18,
+                  "increase": 0.0007044218866494312
+                },
+                {
+                  "epoch": 22,
+                  "increase": 0.0032611902301433737
+                },
+                {
+                  "epoch": 23,
+                  "increase": 0.003993280174115377
+                },
+                {
+                  "epoch": 27,
+                  "increase": 0.007009847943894698
+                },
+                {
+                  "epoch": 29,
+                  "increase": 0.007907796327463856
+                }
+              ],
+              "repeated_dev_nll_rise": true,
+              "running_train_nll_rises": [],
+              "best_epoch": 30,
+              "best_epoch_is_last": true
+            },
+            "101": {
+              "dev_nll_rises": [
+                {
+                  "epoch": 8,
+                  "increase": 0.005612161336125521
+                },
+                {
+                  "epoch": 15,
+                  "increase": 0.0022214751751570283
+                },
+                {
+                  "epoch": 18,
+                  "increase": 0.009209479915902818
+                },
+                {
+                  "epoch": 23,
+                  "increase": 0.004232912961602331
+                },
+                {
+                  "epoch": 24,
+                  "increase": 0.00045176883689324043
+                },
+                {
+                  "epoch": 26,
+                  "increase": 0.0011547130950946283
+                },
+                {
+                  "epoch": 27,
+                  "increase": 0.0007222176727443852
+                },
+                {
+                  "epoch": 28,
+                  "increase": 0.005558838222555984
+                },
+                {
+                  "epoch": 30,
+                  "increase": 0.006681750183654245
+                }
+              ],
+              "repeated_dev_nll_rise": true,
+              "running_train_nll_rises": [],
+              "best_epoch": 25,
+              "best_epoch_is_last": false
+            },
+            "102": {
+              "dev_nll_rises": [
+                {
+                  "epoch": 13,
+                  "increase": 0.0013258181864279628
+                },
+                {
+                  "epoch": 16,
+                  "increase": 0.0005369787440789864
+                },
+                {
+                  "epoch": 18,
+                  "increase": 0.0012717455511821463
+                },
+                {
+                  "epoch": 19,
+                  "increase": 0.0004967401374940117
+                },
+                {
+                  "epoch": 21,
+                  "increase": 0.0009306489435774168
+                },
+                {
+                  "epoch": 23,
+                  "increase": 0.0034894517030501504
+                },
+                {
+                  "epoch": 25,
+                  "increase": 0.0015396674282377454
+                },
+                {
+                  "epoch": 26,
+                  "increase": 0.011609705303495588
+                },
+                {
+                  "epoch": 28,
+                  "increase": 0.00014879076027352056
+                },
+                {
+                  "epoch": 29,
+                  "increase": 0.0025193350894698874
+                }
+              ],
+              "repeated_dev_nll_rise": true,
+              "running_train_nll_rises": [],
+              "best_epoch": 24,
+              "best_epoch_is_last": false
+            }
+          }
+        }
+      },
+      "extension_required": false,
+      "extension_used": false,
+      "status": "selected",
+      "selection": {
+        "cap": 30,
+        "best_mean": 2.057705702440865,
+        "best_epoch": 25,
+        "selected_epoch": 25,
+        "epsilon_at_selected": 0.001,
+        "epsilon_source_at_selected": "floor-derived",
+        "still_improving_at_cap": false
+      }
+    },
+    "D": {
+      "learning_rate": 0.03,
+      "caps": {
+        "30": {
+          "statistics": [
+            {
+              "epoch": 1,
+              "values": {
+                "100": 2.228937155990965,
+                "101": 2.2169281055381345,
+                "102": 2.223863279708127
+              },
+              "mean": 2.2232428470790757,
+              "sd": 0.006028517701728371,
+              "se": 0.003480566317907299,
+              "epsilon": 0.003480566317907299,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 2,
+              "values": {
+                "100": 2.1736531009810425,
+                "101": 2.163968038853833,
+                "102": 2.171145501259539
+              },
+              "mean": 2.1695888803648047,
+              "sd": 0.005026669728499977,
+              "se": 0.0029021491208768044,
+              "epsilon": 0.0029021491208768044,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 3,
+              "values": {
+                "100": 2.14583331905673,
+                "101": 2.139853271066784,
+                "102": 2.141418700625795
+              },
+              "mean": 2.14236843024977,
+              "sd": 0.003101085819435729,
+              "se": 0.0017904127326313494,
+              "epsilon": 0.0017904127326313494,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 4,
+              "values": {
+                "100": 2.131792144019177,
+                "101": 2.1321790685235844,
+                "102": 2.126171438135937
+              },
+              "mean": 2.130047550226233,
+              "sd": 0.0033623817964993402,
+              "se": 0.0019412720353271917,
+              "epsilon": 0.0019412720353271917,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 5,
+              "values": {
+                "100": 2.120089026899862,
+                "101": 2.1148592072784638,
+                "102": 2.1145145129668106
+              },
+              "mean": 2.116487582381712,
+              "sd": 0.003123700610670844,
+              "se": 0.00180346938843861,
+              "epsilon": 0.00180346938843861,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 6,
+              "values": {
+                "100": 2.115268210549976,
+                "101": 2.1154793829286542,
+                "102": 2.1041147069687183
+              },
+              "mean": 2.1116207668157827,
+              "sd": 0.006501295968048637,
+              "se": 0.0037535249772343094,
+              "epsilon": 0.0037535249772343094,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 7,
+              "values": {
+                "100": 2.097006179142362,
+                "101": 2.0946809915820577,
+                "102": 2.0912873715790976
+              },
+              "mean": 2.094324847434506,
+              "sd": 0.002875990086351073,
+              "se": 0.001660453650541487,
+              "epsilon": 0.001660453650541487,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 8,
+              "values": {
+                "100": 2.0968135306565503,
+                "101": 2.0934462295718936,
+                "102": 2.0859870969200913
+              },
+              "mean": 2.0920822857161783,
+              "sd": 0.005540593288957576,
+              "se": 0.00319886302684989,
+              "epsilon": 0.00319886302684989,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 9,
+              "values": {
+                "100": 2.086440878758059,
+                "101": 2.081500181769714,
+                "102": 2.081135849990132
+              },
+              "mean": 2.0830256368393014,
+              "sd": 0.002963290811603043,
+              "se": 0.0017108567477661615,
+              "epsilon": 0.0017108567477661615,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 10,
+              "values": {
+                "100": 2.07782842497999,
+                "101": 2.0790880282800095,
+                "102": 2.0782261211816366
+              },
+              "mean": 2.078380858147212,
+              "sd": 0.000643900430766714,
+              "se": 0.0003717560870344783,
+              "epsilon": 0.001,
+              "epsilon_source": "floor-derived"
+            },
+            {
+              "epoch": 11,
+              "values": {
+                "100": 2.074907110707864,
+                "101": 2.0757738361598723,
+                "102": 2.0725384080605016
+              },
+              "mean": 2.074406451642746,
+              "sd": 0.0016748114434654898,
+              "se": 0.0009669528377266662,
+              "epsilon": 0.001,
+              "epsilon_source": "floor-derived"
+            },
+            {
+              "epoch": 12,
+              "values": {
+                "100": 2.073247476981547,
+                "101": 2.0756410209187646,
+                "102": 2.0674030281703653
+              },
+              "mean": 2.0720971753568924,
+              "sd": 0.004237750169775512,
+              "se": 0.0024466662012782745,
+              "epsilon": 0.0024466662012782745,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 13,
+              "values": {
+                "100": 2.06381547478729,
+                "101": 2.073437491434038,
+                "102": 2.068708994739814
+              },
+              "mean": 2.0686539869870475,
+              "sd": 0.004811244171440824,
+              "se": 0.002777773117518378,
+              "epsilon": 0.002777773117518378,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 14,
+              "values": {
+                "100": 2.0694188345974407,
+                "101": 2.067770914824185,
+                "102": 2.0672381976462106
+              },
+              "mean": 2.068142649022612,
+              "sd": 0.0011368527230813995,
+              "se": 0.000656362225700005,
+              "epsilon": 0.001,
+              "epsilon_source": "floor-derived"
+            },
+            {
+              "epoch": 15,
+              "values": {
+                "100": 2.066526708840895,
+                "101": 2.0647689520196484,
+                "102": 2.0666787546667362
+              },
+              "mean": 2.0659914718424264,
+              "sd": 0.0010614591471663222,
+              "se": 0.0006128337243502667,
+              "epsilon": 0.001,
+              "epsilon_source": "floor-derived"
+            },
+            {
+              "epoch": 16,
+              "values": {
+                "100": 2.064204390877867,
+                "101": 2.0643293040190125,
+                "102": 2.0642976313744463
+              },
+              "mean": 2.064277108757109,
+              "sd": 6.493617308167337e-05,
+              "se": 3.749091700884825e-05,
+              "epsilon": 0.001,
+              "epsilon_source": "floor-derived"
+            },
+            {
+              "epoch": 17,
+              "values": {
+                "100": 2.0568214096284154,
+                "101": 2.0616671529277775,
+                "102": 2.0575772915318957
+              },
+              "mean": 2.058688618029363,
+              "sd": 0.002607027420033686,
+              "se": 0.001505167982741184,
+              "epsilon": 0.001505167982741184,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 18,
+              "values": {
+                "100": 2.058661099876376,
+                "101": 2.0616712645895463,
+                "102": 2.062430358728784
+              },
+              "mean": 2.060920907731569,
+              "sd": 0.0019935156470039695,
+              "se": 0.0011509567954314727,
+              "epsilon": 0.0011509567954314727,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 19,
+              "values": {
+                "100": 2.0553548098562016,
+                "101": 2.0604985201444017,
+                "102": 2.0529688467953706
+              },
+              "mean": 2.0562740589319914,
+              "sd": 0.003848085151511399,
+              "se": 0.002221692998089708,
+              "epsilon": 0.002221692998089708,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 20,
+              "values": {
+                "100": 2.0517138262850314,
+                "101": 2.05826590921862,
+                "102": 2.0553839341270668
+              },
+              "mean": 2.0551212232102394,
+              "sd": 0.0032839321645735642,
+              "se": 0.0018959791192170179,
+              "epsilon": 0.0018959791192170179,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 21,
+              "values": {
+                "100": 2.052494121180266,
+                "101": 2.0559120042706462,
+                "102": 2.055468822810677
+              },
+              "mean": 2.054624982753863,
+              "sd": 0.0018586367950704072,
+              "se": 0.0010730844539596429,
+              "epsilon": 0.0010730844539596429,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 22,
+              "values": {
+                "100": 2.0512703236014866,
+                "101": 2.0574132747741327,
+                "102": 2.0490985952507565
+              },
+              "mean": 2.0525940645421255,
+              "sd": 0.004312504081453712,
+              "se": 0.00248982539230866,
+              "epsilon": 0.00248982539230866,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 23,
+              "values": {
+                "100": 2.052334323158798,
+                "101": 2.056112276462655,
+                "102": 2.050577979721284
+              },
+              "mean": 2.0530081931142456,
+              "sd": 0.00282801797077541,
+              "se": 0.0016327569367002824,
+              "epsilon": 0.0016327569367002824,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 24,
+              "values": {
+                "100": 2.0485612524532915,
+                "101": 2.0545734442157144,
+                "102": 2.046923140706548
+              },
+              "mean": 2.0500192791251846,
+              "sd": 0.004028171704080591,
+              "se": 0.0023256660176929627,
+              "epsilon": 0.0023256660176929627,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 25,
+              "values": {
+                "100": 2.047412771095566,
+                "101": 2.049919364316532,
+                "102": 2.0518562354036005
+              },
+              "mean": 2.0497294569385662,
+              "sd": 0.002227811117071732,
+              "se": 0.0012862273481450055,
+              "epsilon": 0.0012862273481450055,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 26,
+              "values": {
+                "100": 2.044015296409697,
+                "101": 2.0509156285291765,
+                "102": 2.0497096053215866
+              },
+              "mean": 2.04821351008682,
+              "sd": 0.0036854269160299523,
+              "se": 0.002127782222048585,
+              "epsilon": 0.002127782222048585,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 27,
+              "values": {
+                "100": 2.049155387578944,
+                "101": 2.047323599430946,
+                "102": 2.0467525924027457
+              },
+              "mean": 2.047743859804212,
+              "sd": 0.0012553167929624171,
+              "se": 0.0007247574883351092,
+              "epsilon": 0.001,
+              "epsilon_source": "floor-derived"
+            },
+            {
+              "epoch": 28,
+              "values": {
+                "100": 2.04052293227956,
+                "101": 2.052157971415727,
+                "102": 2.0482446330821564
+              },
+              "mean": 2.0469751789258144,
+              "sd": 0.0059204872532863575,
+              "se": 0.0034181949094186266,
+              "epsilon": 0.0034181949094186266,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 29,
+              "values": {
+                "100": 2.051038057541336,
+                "101": 2.0484488884465044,
+                "102": 2.047469028051127
+              },
+              "mean": 2.0489853246796557,
+              "sd": 0.0018439945091222492,
+              "se": 0.0010646307262259223,
+              "epsilon": 0.0010646307262259223,
+              "epsilon_source": "SE-derived"
+            },
+            {
+              "epoch": 30,
+              "values": {
+                "100": 2.0434358519089075,
+                "101": 2.0517380465426407,
+                "102": 2.046509747379501
+              },
+              "mean": 2.047227881943683,
+              "sd": 0.004197427411320148,
+              "se": 0.0024233858458296014,
+              "epsilon": 0.0024233858458296014,
+              "epsilon_source": "SE-derived"
+            }
+          ],
+          "selection": {
+            "cap": 30,
+            "best_mean": 2.0469751789258144,
+            "best_epoch": 28,
+            "selected_epoch": 26,
+            "epsilon_at_selected": 0.002127782222048585,
+            "epsilon_source_at_selected": "SE-derived",
+            "still_improving_at_cap": false
+          },
+          "flags": {
+            "100": {
+              "dev_nll_rises": [
+                {
+                  "epoch": 14,
+                  "increase": 0.00560335981015081
+                },
+                {
+                  "epoch": 18,
+                  "increase": 0.0018396902479604904
+                },
+                {
+                  "epoch": 21,
+                  "increase": 0.0007802948952346789
+                },
+                {
+                  "epoch": 23,
+                  "increase": 0.0010639995573114014
+                },
+                {
+                  "epoch": 27,
+                  "increase": 0.005140091169246741
+                },
+                {
+                  "epoch": 29,
+                  "increase": 0.010515125261775893
+                }
+              ],
+              "repeated_dev_nll_rise": true,
+              "running_train_nll_rises": [],
+              "best_epoch": 28,
+              "best_epoch_is_last": false
+            },
+            "101": {
+              "dev_nll_rises": [
+                {
+                  "epoch": 6,
+                  "increase": 0.0006201756501904576
+                },
+                {
+                  "epoch": 18,
+                  "increase": 4.111661768835262e-06
+                },
+                {
+                  "epoch": 22,
+                  "increase": 0.0015012705034864737
+                },
+                {
+                  "epoch": 26,
+                  "increase": 0.0009962642126444266
+                },
+                {
+                  "epoch": 28,
+                  "increase": 0.004834371984780983
+                },
+                {
+                  "epoch": 30,
+                  "increase": 0.00328915809613628
+                }
+              ],
+              "repeated_dev_nll_rise": true,
+              "running_train_nll_rises": [],
+              "best_epoch": 27,
+              "best_epoch_is_last": false
+            },
+            "102": {
+              "dev_nll_rises": [
+                {
+                  "epoch": 13,
+                  "increase": 0.0013059665694488132
+                },
+                {
+                  "epoch": 18,
+                  "increase": 0.004853067196888272
+                },
+                {
+                  "epoch": 20,
+                  "increase": 0.002415087331696153
+                },
+                {
+                  "epoch": 21,
+                  "increase": 8.488868361045121e-05
+                },
+                {
+                  "epoch": 23,
+                  "increase": 0.0014793844705276449
+                },
+                {
+                  "epoch": 25,
+                  "increase": 0.00493309469705272
+                },
+                {
+                  "epoch": 28,
+                  "increase": 0.0014920406794107777
+                }
+              ],
+              "repeated_dev_nll_rise": true,
+              "running_train_nll_rises": [
+                24
+              ],
+              "best_epoch": 30,
+              "best_epoch_is_last": true
+            }
+          }
+        }
+      },
+      "extension_required": false,
+      "extension_used": false,
+      "status": "selected",
+      "selection": {
+        "cap": 30,
+        "best_mean": 2.0469751789258144,
+        "best_epoch": 28,
+        "selected_epoch": 26,
+        "epsilon_at_selected": 0.002127782222048585,
+        "epsilon_source_at_selected": "SE-derived",
+        "still_improving_at_cap": false
+      }
+    }
+  },
+  "outcome": {
+    "outcome": "requires human review: SE-derived e*",
+    "max_epochs": 26,
+    "requires_human_review": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  "acceptance": {
+    "criteria": {
+      "1_runs_completed_no_unresolved_no_category_A": true,
+      "2_gates_pass_runner_summary_agree": true,
+      "3_no_unresolved_or_rejected_category_B": true,
+      "4_budget_computed_not_inconclusive": true,
+      "5_se_derived_reviewed": "human review required",
+      "6_test_split_protection": "verified by automated tests and code inspection (Stage 4/5 test suites)",
+      "7_finiteness_cost_reported": true,
+      "8_human_approval": "required: record a new decision in PROJECT_RESEARCH_RECORD.md \u00a711"
+    },
+    "ready_for_human_approval": true,
+    "accepted": false
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "arm": "C",
+  "batch_size": 4096,
+  "batches": 6,
+  "buckets": {
+    "definition_sha256": "b9289bab154d61613beeee4a36bd801867bed3d87c6e428d08e5f5d89a571813",
+    "mean_nll": 2.06914035608065,
+    "nll_sum": 46926.034135553055,
+    "num_targets": 22679,
+    "stratifications": {
+      "frequency": {
+        "categories": {
+          "seen:high": {
+            "insufficient_support": false,
+            "mean_nll": 2.5155730356454447,
+            "n": 5930,
+            "nll_sum": 14917.348101377487,
+            "share": 0.2614753736937255
+          },
+          "seen:low": {
+            "insufficient_support": false,
+            "mean_nll": 2.020401187503806,
+            "n": 5973,
+            "nll_sum": 12067.856292960234,
+            "share": 0.2633714008554169
+          },
+          "seen:mid": {
+            "insufficient_support": false,
+            "mean_nll": 2.2806850388485684,
+            "n": 5944,
+            "nll_sum": 13556.39187091589,
+            "share": 0.26209268486264825
+          },
+          "unseen": {
+            "insufficient_support": false,
+            "mean_nll": 1.321282671833494,
+            "n": 4832,
+            "nll_sum": 6384.437870299444,
+            "share": 0.21306054058820936
+          }
+        },
+        "consistency_bound": 2.6049181775818528e-11,
+        "recombined_nll_sum": 46926.034135553055
+      },
+      "real_context_length": {
+        "categories": {
+          "r:0": {
+            "insufficient_support": false,
+            "mean_nll": 2.9656407098901396,
+            "n": 3197,
+            "nll_sum": 9481.153349518776,
+            "share": 0.14096741478901187
+          },
+          "r:1": {
+            "insufficient_support": false,
+            "mean_nll": 1.8792130172178079,
+            "n": 3197,
+            "nll_sum": 6007.844016045332,
+            "share": 0.14096741478901187
+          },
+          "r:2": {
+            "insufficient_support": false,
+            "mean_nll": 2.4695919238387476,
+            "n": 3197,
+            "nll_sum": 7895.285380512476,
+            "share": 0.14096741478901187
+          },
+          "r:3": {
+            "insufficient_support": false,
+            "mean_nll": 2.284149841197486,
+            "n": 3193,
+            "nll_sum": 7293.290442943573,
+            "share": 0.14079104016931965
+          },
+          "r:4": {
+            "insufficient_support": false,
+            "mean_nll": 2.141182873136495,
+            "n": 3119,
+            "nll_sum": 6678.349381312728,
+            "share": 0.13752810970501345
+          },
+          "r:5": {
+            "insufficient_support": false,
+            "mean_nll": 1.7546176529906015,
+            "n": 2826,
+            "nll_sum": 4958.54948735144,
+            "share": 0.12460866881255787
+          },
+          "r:6": {
+            "insufficient_support": false,
+            "mean_nll": 1.3395066521529544,
+            "n": 2069,
+            "nll_sum": 2771.4392633044627,
+            "share": 0.09122977203580404
+          },
+          "r:7": {
+            "insufficient_support": false,
+            "mean_nll": 0.989364292596162,
+            "n": 1173,
+            "nll_sum": 1160.524315215298,
+            "share": 0.05172185722474536
+          },
+          "r:8": {
+            "insufficient_support": false,
+            "mean_nll": 0.9598848860861147,
+            "n": 708,
+            "nll_sum": 679.5984993489692,
+            "share": 0.03121830768552405
+          }
+        },
+        "consistency_bound": 5.2098363551637055e-11,
+        "recombined_nll_sum": 46926.034135553055
+      },
+      "target_position": {
+        "categories": {
+          "eos": {
+            "insufficient_support": false,
+            "mean_nll": 0.8807595503143034,
+            "n": 3197,
+            "nll_sum": 2815.788282354828,
+            "share": 0.14096741478901187
+          },
+          "first": {
+            "insufficient_support": false,
+            "mean_nll": 2.9656407098901396,
+            "n": 3197,
+            "nll_sum": 9481.153349518776,
+            "share": 0.14096741478901187
+          },
+          "interior": {
+            "insufficient_support": false,
+            "mean_nll": 2.1264410502719957,
+            "n": 16285,
+            "nll_sum": 34629.09250367945,
+            "share": 0.7180651704219763
+          }
+        },
+        "consistency_bound": 2.0839345420654822e-11,
+        "recombined_nll_sum": 46926.034135553055
+      }
+    }
+  },
+  "checkpoint": {
+    "attempt_id": "C-s7-a1",
+    "best_epoch": 24,
+    "model_best_sha256": "4c9eecead47a56b8873be0474f7aca812a83409257d0fb65b76e4135a3839e8a",
+    "run_dir": "results/experiments/wavenet_study/final/runs/wavenet/run_008",
+    "state_sha256": "331e10f4e304d753704cdb887b3f2106f5ec69a0fcd39874c8371976d5efbb21"
+  },
+  "checks": {
+    "dev_reproduced": true,
+    "mode": "eval",
+    "selected_epoch": 24
+  },
+  "consistency_bound": 10.945775458306024,
+  "definition_sha256": "b9289bab154d61613beeee4a36bd801867bed3d87c6e428d08e5f5d89a571813",
+  "evaluation_id": "C/7-e1",
+  "files": {
+    "per_target_nll.npy": "68bad5c1b03ce2c1c363c4101c695ca2c34eb6e4a0737a2e6359da8391d2605d"
+  },
+  "finished_at": "2026-11-12T21:33:29.119946+00:00",
+  "format": "wavenet_study.final_test_result/1",
+  "freeze_sha256": "5503d519d9763a5f4d7468967b12599179d372831526df3d5f51c146bb15f867",
+  "key": "C/7",
+  "num_tokens": 22679,
+  "per_target_fsum": 46926.034135553055,
+  "seconds": 0.5204577080003219,
+  "seed": 7,
+  "test_nll": 2.0691403364965937,
+  "test_windows_fingerprint": "a2949f1dc70bb957f59e59c96aa072d15c2fecd1d6965a17112934f01660ef8a",
+  "total_nll": 46926.03369140625
+}

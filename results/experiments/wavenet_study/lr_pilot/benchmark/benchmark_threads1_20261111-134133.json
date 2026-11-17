@@ -1,0 +1,209 @@
+{
+  "created_at": "2026-11-11T13:41:33.585536+00:00",
+  "diagnostics_policy": {
+    "activations": false,
+    "enabled": true,
+    "every_n_steps": 100,
+    "gradients": true,
+    "parameters": true
+  },
+  "estimate": {
+    "note": "trainer epoch time x 10 epochs x 3 seeds; excludes per-run set-up (imports, data, model; a few seconds)",
+    "per_extension_candidate_seconds_max": 256.478773739982,
+    "round0_seconds": 2444.217369960097,
+    "worst_case_all_arms_two_rounds_seconds": 4496.047559879953
+  },
+  "execution": {
+    "cpu": "Apple M3",
+    "env_threads": {
+      "MKL_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null
+    },
+    "mac_ver": "26.0.1",
+    "mps_available_but_unused": true,
+    "python_implementation": "CPython",
+    "requested_threads": 1,
+    "torch_num_interop_threads": 8,
+    "torch_num_threads": 1,
+    "torch_parallel_info": "ATen/Parallel:\n\tat::get_num_threads() : 1\n\tat::get_num_interop_threads() : 8\nOpenMP 201811\n\tomp_get_max_threads() : 1\nMKLDNN not found\nstd::thread::hardware_concurrency() : 8\nEnvironment variables:\n\tOMP_NUM_THREADS : [not set]\nATen parallel backend: OpenMP\n"
+  },
+  "lr": 0.1,
+  "rows": [
+    {
+      "arm": "A",
+      "diagnostic_steps": 0,
+      "diagnostics": false,
+      "estimated_sgd_seconds_without_diagnostics": 2.867314292001538,
+      "estimated_step_diagnostic_overhead_seconds": 0,
+      "estimated_tokens_per_second_without_diagnostics": 63706.30541254318,
+      "idealized_steady_state_tokens_per_second": 70463.21121413488,
+      "measured_epoch_end_seconds": 0.5087088750005933,
+      "measured_sgd_phase_seconds": 2.867314292001538,
+      "measured_tokens_per_second_including_diagnostics": 63706.30541254318,
+      "non_diagnostic_step_seconds": {
+        "max": 0.023653209002077347,
+        "median": 0.00045408300138660707,
+        "p10": 0.00043079199895146303,
+        "p90": 0.000522916998306755
+      },
+      "peak_rss_mb": 280.671875,
+      "trainer_epoch_seconds": 3.367285874999652
+    },
+    {
+      "arm": "A",
+      "diagnostic_steps": 58,
+      "diagnostics": true,
+      "estimated_sgd_seconds_without_diagnostics": 2.716007246152003,
+      "estimated_step_diagnostic_overhead_seconds": 0.14259012884576805,
+      "estimated_tokens_per_second_without_diagnostics": 67255.34339379925,
+      "idealized_steady_state_tokens_per_second": 71526.30101410642,
+      "measured_epoch_end_seconds": 0.4467682499998773,
+      "measured_sgd_phase_seconds": 2.858597374997771,
+      "measured_tokens_per_second_including_diagnostics": 63900.569418294675,
+      "non_diagnostic_step_seconds": {
+        "max": 0.007241082999826176,
+        "median": 0.00044733400136465207,
+        "p10": 0.0004311659977247473,
+        "p90": 0.0005413750004663598
+      },
+      "peak_rss_mb": 343.4375,
+      "trainer_epoch_seconds": 3.302530000000843
+    },
+    {
+      "arm": "B",
+      "diagnostic_steps": 0,
+      "diagnostics": false,
+      "estimated_sgd_seconds_without_diagnostics": 2.981154459001118,
+      "estimated_step_diagnostic_overhead_seconds": 0,
+      "estimated_tokens_per_second_without_diagnostics": 61273.577908205756,
+      "idealized_steady_state_tokens_per_second": 64200.9458858107,
+      "measured_epoch_end_seconds": 0.7167358750011772,
+      "measured_sgd_phase_seconds": 2.981154459001118,
+      "measured_tokens_per_second_including_diagnostics": 61273.577908205756,
+      "non_diagnostic_step_seconds": {
+        "max": 0.002745500001765322,
+        "median": 0.0004983750004612375,
+        "p10": 0.0004840420006075874,
+        "p90": 0.0005894999994779937
+      },
+      "peak_rss_mb": 346.03125,
+      "trainer_epoch_seconds": 3.6915415419971396
+    },
+    {
+      "arm": "B",
+      "diagnostic_steps": 58,
+      "diagnostics": true,
+      "estimated_sgd_seconds_without_diagnostics": 2.9824817929365963,
+      "estimated_step_diagnostic_overhead_seconds": 0.14540854006190784,
+      "estimated_tokens_per_second_without_diagnostics": 61246.30850475178,
+      "idealized_steady_state_tokens_per_second": 65281.60462927257,
+      "measured_epoch_end_seconds": 0.6831655419991876,
+      "measured_sgd_phase_seconds": 3.127890332998504,
+      "measured_tokens_per_second_including_diagnostics": 58399.106283528185,
+      "non_diagnostic_step_seconds": {
+        "max": 0.0016096250001282897,
+        "median": 0.0004901249994873069,
+        "p10": 0.0004809579986613244,
+        "p90": 0.0006107910012360662
+      },
+      "peak_rss_mb": 352.46875,
+      "trainer_epoch_seconds": 3.807615249999799
+    },
+    {
+      "arm": "C",
+      "diagnostic_steps": 0,
+      "diagnostics": false,
+      "estimated_sgd_seconds_without_diagnostics": 3.7978307090015733,
+      "estimated_step_diagnostic_overhead_seconds": 0,
+      "estimated_tokens_per_second_without_diagnostics": 48097.45720551661,
+      "idealized_steady_state_tokens_per_second": 51847.1076487312,
+      "measured_epoch_end_seconds": 1.0402140410005813,
+      "measured_sgd_phase_seconds": 3.7978307090015733,
+      "measured_tokens_per_second_including_diagnostics": 48097.45720551661,
+      "non_diagnostic_step_seconds": {
+        "max": 0.002514167001208989,
+        "median": 0.000617125002463581,
+        "p10": 0.000609582999459235,
+        "p90": 0.0007715419997111894
+      },
+      "peak_rss_mb": 352.46875,
+      "trainer_epoch_seconds": 4.754371750001155
+    },
+    {
+      "arm": "C",
+      "diagnostic_steps": 58,
+      "diagnostics": true,
+      "estimated_sgd_seconds_without_diagnostics": 3.609075919037423,
+      "estimated_step_diagnostic_overhead_seconds": 0.14013003896252485,
+      "estimated_tokens_per_second_without_diagnostics": 50612.95580856578,
+      "idealized_steady_state_tokens_per_second": 52029.80759049324,
+      "measured_epoch_end_seconds": 1.0390527920026216,
+      "measured_sgd_phase_seconds": 3.7492059579999477,
+      "measured_tokens_per_second_including_diagnostics": 48721.24979163456,
+      "non_diagnostic_step_seconds": {
+        "max": 0.0014210830013325904,
+        "median": 0.00061495800036937,
+        "p10": 0.0005994999992253724,
+        "p90": 0.0007672079991607461
+      },
+      "peak_rss_mb": 364.796875,
+      "trainer_epoch_seconds": 4.709040375000768
+    },
+    {
+      "arm": "D",
+      "diagnostic_steps": 0,
+      "diagnostics": false,
+      "estimated_sgd_seconds_without_diagnostics": 5.085308084002463,
+      "estimated_step_diagnostic_overhead_seconds": 0,
+      "estimated_tokens_per_second_without_diagnostics": 35920.34090808323,
+      "idealized_steady_state_tokens_per_second": 37908.26220010718,
+      "measured_epoch_end_seconds": 2.574844832997769,
+      "measured_sgd_phase_seconds": 5.085308084002463,
+      "measured_tokens_per_second_including_diagnostics": 35920.34090808323,
+      "non_diagnostic_step_seconds": {
+        "max": 0.004364042000815971,
+        "median": 0.0008440414985670941,
+        "p10": 0.000824708000436658,
+        "p90": 0.0009687909987405874
+      },
+      "peak_rss_mb": 374.890625,
+      "trainer_epoch_seconds": 7.5678717089977
+    },
+    {
+      "arm": "D",
+      "diagnostic_steps": 58,
+      "diagnostics": true,
+      "estimated_sgd_seconds_without_diagnostics": 5.560983455914538,
+      "estimated_step_diagnostic_overhead_seconds": 0.2923991690877301,
+      "estimated_tokens_per_second_without_diagnostics": 32847.78698733953,
+      "idealized_steady_state_tokens_per_second": 37087.9942893521,
+      "measured_epoch_end_seconds": 2.7969542920000094,
+      "measured_sgd_phase_seconds": 5.8533826250022685,
+      "measured_tokens_per_second_including_diagnostics": 31206.912601229313,
+      "non_diagnostic_step_seconds": {
+        "max": 0.06391062500188127,
+        "median": 0.0008627089991932735,
+        "p10": 0.0008287089985969942,
+        "p90": 0.00100804099929519
+      },
+      "peak_rss_mb": 387.46875,
+      "trainer_epoch_seconds": 8.5492924579994
+    }
+  ],
+  "seed": 999,
+  "source_checksums_combined": "7020b6651099ba4ab20b2aec598809dac58b764b5f15e2de90b9397734b11b4b",
+  "threads": 1,
+  "timing_definitions": {
+    "child_wall_seconds": "whole child process after imports, set-up to result file",
+    "estimated_sgd_seconds_without_diagnostics": "measured_sgd_phase_seconds - estimated overhead",
+    "estimated_step_diagnostic_overhead_seconds": "global optimiser steps are numbered from 0 and never reset; diagnostics run at steps s with s % every_n_steps == 0 (before optimizer.step: gradients, parameter snapshot; after it: update stats and the steps.jsonl write, which fall in step s+1's interval). Estimate = sum over those s and s+1 of (step interval - median of the other intervals); biased slightly upward. The first step of each epoch has no interval of its own, so the pre-step diagnostics of step 0 are not separated",
+    "estimated_tokens_per_second_without_diagnostics": "training tokens / estimated_sgd_seconds_without_diagnostics",
+    "idealized_steady_state_tokens_per_second": "training tokens / (median non-diagnostic step time x steps): removes all jitter, an optimistic upper bound",
+    "measured_epoch_end_seconds": "end of the last optimizer.step() to the end timestamp taken right after this epoch's history row was written: [BN] recalibration, full-train and dev evaluation, the trainer's epoch-end diagnostics (they differ by arm), the best checkpoint and the history write",
+    "measured_sgd_phase_seconds": "wall time from the previous epoch's end timestamp (taken right after its history row was written; epoch 1: the trainer call) to the end of this epoch's last optimizer.step(); includes step diagnostics, the progress line, the previous epoch's checkpoint_last.pt write and, for epoch 1, trainer set-up",
+    "measured_tokens_per_second_including_diagnostics": "training tokens / measured_sgd_phase_seconds",
+    "setup_seconds": "child start to the trainer call: imports done, config, data, model, run directory",
+    "trainer_epoch_seconds": "history.jsonl 'seconds': the trainer's own epoch timer (SGD + evaluation, before the checkpoint writes)",
+    "training_call_seconds": "the trainer call, including the final model_final.pt write"
+  }
+}

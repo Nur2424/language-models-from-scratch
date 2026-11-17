@@ -1,0 +1,342 @@
+{
+  "conditions": {
+    "arms": {
+      "A": {
+        "config": {
+          "checkpoint": {
+            "resume_every_n_steps": null,
+            "save_best": true,
+            "save_final": true
+          },
+          "data": {
+            "duplicate_policy": "group",
+            "path": "data/names.txt",
+            "split_fractions": [
+              0.8,
+              0.1,
+              0.1
+            ],
+            "split_seed": 42
+          },
+          "device": {
+            "device": "cpu",
+            "dtype": "float32"
+          },
+          "diagnostics": {
+            "activations": false,
+            "enabled": true,
+            "every_n_steps": 100,
+            "gradients": true,
+            "parameters": true
+          },
+          "generation": {
+            "max_new_tokens": 32,
+            "num_samples": 20,
+            "temperature": 1.0,
+            "top_k": null,
+            "top_p": null
+          },
+          "logging": {
+            "console": true,
+            "jsonl": true,
+            "level": "INFO"
+          },
+          "model": {
+            "name": "mlp",
+            "params": {
+              "context_length": 8,
+              "embedding_dim": 10,
+              "hidden_dim": 200
+            }
+          },
+          "reproducibility": {
+            "deterministic": false,
+            "warn_only": true
+          },
+          "run": {
+            "name": null,
+            "notes": "",
+            "results_root": "results"
+          }
+        },
+        "expected_parameters": 21897,
+        "label": "Flat-8 MLP, no BatchNorm"
+      },
+      "B": {
+        "config": {
+          "checkpoint": {
+            "resume_every_n_steps": null,
+            "save_best": true,
+            "save_final": true
+          },
+          "data": {
+            "duplicate_policy": "group",
+            "path": "data/names.txt",
+            "split_fractions": [
+              0.8,
+              0.1,
+              0.1
+            ],
+            "split_seed": 42
+          },
+          "device": {
+            "device": "cpu",
+            "dtype": "float32"
+          },
+          "diagnostics": {
+            "activations": false,
+            "enabled": true,
+            "every_n_steps": 100,
+            "gradients": true,
+            "parameters": true
+          },
+          "generation": {
+            "max_new_tokens": 32,
+            "num_samples": 20,
+            "temperature": 1.0,
+            "top_k": null,
+            "top_p": null
+          },
+          "logging": {
+            "console": true,
+            "jsonl": true,
+            "level": "INFO"
+          },
+          "model": {
+            "name": "batchnorm_mlp",
+            "params": {
+              "context_length": 8,
+              "embedding_dim": 10,
+              "hidden_dim": 200
+            }
+          },
+          "reproducibility": {
+            "deterministic": false,
+            "warn_only": true
+          },
+          "run": {
+            "name": null,
+            "notes": "",
+            "results_root": "results"
+          }
+        },
+        "expected_parameters": 22097,
+        "label": "Flat-8 MLP, BatchNorm"
+      },
+      "C": {
+        "config": {
+          "checkpoint": {
+            "resume_every_n_steps": null,
+            "save_best": true,
+            "save_final": true
+          },
+          "data": {
+            "duplicate_policy": "group",
+            "path": "data/names.txt",
+            "split_fractions": [
+              0.8,
+              0.1,
+              0.1
+            ],
+            "split_seed": 42
+          },
+          "device": {
+            "device": "cpu",
+            "dtype": "float32"
+          },
+          "diagnostics": {
+            "activations": false,
+            "enabled": true,
+            "every_n_steps": 100,
+            "gradients": true,
+            "parameters": true
+          },
+          "generation": {
+            "max_new_tokens": 32,
+            "num_samples": 20,
+            "temperature": 1.0,
+            "top_k": null,
+            "top_p": null
+          },
+          "logging": {
+            "console": true,
+            "jsonl": true,
+            "level": "INFO"
+          },
+          "model": {
+            "name": "wavenet",
+            "params": {
+              "context_length": 8,
+              "embedding_dim": 10,
+              "hidden_dim": 68,
+              "normalization": "none"
+            }
+          },
+          "reproducibility": {
+            "deterministic": false,
+            "warn_only": true
+          },
+          "run": {
+            "name": null,
+            "notes": "",
+            "results_root": "results"
+          }
+        },
+        "expected_parameters": 21989,
+        "label": "Hierarchical WaveNet, no BatchNorm"
+      },
+      "D": {
+        "config": {
+          "checkpoint": {
+            "resume_every_n_steps": null,
+            "save_best": true,
+            "save_final": true
+          },
+          "data": {
+            "duplicate_policy": "group",
+            "path": "data/names.txt",
+            "split_fractions": [
+              0.8,
+              0.1,
+              0.1
+            ],
+            "split_seed": 42
+          },
+          "device": {
+            "device": "cpu",
+            "dtype": "float32"
+          },
+          "diagnostics": {
+            "activations": false,
+            "enabled": true,
+            "every_n_steps": 100,
+            "gradients": true,
+            "parameters": true
+          },
+          "generation": {
+            "max_new_tokens": 32,
+            "num_samples": 20,
+            "temperature": 1.0,
+            "top_k": null,
+            "top_p": null
+          },
+          "logging": {
+            "console": true,
+            "jsonl": true,
+            "level": "INFO"
+          },
+          "model": {
+            "name": "wavenet_batchnorm",
+            "params": {
+              "context_length": 8,
+              "embedding_dim": 10,
+              "hidden_dim": 68,
+              "normalization": "batchnorm"
+            }
+          },
+          "reproducibility": {
+            "deterministic": false,
+            "warn_only": true
+          },
+          "run": {
+            "name": null,
+            "notes": "",
+            "results_root": "results"
+          }
+        },
+        "expected_parameters": 22397,
+        "label": "Hierarchical WaveNet, BatchNorm"
+      }
+    },
+    "checksums": {
+      "UNIVERSAL_MODEL_IMPLEMENTATION_STANDARD_v1.1.md": "4175844e4e03e536e1b7a79406f89734c4714a5d0a81c82da1b1e1dce7c72707",
+      "configs/base.yaml": "25c3f713b0078ab846cc8a51b87a970a405e756ba11ba91e9ad3eedf769cb7d5",
+      "configs/models/batchnorm_mlp.yaml": "bad0184fb7c0c9936e278dc2a928b1f540ec037748d3c1c70e13955f6929061f",
+      "configs/models/mlp.yaml": "0d75c013b402d26ddaf62b65955a7cbbed265ef6368453370e8a0241f70d75b8",
+      "configs/models/wavenet.yaml": "bd8ff96a3da99151b793bbb81c9b9991d1d407c4213ac998995799722122d4a1",
+      "configs/models/wavenet_batchnorm.yaml": "ba5c5a9ed17493b166881a50ad0a6dfa35bad72ee370233d125c958a867ad6bd",
+      "data/names.txt": "0a30b5557f192f32ab962680889aac5f6fda0f4cecf40a6d0b5694f58ea8cc4d",
+      "models/feedforward/batchnorm_mlp.py": "e1f0d657186ac6158641caa6742fd8ffa55a9125025150ebce6c9316cfa6405d",
+      "models/feedforward/batchnorm_mlp_spec.md": "ac2898530e5be632429b0a4a27c6dda600ffb9c60d9b56d5bd5cd02ba875297b",
+      "models/feedforward/mlp.py": "f787c8f51014b545837078ba536ad96ee84be04f974fb9bcc30817df95f3a0d3",
+      "models/feedforward/mlp_spec.md": "e5a9dedfd1572910f70f1e1c433b29db8d1eb7f446954753bbada4c8be8e2163",
+      "models/hierarchical/wavenet.py": "4094b401f8bc541be4237d56b2afa7935a3fce3895116e10d0135b9d862cbab6",
+      "models/hierarchical/wavenet_spec.md": "915b1b3178bfb749df284e61b78515b665f506e8a6651704bfbdb75576ac01c2",
+      "training/wavenet_study/lr_pilot.py": "b77d76844a6c09dfd905e97a764bc929ab7591417ce08b6c55d2b1dfa95e27bc",
+      "training/wavenet_study/summarize_lr_pilot.py": "6402c34366a681642a86c91233cbad0302f5264c8ea8e9af4bd1e37a01573a8d",
+      "utils/__init__.py": "6af278eccb4f255760984a589cebc04a15135a160a9410852591f0453311f8b9",
+      "utils/batching.py": "346b0c85a0cf5860048efc04961b7552ca5ca48b9c743a354b6e735d0e7b268c",
+      "utils/checkpoint.py": "8990ba704469b353e4e0063fb5121e972dd525ba945948e12bedec7c00a50a31",
+      "utils/config.py": "a8530f09240f512e8c2c28cb535174a1041b04a9cc918d7d3d6c4f487d082946",
+      "utils/data.py": "0c2893d21f7ae61a7b322682a379f3814e5aafb4a53ddefc13ac23e92badd61d",
+      "utils/device.py": "2636950235906eb7c23cc1b5ab87daa3115e69c60c7034047ef20ebedd87e838",
+      "utils/diagnostics/__init__.py": "7883171f62d15d2708f5d3d833fd1bd96ed47a40908fb7abaf2f849407950143",
+      "utils/diagnostics/activations.py": "9fc2f218298a5a068adb8af65193f5be1fa660f20ee455d0495243eb86c1068b",
+      "utils/diagnostics/gradients.py": "237f2619f72266e5e68b183ffc7def351fffc42e74091bdfd63e1cfe8200a583",
+      "utils/diagnostics/parameters.py": "79f7fc31b63e39edded3f1eea1db16429168785f4d372cc58c647b2aed249adc",
+      "utils/diagnostics/schedule.py": "7a29418644bf8269a74b50a0df93cf97e1bf6f29bc752c40cf9c60dda9ec3c32",
+      "utils/generation.py": "d51f089f7051d6db761e8eba4285e18e92be4afccb5e4e94632a024901c7d4f0",
+      "utils/io.py": "108671620b767afc5ef5024e99464406c66a24e1b3d1af18520e946d621fbddc",
+      "utils/logging_utils.py": "8eabea9b307aeb28859c6c206e3cce1781080b45f7b9a082479a5f651a6e66ca",
+      "utils/metrics.py": "5cdb400d31cceb35344ecb515a13b74ab9a06d477d5b72198c74b997ef180cf4",
+      "utils/paths.py": "9d789b12128886deaedb074ab7a4b79eee62c8c4f2501ecd44b5b5796978649b",
+      "utils/reproducibility.py": "762fca6323fa6b206efe13e2434302add8cf460fb3c071c55bbfddeba816ce9f",
+      "utils/run_manager.py": "d7da7ad467adb1bdb43845654fc09288821305bcc6c4ef2319033acf12e78bb9",
+      "utils/statistics.py": "bf11a198f31abd8059a8a6a88207d814e914ff43a53de7bc8ddae2c63828651f",
+      "utils/vocabulary.py": "a72b88a357a76cf30202cd2c4e92256a876a80211d0e90ef8b9acd6298d97e81"
+    },
+    "diagnostics": {
+      "activations": false,
+      "enabled": true,
+      "every_n_steps": 100,
+      "gradients": true,
+      "parameters": true
+    },
+    "environment": {
+      "cpu": "Apple M3",
+      "machine": "arm64",
+      "packages": {
+        "PyYAML": "6.0.3",
+        "numpy": "2.3.4",
+        "torch": "2.10.0"
+      },
+      "platform": "macOS-26.0.1-arm64-arm-64bit",
+      "python": "3.12.6 (v3.12.6:a4a2d2b0d85, Sep  6 2024, 16:08:03) [Clang 13.0.0 (clang-1300.0.29.30)]",
+      "python_executable": "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3"
+    },
+    "protocol": {
+      "extension_down": [
+        0.01,
+        0.003
+      ],
+      "extension_up": [
+        3.0,
+        10.0
+      ],
+      "initial_grid": [
+        0.03,
+        0.1,
+        0.3,
+        1.0
+      ],
+      "max_epochs": 10,
+      "max_rounds": 2,
+      "seeds": [
+        100,
+        101,
+        102
+      ],
+      "training": {
+        "batch_size": 32,
+        "eval_batch_size": 4096,
+        "lr_decay_epoch": null,
+        "lr_decay_factor": 0.1,
+        "max_epochs": 10
+      }
+    },
+    "threads": 1
+  },
+  "conditions_sha256": "6db534b4e3a46e8b35a2da1174f3d73f121f5099272a202c2941175c69e4ca62",
+  "created_at": "2026-11-11T13:58:19.091702+00:00",
+  "note": "Frozen at the first `run`. Any difference blocks the pilot until a documented amendment is approved."
+}

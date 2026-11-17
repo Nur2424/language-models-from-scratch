@@ -1,0 +1,388 @@
+{
+  "authorized_by": "Nur",
+  "bucket_definitions": {
+    "definition_sha256": "b9289bab154d61613beeee4a36bd801867bed3d87c6e428d08e5f5d89a571813",
+    "file_sha256": "f0a57b483daff2c878d518a459588490ec5e17fb473c62d2843ca4ba15e199fb",
+    "path": "analysis/dev/bucket_definitions.json"
+  },
+  "checkpoints": {
+    "A/0": {
+      "attempt_id": "A-s0-a1",
+      "best_epoch": 22,
+      "model_best_sha256": "1cde885d4fa48f30b6c3dae6c8fe981d8e6bb32a5d06230172ce73c6ef37ee60",
+      "run_dir": "results/experiments/wavenet_study/final/runs/mlp/run_001",
+      "state_sha256": "6741891a810a5b8fd3e7e667c56dcc04d48c89a3d57bb983e1d588017930d047"
+    },
+    "A/1": {
+      "attempt_id": "A-s1-a1",
+      "best_epoch": 22,
+      "model_best_sha256": "08657de72f5309024dcb99752bb2ae5961eec9dc35681992208518a6c3a9e821",
+      "run_dir": "results/experiments/wavenet_study/final/runs/mlp/run_002",
+      "state_sha256": "da2aca67ddd66c764adce739470e78d79086d80a09736d7499d3e222d816c2e1"
+    },
+    "A/2": {
+      "attempt_id": "A-s2-a1",
+      "best_epoch": 21,
+      "model_best_sha256": "d23e8edc7d6b976d121b3b0369b00fc0881eee7b9b84b54356ea89ea4af9817b",
+      "run_dir": "results/experiments/wavenet_study/final/runs/mlp/run_003",
+      "state_sha256": "d3f9982f528d030f257c7986d7c20c71c219b08a847d9ef2450dd0e98728697f"
+    },
+    "A/3": {
+      "attempt_id": "A-s3-a1",
+      "best_epoch": 19,
+      "model_best_sha256": "922ff622d578eec2ff9788c1db5e5d8589428165719a21b6ef42efb9c7356c35",
+      "run_dir": "results/experiments/wavenet_study/final/runs/mlp/run_004",
+      "state_sha256": "719fa89ff2fb8828323e2ccdc851ac1c3ca3131ab08c8e63c15b0ab86c1f7ac0"
+    },
+    "A/4": {
+      "attempt_id": "A-s4-a1",
+      "best_epoch": 16,
+      "model_best_sha256": "feaffd457893fe0fb469a0852aeb7f3d91b7c87152a4625f5012df10eba703ff",
+      "run_dir": "results/experiments/wavenet_study/final/runs/mlp/run_005",
+      "state_sha256": "660837b76f58bde355e274f01e48551f5b7d909dd15fb8cd15e17e2fc95a14bd"
+    },
+    "A/5": {
+      "attempt_id": "A-s5-a1",
+      "best_epoch": 19,
+      "model_best_sha256": "ac26fb03bf43eb334ef072a3ff2fa52f8c6b78130dbec2f8fe1b307aa4178ebb",
+      "run_dir": "results/experiments/wavenet_study/final/runs/mlp/run_006",
+      "state_sha256": "9d538783690a929d4744863f873060b4ec9fc91deec3e0aed2acf142c950fe5b"
+    },
+    "A/6": {
+      "attempt_id": "A-s6-a1",
+      "best_epoch": 21,
+      "model_best_sha256": "eafb5b8c704be0d13db67d370236acacd852a571e357c7f6170aa8f47b105505",
+      "run_dir": "results/experiments/wavenet_study/final/runs/mlp/run_007",
+      "state_sha256": "4472f1035b6aaea87e43cff69da3fe69653dc63ac1247d9796b60141010d56b7"
+    },
+    "A/7": {
+      "attempt_id": "A-s7-a1",
+      "best_epoch": 19,
+      "model_best_sha256": "35effc92617dffe95b99e261486f5a1ae7bb07d3d7fe49f5b421c9e1004d7988",
+      "run_dir": "results/experiments/wavenet_study/final/runs/mlp/run_008",
+      "state_sha256": "37a91dafb5b0944bfb65fad6017fa1b26ba8bccaa9601bc9bfa47d984215fed1"
+    },
+    "A/8": {
+      "attempt_id": "A-s8-a1",
+      "best_epoch": 25,
+      "model_best_sha256": "71cadbaeac07630056f954f20abae88078714e736157c44f6ac560594291afe7",
+      "run_dir": "results/experiments/wavenet_study/final/runs/mlp/run_009",
+      "state_sha256": "030066555dfab25693711b40c221f4ff27c51c72d9b636805a3347a0966386e4"
+    },
+    "A/9": {
+      "attempt_id": "A-s9-a1",
+      "best_epoch": 25,
+      "model_best_sha256": "d0b68516da7b480eda8542684707b11db794a3d26e75504858d3f42e625ca435",
+      "run_dir": "results/experiments/wavenet_study/final/runs/mlp/run_010",
+      "state_sha256": "8e4ae81a6a8d1f383daadc1876c2dc4c98cbb6cba249883e2115a968d16a711b"
+    },
+    "B/0": {
+      "attempt_id": "B-s0-a1",
+      "best_epoch": 25,
+      "model_best_sha256": "32c911f6926182c9db00eaa20305a39026727fa7d033c20f73243d940ae4f517",
+      "run_dir": "results/experiments/wavenet_study/final/runs/batchnorm_mlp/run_001",
+      "state_sha256": "9b957bde6367788765b409e105182dcc65e7d147bfcd447de19a07a6d7f258da"
+    },
+    "B/1": {
+      "attempt_id": "B-s1-a1",
+      "best_epoch": 23,
+      "model_best_sha256": "06e7d4b9d45af09984c34829b91d2e6a685bdea89253265642d422acfb1147a1",
+      "run_dir": "results/experiments/wavenet_study/final/runs/batchnorm_mlp/run_002",
+      "state_sha256": "1652bf88e4dca1a94fbb292ca06db907523588869414e8ee920d142f7f1bc2d2"
+    },
+    "B/2": {
+      "attempt_id": "B-s2-a1",
+      "best_epoch": 25,
+      "model_best_sha256": "5d6877df9b9727e0699458dbb8621b8823767c2bbfe865db8e6b59edcaa54c10",
+      "run_dir": "results/experiments/wavenet_study/final/runs/batchnorm_mlp/run_003",
+      "state_sha256": "ccdfbd3f801bff8d7d2c172009a89f2c27e7063c2f33176c1c507db7d773087b"
+    },
+    "B/3": {
+      "attempt_id": "B-s3-a1",
+      "best_epoch": 24,
+      "model_best_sha256": "5d67f2a1b4e00090004a29c2ddbbc1018958e78602fc4ad11f21bac8c0ebf71e",
+      "run_dir": "results/experiments/wavenet_study/final/runs/batchnorm_mlp/run_004",
+      "state_sha256": "8a206c99da00afba36a954ff30778a798038c975f95fe4284116b575b4b3fae7"
+    },
+    "B/4": {
+      "attempt_id": "B-s4-a1",
+      "best_epoch": 25,
+      "model_best_sha256": "faeb66835e86264f174aeaa7224de0af74737ac3ee65329e72700794b9a60d5d",
+      "run_dir": "results/experiments/wavenet_study/final/runs/batchnorm_mlp/run_005",
+      "state_sha256": "45fae89ff49cf0e41419acf7043d72277b8727667560e46811cc663197dd9c91"
+    },
+    "B/5": {
+      "attempt_id": "B-s5-a1",
+      "best_epoch": 19,
+      "model_best_sha256": "5e2727946660a5a4e35e117db479d862ddf546b2829eae1d320ab6cf653779bf",
+      "run_dir": "results/experiments/wavenet_study/final/runs/batchnorm_mlp/run_006",
+      "state_sha256": "ff2acf8a4855966c19038bc5501bb41edc5b42a10f9310fffd0918439a57dbc3"
+    },
+    "B/6": {
+      "attempt_id": "B-s6-a1",
+      "best_epoch": 20,
+      "model_best_sha256": "e9d028daca6df621ba63093ac0bbf0ab1d93107927bad9376db69d38e1568416",
+      "run_dir": "results/experiments/wavenet_study/final/runs/batchnorm_mlp/run_007",
+      "state_sha256": "83fedc836b47f0c0a14ea12135ab2f26215b99cc57ed78bf26bf69c72b710e1c"
+    },
+    "B/7": {
+      "attempt_id": "B-s7-a1",
+      "best_epoch": 23,
+      "model_best_sha256": "1957d584afa4a4cf0b3008032e1090c2697a096c0da16af01e2bd5423dcd4dd7",
+      "run_dir": "results/experiments/wavenet_study/final/runs/batchnorm_mlp/run_008",
+      "state_sha256": "f1edc8df284eeb02a8c5742197343dbd292d6943ee7dbd6d877ae5954fdfc24c"
+    },
+    "B/8": {
+      "attempt_id": "B-s8-a1",
+      "best_epoch": 18,
+      "model_best_sha256": "9aac392511988a0753422a069e6c469f099404cb2d7e4989d03d0c78d56c3535",
+      "run_dir": "results/experiments/wavenet_study/final/runs/batchnorm_mlp/run_009",
+      "state_sha256": "0320d576325cbfa8435d5d093e695b434f11efcf9704b9a54b846ec41970a187"
+    },
+    "B/9": {
+      "attempt_id": "B-s9-a1",
+      "best_epoch": 22,
+      "model_best_sha256": "02377b308543c7af076a4e0c8bb3286e00130f06b0d23f57362b9425958bbf6a",
+      "run_dir": "results/experiments/wavenet_study/final/runs/batchnorm_mlp/run_010",
+      "state_sha256": "f3e3d170d28ff5de63c4eef267242f9b0b38e68a958b1807da2cfcc4b71a1b61"
+    },
+    "C/0": {
+      "attempt_id": "C-s0-a1",
+      "best_epoch": 22,
+      "model_best_sha256": "20b778f10be97122f1baa5c6180187074dce374a50f2ec4aee297b3bdb522328",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet/run_001",
+      "state_sha256": "216c4cf2a73783e81fb7f00e773e97b6f62e49c87ec81c5dd2c363ee34ad927f"
+    },
+    "C/1": {
+      "attempt_id": "C-s1-a1",
+      "best_epoch": 19,
+      "model_best_sha256": "32aaa6535717d4e4fc601cbe6406f35453e9c9c16e084037d1c989447017debb",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet/run_002",
+      "state_sha256": "eda3d7db7a63003147b1c8b7c3d512b2eae23f1439f088b6532188941487e7a6"
+    },
+    "C/2": {
+      "attempt_id": "C-s2-a1",
+      "best_epoch": 24,
+      "model_best_sha256": "7f4b34f881456e322441d4d201eaf175cd228ca9593d0d3754d7a9aed3b7301f",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet/run_003",
+      "state_sha256": "94a7e868c87f0daaf9b0a127a1b6819e42155ca1ad754cafc9b48bb95971a497"
+    },
+    "C/3": {
+      "attempt_id": "C-s3-a1",
+      "best_epoch": 20,
+      "model_best_sha256": "cab1bb63cb9d2ebe76c8ea9842ab9996a7bde247ff0db8ae0fc70f8c7024cd49",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet/run_004",
+      "state_sha256": "c195ce86e36e1a4fd98a2ba1e73828d4b06df2d025d3ba432fa7508df1817d45"
+    },
+    "C/4": {
+      "attempt_id": "C-s4-a1",
+      "best_epoch": 19,
+      "model_best_sha256": "aa432cd41842f8c7986857b477ccdc4c50fa37df82b0c4d47e5e891c20763cdc",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet/run_005",
+      "state_sha256": "ab79096d08efcc66fa57e0199756c12d2317fceff7ad2c6b5ea8ccc7a60cc2a3"
+    },
+    "C/5": {
+      "attempt_id": "C-s5-a1",
+      "best_epoch": 21,
+      "model_best_sha256": "e4e3f16af76ab2b4a40ee6772e9ff936fa35c2c1444f60a79465df2972479811",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet/run_006",
+      "state_sha256": "4bc95caa4b0a3a95ad6d145bd6fa025eb44387664941ac910cb2b9daca88c435"
+    },
+    "C/6": {
+      "attempt_id": "C-s6-a1",
+      "best_epoch": 25,
+      "model_best_sha256": "bb88c4eda5294b85d78d3a46bf2a75a6d0dca03c44762cd0fd007babf7f06cc1",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet/run_007",
+      "state_sha256": "a09fc0c54e2ee89ce522047e1a24649988eeac6251c4d9a4ccb9ddade3722d5e"
+    },
+    "C/7": {
+      "attempt_id": "C-s7-a1",
+      "best_epoch": 24,
+      "model_best_sha256": "4c9eecead47a56b8873be0474f7aca812a83409257d0fb65b76e4135a3839e8a",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet/run_008",
+      "state_sha256": "331e10f4e304d753704cdb887b3f2106f5ec69a0fcd39874c8371976d5efbb21"
+    },
+    "C/8": {
+      "attempt_id": "C-s8-a1",
+      "best_epoch": 25,
+      "model_best_sha256": "ea764c6782f282950a25eed17135261ab84c7120f15787514bfe5f5ca46753c7",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet/run_009",
+      "state_sha256": "30696df3c13deb16c948e687e3ab821439940f0f0377e02148205a5d24ec8b8c"
+    },
+    "C/9": {
+      "attempt_id": "C-s9-a1",
+      "best_epoch": 25,
+      "model_best_sha256": "bb9827f8fda84c3ca353622e798bb082d2c01fb63c153adfcb5af275396fc799",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet/run_010",
+      "state_sha256": "85659f62c3639db3a0843b337fe477fe95649dd57bd56f5cd71f166d89e02e42"
+    },
+    "D/0": {
+      "attempt_id": "D-s0-a1",
+      "best_epoch": 25,
+      "model_best_sha256": "02b0f4216b588fb869c2a1ddb645ef3637390e15fa8380b762b14e704fdb778d",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet_batchnorm/run_001",
+      "state_sha256": "ed12019a5f820efc7559a3741453a43b6d9e5e0c2f7ec3f85a6bce0608b96910"
+    },
+    "D/1": {
+      "attempt_id": "D-s1-a1",
+      "best_epoch": 24,
+      "model_best_sha256": "e2468d32c70d7949e93ea7ba51a07c45dc48437f37e084f3dd11ab4dea7dc8f6",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet_batchnorm/run_002",
+      "state_sha256": "6ad0e2594fc93ae35e6f82597f897fdfdf0eb6bbb84f79e38df7a3eebdbbef29"
+    },
+    "D/2": {
+      "attempt_id": "D-s2-a1",
+      "best_epoch": 24,
+      "model_best_sha256": "90a160c7559c556f2ac41ee4f22a68a180a4a30f96212778eac8167926b7c8e2",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet_batchnorm/run_003",
+      "state_sha256": "77cde1aaa894a407550fd72de65b51b8464baa1b9b3a681fb03ac7c6c20f235f"
+    },
+    "D/3": {
+      "attempt_id": "D-s3-a1",
+      "best_epoch": 25,
+      "model_best_sha256": "cec9ec43c86ca6cbf109483c634dab34e3dc28628b19631eb97a1bed01767023",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet_batchnorm/run_004",
+      "state_sha256": "8250da82fbb60ea7f25531d7e2ae0a84d5c4b5b792d38e11576c4906edb91f6e"
+    },
+    "D/4": {
+      "attempt_id": "D-s4-a1",
+      "best_epoch": 25,
+      "model_best_sha256": "88b9ccf452193e5a5e6647e5e04b7462215dfa1e79c859deaebf8a7db28f37fb",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet_batchnorm/run_005",
+      "state_sha256": "18686e69349620b77291f9d36e727607a1e5c74b5990e743a69fa139600439f2"
+    },
+    "D/5": {
+      "attempt_id": "D-s5-a1",
+      "best_epoch": 23,
+      "model_best_sha256": "f467785147d27e246d86c57cab808d371dc9c6cdac4ea5e68324781deb7310e0",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet_batchnorm/run_006",
+      "state_sha256": "028fd1c7bd80f85de9dd717a5fc98ba4aad13a8172fade4926e17f72abb2b804"
+    },
+    "D/6": {
+      "attempt_id": "D-s6-a1",
+      "best_epoch": 20,
+      "model_best_sha256": "c250ba44c6e172ab218e44af7e6f9434e22b2d61682ed5a2257aa68053767873",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet_batchnorm/run_007",
+      "state_sha256": "537fb15d03e6c489318c1bcee4af40f1b1ba745ed1104a3251a0bc75df285516"
+    },
+    "D/7": {
+      "attempt_id": "D-s7-a1",
+      "best_epoch": 23,
+      "model_best_sha256": "1382aec56fc7246577411a0e8d4c05f95908318851c0730e93f51220f6515a0d",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet_batchnorm/run_008",
+      "state_sha256": "5c62c50f9cf932bae39f3e792559eb57a94b66c1314c9bcfcebdacdcf8d6a4c2"
+    },
+    "D/8": {
+      "attempt_id": "D-s8-a1",
+      "best_epoch": 25,
+      "model_best_sha256": "a323f5dcd0279c92959ca97d06b077d88b3e2baecc5ff7fa87e533e49db082ee",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet_batchnorm/run_009",
+      "state_sha256": "4a2c6acf42e62c5e414aa2a53f6c04b194eea7dbe67a50cc1eee31ffab604a22"
+    },
+    "D/9": {
+      "attempt_id": "D-s9-a1",
+      "best_epoch": 24,
+      "model_best_sha256": "c77125b1d7579532fab3f0d0b983135049f1bef21d3df7dcc2822d869d101226",
+      "run_dir": "results/experiments/wavenet_study/final/runs/wavenet_batchnorm/run_010",
+      "state_sha256": "91793c68e62b1cf2ec4aa1d511eb39844addab01a27faa1dcd716ce3f622b5d9"
+    }
+  },
+  "code": {
+    "models/feedforward/batchnorm_mlp.py": "e1f0d657186ac6158641caa6742fd8ffa55a9125025150ebce6c9316cfa6405d",
+    "models/feedforward/mlp.py": "f787c8f51014b545837078ba536ad96ee84be04f974fb9bcc30817df95f3a0d3",
+    "models/hierarchical/wavenet.py": "4094b401f8bc541be4237d56b2afa7935a3fce3895116e10d0135b9d862cbab6",
+    "training/wavenet_study/analyze_final_experiment.py": "639cb8e68375c1c8dc345bfd2d90ab7222b1af5144793982495902d643ae360c",
+    "training/wavenet_study/context_buckets.py": "78e55649eca2d5de303519473e964369c51407070ae601c982422c63099ef920",
+    "training/wavenet_study/evaluate_final_test.py": "f724a8e1d2f7603a9cb6c9a1982905e6a280cf520fd7cc594384306d3a6700a0",
+    "training/wavenet_study/final_experiment.py": "d88aed654c270b9f334af38189353c8fc51f716b1634826601aa5950d559b6d8",
+    "training/wavenet_study/final_record_schemas.json": "76af465fc2678e1c254c46eb0e9bb60d2dba837c6ce44c44cd21d95a014fedef",
+    "training/wavenet_study/final_statistics.py": "f08cd5d594294f6cdcb3e0cbac1647e56f20f96fb0024effb667b994b7e929da",
+    "training/wavenet_study/study_common.py": "61c549549db9d5acf9c9b55c27538a9c49fe978a406a9d3ca8d2c9193ba5b996",
+    "training/wavenet_study/verify_final_runs.py": "9fba82b394280d0c83166cd7e516eedc21035bd7cb4ea03e374c7fd5f9945bd1",
+    "utils/__init__.py": "6af278eccb4f255760984a589cebc04a15135a160a9410852591f0453311f8b9",
+    "utils/batching.py": "346b0c85a0cf5860048efc04961b7552ca5ca48b9c743a354b6e735d0e7b268c",
+    "utils/checkpoint.py": "8990ba704469b353e4e0063fb5121e972dd525ba945948e12bedec7c00a50a31",
+    "utils/config.py": "a8530f09240f512e8c2c28cb535174a1041b04a9cc918d7d3d6c4f487d082946",
+    "utils/data.py": "0c2893d21f7ae61a7b322682a379f3814e5aafb4a53ddefc13ac23e92badd61d",
+    "utils/device.py": "2636950235906eb7c23cc1b5ab87daa3115e69c60c7034047ef20ebedd87e838",
+    "utils/diagnostics/__init__.py": "7883171f62d15d2708f5d3d833fd1bd96ed47a40908fb7abaf2f849407950143",
+    "utils/diagnostics/activations.py": "9fc2f218298a5a068adb8af65193f5be1fa660f20ee455d0495243eb86c1068b",
+    "utils/diagnostics/gradients.py": "237f2619f72266e5e68b183ffc7def351fffc42e74091bdfd63e1cfe8200a583",
+    "utils/diagnostics/parameters.py": "79f7fc31b63e39edded3f1eea1db16429168785f4d372cc58c647b2aed249adc",
+    "utils/diagnostics/schedule.py": "7a29418644bf8269a74b50a0df93cf97e1bf6f29bc752c40cf9c60dda9ec3c32",
+    "utils/generation.py": "d51f089f7051d6db761e8eba4285e18e92be4afccb5e4e94632a024901c7d4f0",
+    "utils/io.py": "108671620b767afc5ef5024e99464406c66a24e1b3d1af18520e946d621fbddc",
+    "utils/logging_utils.py": "8eabea9b307aeb28859c6c206e3cce1781080b45f7b9a082479a5f651a6e66ca",
+    "utils/metrics.py": "5cdb400d31cceb35344ecb515a13b74ab9a06d477d5b72198c74b997ef180cf4",
+    "utils/paths.py": "9d789b12128886deaedb074ab7a4b79eee62c8c4f2501ecd44b5b5796978649b",
+    "utils/reproducibility.py": "762fca6323fa6b206efe13e2434302add8cf460fb3c071c55bbfddeba816ce9f",
+    "utils/run_manager.py": "d7da7ad467adb1bdb43845654fc09288821305bcc6c4ef2319033acf12e78bb9",
+    "utils/statistics.py": "bf11a198f31abd8059a8a6a88207d814e914ff43a53de7bc8ddae2c63828651f",
+    "utils/vocabulary.py": "a72b88a357a76cf30202cd2c4e92256a876a80211d0e90ef8b9acd6298d97e81"
+  },
+  "conditions_sha256": "1f1b2cab59dc09e39829fa53d9d4038091791ecb6fa98b272b8a791c83c4d5e0",
+  "created_at": "2026-11-12T21:32:01.791315+00:00",
+  "dev_analysis": {
+    "path": "analysis/dev/dev_summary.json",
+    "sha256": "cfa6d3afc7d6cd79c9ac3ada091095510278ad9e0124085243c4ee81fe0a210d"
+  },
+  "evaluation": {
+    "batch_size": 4096,
+    "endpoint": "test NLL (nats per character), NLLAccumulator via evaluate_nll",
+    "per_target": "token_nll(reduction='none') of the same logits",
+    "split": "test",
+    "stratifications": [
+      "frequency",
+      "real_context_length",
+      "target_position"
+    ]
+  },
+  "excluded_seeds": [],
+  "exclusions": [],
+  "format": "wavenet_study.final_test_freeze/1",
+  "freeze_sha256": "5503d519d9763a5f4d7468967b12599179d372831526df3d5f51c146bb15f867",
+  "manifest_head": "3d772654bdc86bb3a4d16cafbf3e44bc0e0a0543c4cf5a3dc48cce2f002ad3c2",
+  "note": "I authorize the one-time final test evaluation. All 40 runs passed independent verification; development analysis is complete; no seeds were excluded.",
+  "order": [
+    "A/0",
+    "B/0",
+    "C/0",
+    "D/0",
+    "A/1",
+    "B/1",
+    "C/1",
+    "D/1",
+    "A/2",
+    "B/2",
+    "C/2",
+    "D/2",
+    "A/3",
+    "B/3",
+    "C/3",
+    "D/3",
+    "A/4",
+    "B/4",
+    "C/4",
+    "D/4",
+    "A/5",
+    "B/5",
+    "C/5",
+    "D/5",
+    "A/6",
+    "B/6",
+    "C/6",
+    "D/6",
+    "A/7",
+    "B/7",
+    "C/7",
+    "D/7",
+    "A/8",
+    "B/8",
+    "C/8",
+    "D/8",
+    "A/9",
+    "B/9",
+    "C/9",
+    "D/9"
+  ]
+}
