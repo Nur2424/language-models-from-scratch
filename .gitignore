@@ -24,6 +24,8 @@ results/*
 !results/experiments/
 results/experiments/*
 !results/experiments/bigram_study/
+!results/experiments/mlp_study/
+results/experiments/mlp_study/runs/
 
 # Scratch
 scratch.txt

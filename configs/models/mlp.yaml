@@ -1,0 +1,18 @@
+# MLP: Bengio-style fixed-context feedforward character model (models/feedforward/mlp.py).
+# Specification: models/feedforward/mlp_spec.md (v0.3)
+# Load with: load_config(default_config_paths("mlp"), model_config_cls=MLPConfig)
+#
+# params is the architecture only (approved baseline): shared embedding table [27, 10],
+# three positions concatenated (30) → Linear(30, 200) → tanh → Linear(200, 27); 11,897 parameters.
+# Initialisation is fixed in code (W1 std = 1/sqrt(context_length · embedding_dim)).
+#
+# Training settings (lr, max_epochs, schedule, batch size) live in the model-local
+# MLPTrainingConfig, not in this file: the shared ExperimentConfig has no training section.
+# lr, max_epochs and the schedule are PENDING PILOT (spec §13.4).
+
+model:
+  name: mlp
+  params:
+    context_length: 3
+    embedding_dim: 10
+    hidden_dim: 200

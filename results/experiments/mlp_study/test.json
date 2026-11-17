@@ -1,0 +1,160 @@
+{
+  "stage": "test",
+  "created_at": "2026-11-17T00:43:24.566670+00:00",
+  "outcome": "completed",
+  "endpoint": "test NLL (nats per character) of model_best.pt, evaluate_nll, batch 4096; evaluated once",
+  "models": {
+    "mlp": {
+      "test_nll_mean": 2.129109496343671,
+      "test_nll_se": 0.000718146648866251,
+      "per_seed": [
+        {
+          "seed": 0,
+          "best_epoch": 25,
+          "best_dev_nll": 2.119645438556697,
+          "test_nll": 2.1287658091254573,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 1,
+          "best_epoch": 24,
+          "best_dev_nll": 2.1254854544825337,
+          "test_nll": 2.128285601664811,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 2,
+          "best_epoch": 21,
+          "best_dev_nll": 2.1276659843592385,
+          "test_nll": 2.1302966857073176,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 3,
+          "best_epoch": 22,
+          "best_dev_nll": 2.126270417827069,
+          "test_nll": 2.12725471871004,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 4,
+          "best_epoch": 25,
+          "best_dev_nll": 2.1194623197036315,
+          "test_nll": 2.133207189883813,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 5,
+          "best_epoch": 25,
+          "best_dev_nll": 2.121450972031106,
+          "test_nll": 2.1296952637558424,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 6,
+          "best_epoch": 22,
+          "best_dev_nll": 2.1217833956021668,
+          "test_nll": 2.126761614716533,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 7,
+          "best_epoch": 25,
+          "best_dev_nll": 2.125216697424181,
+          "test_nll": 2.132122976859099,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 8,
+          "best_epoch": 23,
+          "best_dev_nll": 2.1227550112591005,
+          "test_nll": 2.128550055943825,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 9,
+          "best_epoch": 25,
+          "best_dev_nll": 2.1223514902032807,
+          "test_nll": 2.1261550470699766,
+          "test_tokens": 22679
+        }
+      ]
+    },
+    "batchnorm_mlp": {
+      "test_nll_mean": 2.145510781501472,
+      "test_nll_se": 0.0009376384946419323,
+      "per_seed": [
+        {
+          "seed": 0,
+          "best_epoch": 24,
+          "best_dev_nll": 2.13794725885789,
+          "test_nll": 2.150817050258499,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 1,
+          "best_epoch": 24,
+          "best_dev_nll": 2.1371113922840554,
+          "test_nll": 2.1449883987182528,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 2,
+          "best_epoch": 25,
+          "best_dev_nll": 2.1379939647658,
+          "test_nll": 2.143336436826194,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 3,
+          "best_epoch": 22,
+          "best_dev_nll": 2.1360473927267445,
+          "test_nll": 2.144874332222265,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 4,
+          "best_epoch": 19,
+          "best_dev_nll": 2.1374118005720693,
+          "test_nll": 2.148400188328134,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 5,
+          "best_epoch": 22,
+          "best_dev_nll": 2.133566197583165,
+          "test_nll": 2.147351822928149,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 6,
+          "best_epoch": 20,
+          "best_dev_nll": 2.137697903703511,
+          "test_nll": 2.146498261917688,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 7,
+          "best_epoch": 23,
+          "best_dev_nll": 2.1334860201786654,
+          "test_nll": 2.145185851310684,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 8,
+          "best_epoch": 24,
+          "best_dev_nll": 2.1328642384105962,
+          "test_nll": 2.1435031874889767,
+          "test_tokens": 22679
+        },
+        {
+          "seed": 9,
+          "best_epoch": 25,
+          "best_dev_nll": 2.1328172755238257,
+          "test_nll": 2.1401522850158736,
+          "test_tokens": 22679
+        }
+      ]
+    }
+  }
+}

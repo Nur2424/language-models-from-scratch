@@ -1,0 +1,20 @@
+# BatchNorm MLP: the Model 3 MLP with batch normalisation before the tanh (models/feedforward/batchnorm_mlp.py).
+# Specification: models/feedforward/batchnorm_mlp_spec.md (v0.2)
+# Load with: load_config(default_config_paths("batchnorm_mlp"), model_config_cls=BatchNormMLPConfig)
+#
+# params is the architecture only (approved baseline): shared embedding table [27, 10],
+# three positions concatenated (30) → Linear(30, 200, bias=False) → BatchNorm1d(200) → tanh
+# → Linear(200, 27); 12,097 parameters.
+# BatchNorm eps (1e-5) and momentum (0.1), and the initialisation, are fixed in code.
+# Evaluation uses statistics recalibrated over the full training set after every epoch.
+#
+# Training settings (lr, max_epochs, batch size) live in the model-local
+# BatchNormMLPTrainingConfig, not in this file: the shared ExperimentConfig has no training section.
+# lr is PENDING PILOT; max_epochs equals the final MLP value (spec §13.4).
+
+model:
+  name: batchnorm_mlp
+  params:
+    context_length: 3
+    embedding_dim: 10
+    hidden_dim: 200

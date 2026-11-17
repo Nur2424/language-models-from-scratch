@@ -1,0 +1,193 @@
+{
+  "stage": "final",
+  "created_at": "2026-11-17T00:03:10.838648+00:00",
+  "outcome": "completed",
+  "models": {
+    "mlp": {
+      "settings": {
+        "lr": 0.03,
+        "epochs": 26,
+        "lr_decay_epoch": 13
+      },
+      "completed": 10,
+      "failed_seeds": [],
+      "best_dev_nll_mean": 2.1232087181449004,
+      "best_dev_nll_se": 0.0008897634162726049,
+      "runs": [
+        {
+          "seed": 0,
+          "status": "completed",
+          "best_epoch": 25,
+          "best_dev_nll": 2.119645438556697,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/mlp/run_001",
+          "params": 11897
+        },
+        {
+          "seed": 1,
+          "status": "completed",
+          "best_epoch": 24,
+          "best_dev_nll": 2.1254854544825337,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/mlp/run_002",
+          "params": 11897
+        },
+        {
+          "seed": 2,
+          "status": "completed",
+          "best_epoch": 21,
+          "best_dev_nll": 2.1276659843592385,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/mlp/run_003",
+          "params": 11897
+        },
+        {
+          "seed": 3,
+          "status": "completed",
+          "best_epoch": 22,
+          "best_dev_nll": 2.126270417827069,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/mlp/run_004",
+          "params": 11897
+        },
+        {
+          "seed": 4,
+          "status": "completed",
+          "best_epoch": 25,
+          "best_dev_nll": 2.1194623197036315,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/mlp/run_005",
+          "params": 11897
+        },
+        {
+          "seed": 5,
+          "status": "completed",
+          "best_epoch": 25,
+          "best_dev_nll": 2.121450972031106,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/mlp/run_006",
+          "params": 11897
+        },
+        {
+          "seed": 6,
+          "status": "completed",
+          "best_epoch": 22,
+          "best_dev_nll": 2.1217833956021668,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/mlp/run_007",
+          "params": 11897
+        },
+        {
+          "seed": 7,
+          "status": "completed",
+          "best_epoch": 25,
+          "best_dev_nll": 2.125216697424181,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/mlp/run_008",
+          "params": 11897
+        },
+        {
+          "seed": 8,
+          "status": "completed",
+          "best_epoch": 23,
+          "best_dev_nll": 2.1227550112591005,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/mlp/run_009",
+          "params": 11897
+        },
+        {
+          "seed": 9,
+          "status": "completed",
+          "best_epoch": 25,
+          "best_dev_nll": 2.1223514902032807,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/mlp/run_010",
+          "params": 11897
+        }
+      ]
+    },
+    "batchnorm_mlp": {
+      "settings": {
+        "lr": 0.03,
+        "epochs": 26,
+        "lr_decay_epoch": null
+      },
+      "completed": 10,
+      "failed_seeds": [],
+      "best_dev_nll_mean": 2.1356943444606324,
+      "best_dev_nll_se": 0.0007083092604835312,
+      "runs": [
+        {
+          "seed": 0,
+          "status": "completed",
+          "best_epoch": 24,
+          "best_dev_nll": 2.13794725885789,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/batchnorm_mlp/run_001",
+          "params": 12097
+        },
+        {
+          "seed": 1,
+          "status": "completed",
+          "best_epoch": 24,
+          "best_dev_nll": 2.1371113922840554,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/batchnorm_mlp/run_002",
+          "params": 12097
+        },
+        {
+          "seed": 2,
+          "status": "completed",
+          "best_epoch": 25,
+          "best_dev_nll": 2.1379939647658,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/batchnorm_mlp/run_003",
+          "params": 12097
+        },
+        {
+          "seed": 3,
+          "status": "completed",
+          "best_epoch": 22,
+          "best_dev_nll": 2.1360473927267445,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/batchnorm_mlp/run_004",
+          "params": 12097
+        },
+        {
+          "seed": 4,
+          "status": "completed",
+          "best_epoch": 19,
+          "best_dev_nll": 2.1374118005720693,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/batchnorm_mlp/run_005",
+          "params": 12097
+        },
+        {
+          "seed": 5,
+          "status": "completed",
+          "best_epoch": 22,
+          "best_dev_nll": 2.133566197583165,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/batchnorm_mlp/run_006",
+          "params": 12097
+        },
+        {
+          "seed": 6,
+          "status": "completed",
+          "best_epoch": 20,
+          "best_dev_nll": 2.137697903703511,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/batchnorm_mlp/run_007",
+          "params": 12097
+        },
+        {
+          "seed": 7,
+          "status": "completed",
+          "best_epoch": 23,
+          "best_dev_nll": 2.1334860201786654,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/batchnorm_mlp/run_008",
+          "params": 12097
+        },
+        {
+          "seed": 8,
+          "status": "completed",
+          "best_epoch": 24,
+          "best_dev_nll": 2.1328642384105962,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/batchnorm_mlp/run_009",
+          "params": 12097
+        },
+        {
+          "seed": 9,
+          "status": "completed",
+          "best_epoch": 25,
+          "best_dev_nll": 2.1328172755238257,
+          "run_dir": "results/experiments/mlp_study/runs/final/runs/batchnorm_mlp/run_010",
+          "params": 12097
+        }
+      ]
+    }
+  }
+}
