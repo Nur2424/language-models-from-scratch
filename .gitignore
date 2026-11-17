@@ -32,7 +32,3 @@ results/experiments/wavenet_study/*/attempts/
 results/experiments/wavenet_study/*/logs/
 results/experiments/wavenet_study/*/.runner.lock
 results/experiments/wavenet_study/final/test_freeze/evaluations/*/per_target_nll.npy
-
-# Scratch
-scratch.txt
-mlp_practice.ipynb

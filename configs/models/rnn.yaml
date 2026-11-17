@@ -1,0 +1,20 @@
+# RNN: single-layer vanilla (Elman) recurrent character model (models/recurrent/rnn.py).
+# Specification: models/recurrent/rnn_spec.md (v0.2, approved D-44); integrated contract
+# models/recurrent/rnn_integration_spec.md (v0.2, approved D-48).
+# Load with: load_config(default_config_paths("rnn"), model_config_cls=RNNConfig)
+#
+# params is the architecture only: input lookup U [27, H], recurrent matrix W [H, H] = g·Q
+# (Q Haar orthogonal), hidden bias b [H], output projection V [27, H], output bias c [27];
+# tanh recurrence with zero initial state; 23,451 parameters at H = 128 (P(H) = H² + 55H + 27).
+# recurrent_gain (g) and input_init_variance (s²) are PROVISIONAL (D-41) until the
+# initialisation gate (rnn_training_spec.md §9, as amended by D-47); never changed automatically.
+#
+# Training settings (lr, max_epochs, batch sizes) live in the model-local RNNTrainingConfig
+# (rnn_training.py), not in this file: the shared ExperimentConfig has no training section.
+
+model:
+  name: rnn
+  params:
+    hidden_dim: 128
+    recurrent_gain: 1.0        # provisional (D-41)
+    input_init_variance: 0.5   # provisional (D-41)
