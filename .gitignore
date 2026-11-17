@@ -18,6 +18,7 @@ venv/
 # Local-only project documents
 PROJECT_RESEARCH_RECORD.md
 RESEARCH_PROJECT_HANDOFF.md
+TRANSFORMER_PART1_STUDY_PLAN.md
 
 # Results: everything ignored except the small result files each study publishes
 results/*
