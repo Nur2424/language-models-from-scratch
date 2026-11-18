@@ -1,0 +1,17 @@
+# Model 01: 2017 Transformer, decoder-only adaptation (sinusoidal positions, post-LN, ReLU).
+# Code: models/attention/transformer.py. Specification: models/attention/transformer_spec.md.
+# Load with: load_config(default_config_paths("transformer_2017"), model_config_cls=TransformerConfig)
+#
+# params is the architecture only; everything else (d_ff = 4·d_model, LayerNorm placement and ε,
+# activation, biases, initialisation, tied output) is fixed per variant in code.
+# d_model and num_layers are PROVISIONAL until the shape pilot chooses among
+# (d_model, num_layers) = (42, 1), (30, 2), (24, 3), all with 3 heads.
+
+model:
+  name: transformer_2017
+  params:
+    variant: transformer_2017
+    d_model: 30
+    num_layers: 2
+    num_heads: 3
+    max_len: 16

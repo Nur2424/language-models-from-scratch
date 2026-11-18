@@ -161,11 +161,11 @@ Study shapes (H = 3):
 
 ### 6.1 Permitted
 
-`nn.Parameter`, `nn.Linear` (as a weight container, with `bias` per §3), `nn.Embedding` (Model 02 positions), tensor operations, `torch.softmax`, `torch.tanh`, `torch.relu`, `masked_fill`.
+`nn.Parameter`, `nn.Module`, `nn.ModuleList`, tensor operations, `torch.softmax`, `torch.tanh`, `torch.relu`, `masked_fill`. All weights are raw `nn.Parameter` tensors (as in the RNN), so no PyTorch default initialisation ever runs.
 
 ### 6.2 Prohibited
 
-`nn.MultiheadAttention`, `nn.Transformer*`, `F.scaled_dot_product_attention`, `nn.LayerNorm`, `nn.GELU`, `nn.functional.layer_norm`, `nn.functional.gelu` (all written by hand), packaged language-model modules, dropout.
+`nn.MultiheadAttention`, `nn.Transformer*`, `F.scaled_dot_product_attention`, `nn.LayerNorm`, `nn.GELU`, `nn.functional.layer_norm`, `nn.functional.gelu` (all written by hand), `nn.Linear`, packaged language-model modules, dropout.
 
 ### 6.3 Manual implementation requirements [I]
 
@@ -195,8 +195,8 @@ All randomness comes from one `torch.Generator` (`derive_seed(seed, "init")`); n
 Sharing: one E for input and output; within a layer all positions share all weights; layers share nothing.
 
 **Expected initial statistics [T]** (checked by tests, §13.2):
-- Model 02: scaled attention-score std ≈ 0.01 at d = 30 (nearly uniform attention); initial loss ≈ ln 27 + σ²_z / 2 with logit std σ_z ≈ √d · 0.02 ≈ 0.11, so about ln 27 + 0.006.
-- Model 01: scaled attention-score std of order 1; logit std ≈ √d · d^−½ = 1, so an initial loss of about ln 27 + 0.5. Unlike the earlier models, neither starts at exactly ln 27, because tying forbids a zero output layer.
+- Model 02: scaled attention-score std ≈ 0.01 at d = 30 (nearly uniform attention); logits are small (std of order √d · 0.02 ≈ 0.1), so the initial loss is just above ln 27: measured ln 27 + 0.014 at d = 30, L = 2 (256 random names).
+- Model 01: scaled attention-score std of order 1; the post-LN output has unit scale and E has std d^−½, so logits have std of order 1 and the initial loss is clearly above ln 27: measured ln 27 + 0.68 at d = 30, L = 2. Unlike the earlier models, neither starts at exactly ln 27, because tying forbids a zero output layer.
 - Token signal vs position signal per dimension (Model 01): ≈ 1.0 vs ≈ 0.71.
 
 ## 8. Forward-pass specification
@@ -293,3 +293,4 @@ Checkpoints through `utils.checkpoint`: `model_state_dict`, `TransformerConfig`,
 | 1 | Position-preserving truncation design | BOS at position 0, removed characters deleted, kept characters at original positions (§12); to confirm |
 | 2 | GPT-2 residual scaling | The paper describes it; reimplementations use 0.02 / √(2L) on W_O and W₂; adopted |
 | 3 | Initial loss above ln 27 | Accepted and recorded (§7); the divergence rule (train NLL > ln 27 at an epoch ≥ 1) is unchanged |
+| 4 | Model 01 LayerNorm ε = 1e-6 | tensor2tensor's default as far as known; to confirm against its source before the freeze |
