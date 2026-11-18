@@ -1,0 +1,23 @@
+{
+ "batch_size": 32,
+ "d_model": 42,
+ "loss_constant_C": 227.97628705148205,
+ "lr": 0.003,
+ "max_epochs": 30,
+ "num_heads": 3,
+ "num_layers": 1,
+ "num_parameters": 23604,
+ "num_train_names": 25640,
+ "num_train_targets": 182666,
+ "optimizer": "adamw",
+ "optimizer_settings": {
+  "betas": [
+   0.9,
+   0.999
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.0
+ },
+ "seed": 102,
+ "variant": "gpt2_style"
+}

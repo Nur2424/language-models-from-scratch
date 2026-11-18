@@ -1,0 +1,263 @@
+{
+ "horizon_model_02": {
+  "decision": "extension run X needed",
+  "e_star_30": 30,
+  "epsilon": 0.0048514115643754725,
+  "epsilon_from_se_needs_review": true
+ },
+ "rule": "\u03b7 per shape: RNN training spec \u00a77.3; shape: lowest mean dev NLL at epoch 30 with the shallower-shape tie-break; horizon: \u00a77.4",
+ "shape_choice": {
+  "best": "L1_d42",
+  "chosen": {
+   "d_model": 42,
+   "lr": 0.1,
+   "num_layers": 1
+  },
+  "margins": {
+   "L1_d42": 0.001,
+   "L2_d30": 0.00616899776983723,
+   "L3_d24": 0.004221135983573502
+  },
+  "mean_final_dev": {
+   "L1_d42": 2.045290128503512,
+   "L2_d30": 2.0531216452485292,
+   "L3_d24": 2.063786456782614
+  },
+  "tied": [
+   "L1_d42"
+  ]
+ },
+ "shapes": {
+  "L1_d42": {
+   "learning_rates": {
+    "0.03": {
+     "eligible": true,
+     "final_dev": [
+      2.0824230286860037,
+      2.0796540983098337,
+      2.0790498621842386
+     ],
+     "mean_final_dev": 2.080375663060025,
+     "se_final_dev": 0.0010384370994747979,
+     "statuses": [
+      "completed",
+      "completed",
+      "completed"
+     ]
+    },
+    "0.1": {
+     "eligible": true,
+     "final_dev": [
+      2.054585664732038,
+      2.043051372047375,
+      2.038233348731123
+     ],
+     "mean_final_dev": 2.045290128503512,
+     "se_final_dev": 0.0048514115643754725,
+     "statuses": [
+      "completed",
+      "completed",
+      "completed"
+     ]
+    },
+    "0.3": {
+     "eligible": true,
+     "final_dev": [
+      2.045158155148807,
+      2.04177517506183,
+      2.045505780898162
+     ],
+     "mean_final_dev": 2.0441463703695995,
+     "se_final_dev": 0.0011898370064979144,
+     "statuses": [
+      "completed",
+      "completed",
+      "completed"
+     ]
+    },
+    "1": {
+     "eligible": true,
+     "final_dev": [
+      2.0822494241094613,
+      2.0830379805715027,
+      2.0878915200201917
+     ],
+     "mean_final_dev": 2.084392974900385,
+     "se_final_dev": 0.0017640218054158796,
+     "statuses": [
+      "completed",
+      "completed",
+      "completed"
+     ]
+    }
+   },
+   "selection": {
+    "at_lower_boundary": false,
+    "at_upper_boundary": false,
+    "grid": [
+     0.03,
+     0.1,
+     0.3,
+     1.0
+    ],
+    "near_tie_margin": 0.0011898370064979144,
+    "primary": 0.3,
+    "selected": 0.1
+   }
+  },
+  "L2_d30": {
+   "learning_rates": {
+    "0.03": {
+     "eligible": true,
+     "final_dev": [
+      2.10191410904757,
+      2.0952521121924517,
+      2.100212795620443
+     ],
+     "mean_final_dev": 2.099126338953488,
+     "se_final_dev": 0.0019984028282004867,
+     "statuses": [
+      "completed",
+      "completed",
+      "completed"
+     ]
+    },
+    "0.1": {
+     "eligible": true,
+     "final_dev": [
+      2.0583604915983376,
+      2.0565613629221264,
+      2.0553545989592132
+     ],
+     "mean_final_dev": 2.0567588178265592,
+     "se_final_dev": 0.0008733248668066997,
+     "statuses": [
+      "completed",
+      "completed",
+      "completed"
+     ]
+    },
+    "0.3": {
+     "eligible": true,
+     "final_dev": [
+      2.0510766571165653,
+      2.0523443529405836,
+      2.055943925688439
+     ],
+     "mean_final_dev": 2.0531216452485292,
+     "se_final_dev": 0.0014578195289176106,
+     "statuses": [
+      "completed",
+      "completed",
+      "completed"
+     ]
+    },
+    "1": {
+     "eligible": true,
+     "final_dev": [
+      2.086362614240755,
+      2.0828390552345124,
+      2.0832458881394653
+     ],
+     "mean_final_dev": 2.0841491858715777,
+     "se_final_dev": 0.001112928136680836,
+     "statuses": [
+      "completed",
+      "completed",
+      "completed"
+     ]
+    }
+   },
+   "selection": {
+    "at_lower_boundary": false,
+    "at_upper_boundary": false,
+    "grid": [
+     0.03,
+     0.1,
+     0.3,
+     1.0
+    ],
+    "near_tie_margin": 0.0014578195289176106,
+    "primary": 0.3,
+    "selected": 0.3
+   }
+  },
+  "L3_d24": {
+   "learning_rates": {
+    "0.03": {
+     "eligible": true,
+     "final_dev": [
+      2.1211844757533,
+      2.111856444370959,
+      2.1087332151006217
+     ],
+     "mean_final_dev": 2.113924711741627,
+     "se_final_dev": 0.0037401769297569884,
+     "statuses": [
+      "completed",
+      "completed",
+      "completed"
+     ]
+    },
+    "0.1": {
+     "eligible": true,
+     "final_dev": [
+      2.0656861514836637,
+      2.0697866474818927,
+      2.071848602832828
+     ],
+     "mean_final_dev": 2.069107133932795,
+     "se_final_dev": 0.0018111005544750218,
+     "statuses": [
+      "completed",
+      "completed",
+      "completed"
+     ]
+    },
+    "0.3": {
+     "eligible": true,
+     "final_dev": [
+      2.0662917293050684,
+      2.060598501842514,
+      2.0644691392002588
+     ],
+     "mean_final_dev": 2.063786456782614,
+     "se_final_dev": 0.0016785659750332043,
+     "statuses": [
+      "completed",
+      "completed",
+      "completed"
+     ]
+    },
+    "1": {
+     "eligible": true,
+     "final_dev": [
+      2.079025196281711,
+      2.079949637770478,
+      2.0930102404486295
+     ],
+     "mean_final_dev": 2.083995024833606,
+     "se_final_dev": 0.004515500432051043,
+     "statuses": [
+      "completed",
+      "completed",
+      "completed"
+     ]
+    }
+   },
+   "selection": {
+    "at_lower_boundary": false,
+    "at_upper_boundary": false,
+    "grid": [
+     0.03,
+     0.1,
+     0.3,
+     1.0
+    ],
+    "near_tie_margin": 0.0016785659750332043,
+    "primary": 0.3,
+    "selected": 0.3
+   }
+  }
+ }
+}

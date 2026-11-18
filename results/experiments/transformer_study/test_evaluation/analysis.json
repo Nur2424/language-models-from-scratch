@@ -1,0 +1,177 @@
+{
+ "analysis": {
+  "endpoint": "test NLL (nats per character, token-weighted, every valid target incl. EOS) of model_best.pt, per seed 0\u20139; mean \u00b1 SE over seeds",
+  "multiplicity": "Holm across the three primary p-values (TOST p = larger one-sided p)",
+  "pairing": "seed s of every arm uses the same name batches (EpochSampler, derive_seed(s, 'data'))",
+  "primary": [
+   {
+    "a": "gpt2_style",
+    "b": "rnn",
+    "id": "T-RQ1a",
+    "test": "paired two-sided t"
+   },
+   {
+    "a": "gpt2_style",
+    "b": "wavenet_d",
+    "id": "T-RQ1b_equivalence",
+    "test": "TOST, margin \u00b10.01"
+   },
+   {
+    "a": "transformer_2017",
+    "b": "gpt2_style",
+    "id": "T-RQ2",
+    "test": "paired two-sided t"
+   }
+  ],
+  "secondary": "every other pair: paired mean difference with 95% t interval, descriptive"
+ },
+ "holm": {
+  "T-RQ1a": {
+   "p": 1.5135876177864039e-06,
+   "p_holm": 3.0271752355728078e-06,
+   "reject": true
+  },
+  "T-RQ1b_equivalence": {
+   "p": 0.9989097859895472,
+   "p_holm": 0.9989097859895472,
+   "reject": false
+  },
+  "T-RQ2": {
+   "p": 3.3032988667012533e-07,
+   "p_holm": 9.90989660010376e-07,
+   "reject": true
+  }
+ },
+ "primary": {
+  "T-RQ1a": {
+   "a_lower_in": 10,
+   "ci95": [
+    -0.022781925189390467,
+    -0.015057028925942576
+   ],
+   "mean_diff": -0.01891947705766652,
+   "n": 10,
+   "p_two_sided": 1.5135876177864039e-06,
+   "se": 0.0017074181206980354
+  },
+  "T-RQ1b_equivalence": {
+   "a_lower_in": 10,
+   "ci90": [
+    -0.026291232538102175,
+    -0.016453421565882382
+   ],
+   "ci95": [
+    -0.027442513498551126,
+    -0.015302140605433431
+   ],
+   "equivalent": false,
+   "margin": 0.01,
+   "mean_diff": -0.02137232705199228,
+   "n": 10,
+   "p_tost": 0.9989097859895472,
+   "p_two_sided": 2.292912562597471e-05,
+   "se": 0.00268336194594909
+  },
+  "T-RQ2": {
+   "a_lower_in": 0,
+   "ci95": [
+    0.01696339345812865,
+    0.023950145077127585
+   ],
+   "mean_diff": 0.020456769267628117,
+   "n": 10,
+   "p_two_sided": 3.3032988667012533e-07,
+   "se": 0.0015442675101724475
+  }
+ },
+ "secondary": {
+  "rnn - gpt2_style": {
+   "a_lower_in": 0,
+   "ci95": [
+    0.015057028925942576,
+    0.022781925189390467
+   ],
+   "mean_diff": 0.01891947705766652,
+   "n": 10,
+   "p_two_sided": 1.5135876177864039e-06,
+   "se": 0.0017074181206980354
+  },
+  "rnn - transformer_2017": {
+   "a_lower_in": 6,
+   "ci95": [
+    -0.004015981271092366,
+    0.0009413968511691787
+   ],
+   "mean_diff": -0.0015372922099615937,
+   "n": 10,
+   "p_two_sided": 0.19416142988591623,
+   "se": 0.0010957192107746755
+  },
+  "rnn - wavenet_d": {
+   "a_lower_in": 5,
+   "ci95": [
+    -0.006491102717504907,
+    0.0015854027288533948
+   ],
+   "mean_diff": -0.0024528499943257563,
+   "n": 10,
+   "p_two_sided": 0.20267591673563132,
+   "se": 0.0017851335837710779
+  },
+  "transformer_2017 - gpt2_style": {
+   "a_lower_in": 0,
+   "ci95": [
+    0.01696339345812865,
+    0.023950145077127585
+   ],
+   "mean_diff": 0.020456769267628117,
+   "n": 10,
+   "p_two_sided": 3.3032988667012533e-07,
+   "se": 0.0015442675101724475
+  },
+  "wavenet_d - gpt2_style": {
+   "a_lower_in": 0,
+   "ci95": [
+    0.015302140605433431,
+    0.027442513498551126
+   ],
+   "mean_diff": 0.02137232705199228,
+   "n": 10,
+   "p_two_sided": 2.292912562597471e-05,
+   "se": 0.00268336194594909
+  },
+  "wavenet_d - transformer_2017": {
+   "a_lower_in": 4,
+   "ci95": [
+    -0.002742445966443155,
+    0.00457356153517148
+   ],
+   "mean_diff": 0.0009155577843641627,
+   "n": 10,
+   "p_two_sided": 0.5851019617769238,
+   "se": 0.0016170422687131602
+  }
+ },
+ "test_nll": {
+  "gpt2_style": {
+   "mean": 2.0439185983386943,
+   "n": 10,
+   "se": 0.0013532047831994137
+  },
+  "rnn": {
+   "mean": 2.0628380753963604,
+   "n": 10,
+   "se": 0.0010298385583280686
+  },
+  "transformer_2017": {
+   "mean": 2.064375367606322,
+   "n": 10,
+   "se": 0.0005853096451611971
+  },
+  "wavenet_d": {
+   "mean": 2.0652909253906864,
+   "n": 10,
+   "se": 0.0016130759896493447
+  }
+ }
+}

@@ -1,6 +1,6 @@
 # WaveNet-BatchNorm (arm D) under the shared protocol: driver specification
 
-Part of the Transformer Part I comparative study. Status: approved 2026-11-17; pilot and final runs completed the same day.
+Part of the Transformer Part I comparative study. Status: approved; pilot and final runs completed.
 
 ## 1. Purpose
 

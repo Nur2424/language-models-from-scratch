@@ -40,3 +40,5 @@ results/experiments/rnn_study/*/runs/*/*/logs/
 results/experiments/rnn_study/*/runs/*/*/diagnostics/steps.jsonl
 results/experiments/rnn_study/L7_research/runs/*/*/research_diagnostics/raw/
 results/experiments/rnn_study/L5_gate/initial_statistics_raw.npz
+!results/experiments/transformer_study/
+results/experiments/transformer_study/**/.runner.lock

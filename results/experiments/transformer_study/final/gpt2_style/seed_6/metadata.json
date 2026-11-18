@@ -1,0 +1,12 @@
+{
+ "best_dev_nll": 2.0357245788590133,
+ "best_epoch": 44,
+ "completed_epochs": 48,
+ "detail": null,
+ "status": "completed",
+ "threads": [
+  4,
+  8
+ ],
+ "torch": "2.10.0"
+}

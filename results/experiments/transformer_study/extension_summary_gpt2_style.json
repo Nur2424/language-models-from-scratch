@@ -1,0 +1,13 @@
+{
+ "decision": "E = 48",
+ "e_star_60": 48,
+ "epsilon": 0.0033532255906235865,
+ "epsilon_from_se_needs_review": true,
+ "integrity_epochs_1_30_bit_identical": {
+  "100": true,
+  "101": true,
+  "102": true
+ },
+ "lr": 0.1,
+ "variant": "gpt2_style"
+}

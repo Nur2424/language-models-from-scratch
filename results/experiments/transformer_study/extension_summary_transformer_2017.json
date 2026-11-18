@@ -1,0 +1,13 @@
+{
+ "decision": "E = 53",
+ "e_star_60": 53,
+ "epsilon": 0.004662935754889679,
+ "epsilon_from_se_needs_review": true,
+ "integrity_epochs_1_30_bit_identical": {
+  "100": true,
+  "101": true,
+  "102": true
+ },
+ "lr": 0.1,
+ "variant": "transformer_2017"
+}

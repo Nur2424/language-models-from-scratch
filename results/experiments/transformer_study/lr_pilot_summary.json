@@ -1,0 +1,81 @@
+{
+ "horizon": {
+  "decision": "E = 30",
+  "e_star_30": 28,
+  "epsilon": 0.005940561704162665,
+  "epsilon_from_se_needs_review": true
+ },
+ "learning_rates": {
+  "0.03": {
+   "eligible": true,
+   "final_dev": [
+    2.105503724832907,
+    2.1066404045470932,
+    2.10324967837819
+   ],
+   "mean_final_dev": 2.10513126925273,
+   "se_final_dev": 0.0009963764946921518,
+   "statuses": [
+    "completed",
+    "completed",
+    "completed"
+   ]
+  },
+  "0.1": {
+   "eligible": true,
+   "final_dev": [
+    2.071132836305283,
+    2.068227182316725,
+    2.074503428049176
+   ],
+   "mean_final_dev": 2.0712878155570613,
+   "se_final_dev": 0.0018134524210180487,
+   "statuses": [
+    "completed",
+    "completed",
+    "completed"
+   ]
+  },
+  "0.3": {
+   "eligible": true,
+   "final_dev": [
+    2.0865985502192657,
+    2.0796753854441516,
+    2.077848653509375
+   ],
+   "mean_final_dev": 2.081374196390931,
+   "se_final_dev": 0.002664872860201236,
+   "statuses": [
+    "completed",
+    "completed",
+    "completed"
+   ]
+  },
+  "1": {
+   "eligible": false,
+   "final_dev": [],
+   "mean_final_dev": NaN,
+   "se_final_dev": NaN,
+   "statuses": [
+    "failed_diverged",
+    "failed_diverged",
+    "failed_diverged"
+   ]
+  }
+ },
+ "selection": {
+  "at_lower_boundary": false,
+  "at_upper_boundary": false,
+  "grid": [
+   0.03,
+   0.1,
+   0.3,
+   1.0
+  ],
+  "near_tie_margin": 0.0018134524210180487,
+  "primary": 0.1,
+  "selected": 0.1
+ },
+ "shape": "L1_d42",
+ "variant": "transformer_2017"
+}

@@ -1,0 +1,24 @@
+{
+ "gpt2_style": [
+  2.0298647080016963,
+  2.1197477499990782
+ ],
+ "note": "one training epoch (forward, backward, SGD step; no evaluation), seed 0, shared protocol; the first epoch is warm-up, the last is reported",
+ "rnn": [
+  1.4542203750024782,
+  1.2957337080006255
+ ],
+ "threads": [
+  4,
+  8
+ ],
+ "torch": "2.10.0",
+ "transformer_2017": [
+  1.8757460419983545,
+  1.5966168340019067
+ ],
+ "wavenet_d": [
+  0.8696931250015041,
+  0.901581250000163
+ ]
+}

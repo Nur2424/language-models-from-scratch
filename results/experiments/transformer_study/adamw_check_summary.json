@@ -1,0 +1,63 @@
+{
+ "learning_rates": {
+  "0.0003": {
+   "eligible": true,
+   "final_dev": [
+    2.0576528799505667,
+    2.0570829610680663,
+    2.0572260294566567
+   ],
+   "mean_final_dev": 2.0573206234917634,
+   "se_final_dev": 0.0001711849942468842,
+   "statuses": [
+    "completed",
+    "completed",
+    "completed"
+   ]
+  },
+  "0.001": {
+   "eligible": true,
+   "final_dev": [
+    2.040583805971685,
+    2.0350577358925586,
+    2.0396706028830613
+   ],
+   "mean_final_dev": 2.038437381582435,
+   "se_final_dev": 0.001710262037631809,
+   "statuses": [
+    "completed",
+    "completed",
+    "completed"
+   ]
+  },
+  "0.003": {
+   "eligible": true,
+   "final_dev": [
+    2.0398536125826277,
+    2.041697130192254,
+    2.0277004346983207
+   ],
+   "mean_final_dev": 2.0364170591577344,
+   "se_final_dev": 0.004390683157515974,
+   "statuses": [
+    "completed",
+    "completed",
+    "completed"
+   ]
+  }
+ },
+ "selection": {
+  "at_lower_boundary": false,
+  "at_upper_boundary": true,
+  "grid": [
+   0.0003,
+   0.001,
+   0.003
+  ],
+  "near_tie_margin": 0.004390683157515974,
+  "primary": 0.003,
+  "selected": 0.001
+ },
+ "shape": "L1_d42",
+ "variant": "gpt2_style"
+}

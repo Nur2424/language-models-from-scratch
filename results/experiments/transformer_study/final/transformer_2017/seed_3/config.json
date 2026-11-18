@@ -1,0 +1,19 @@
+{
+ "batch_size": 32,
+ "d_model": 42,
+ "loss_constant_C": 227.97628705148205,
+ "lr": 0.1,
+ "max_epochs": 53,
+ "num_heads": 3,
+ "num_layers": 1,
+ "num_parameters": 22680,
+ "num_train_names": 25640,
+ "num_train_targets": 182666,
+ "optimizer": "sgd",
+ "optimizer_settings": {
+  "momentum": 0.0,
+  "weight_decay": 0.0
+ },
+ "seed": 3,
+ "variant": "transformer_2017"
+}

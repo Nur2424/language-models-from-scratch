@@ -1,0 +1,84 @@
+{
+ "horizon": {
+  "decision": "E = 30",
+  "e_star_30": 28,
+  "epsilon": 0.001,
+  "epsilon_from_se_needs_review": false
+ },
+ "learning_rates": {
+  "0.03": {
+   "eligible": true,
+   "final_dev": [
+    2.0790574795331414,
+    2.0708131274468164,
+    2.0764184584486185
+   ],
+   "mean_final_dev": 2.075429688476192,
+   "se_final_dev": 0.0024307464473971446,
+   "statuses": [
+    "completed",
+    "completed",
+    "completed"
+   ]
+  },
+  "0.1": {
+   "eligible": true,
+   "final_dev": [
+    2.0527782993046357,
+    2.052366116554149,
+    2.055910754873239
+   ],
+   "mean_final_dev": 2.0536850569106746,
+   "se_final_dev": 0.0011191920032434025,
+   "statuses": [
+    "completed",
+    "completed",
+    "completed"
+   ]
+  },
+  "0.3": {
+   "eligible": true,
+   "final_dev": [
+    2.0559953896315206,
+    2.0451084632002687,
+    2.0574589077429604
+   ],
+   "mean_final_dev": 2.0528542535249166,
+   "se_final_dev": 0.0038958705544325646,
+   "statuses": [
+    "completed",
+    "completed",
+    "completed"
+   ]
+  },
+  "1": {
+   "eligible": true,
+   "final_dev": [
+    2.071357448953341,
+    2.052612133967139,
+    2.0633190537457504
+   ],
+   "mean_final_dev": 2.06242954555541,
+   "se_final_dev": 0.005429552685642232,
+   "statuses": [
+    "completed",
+    "completed",
+    "completed"
+   ]
+  }
+ },
+ "rule": "RNN training spec \u00a77.3 (selection) and \u00a77.4 (horizon)",
+ "selection": {
+  "at_lower_boundary": false,
+  "at_upper_boundary": false,
+  "grid": [
+   0.03,
+   0.1,
+   0.3,
+   1.0
+  ],
+  "near_tie_margin": 0.0038958705544325646,
+  "primary": 0.3,
+  "selected": 0.1
+ }
+}

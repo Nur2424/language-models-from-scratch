@@ -1,0 +1,12 @@
+{
+ "best_dev_nll": 2.190485309412753,
+ "best_epoch": 5,
+ "completed_epochs": 20,
+ "detail": "train NLL 81.2414 > ln 27 at epoch 20",
+ "status": "failed_diverged",
+ "threads": [
+  4,
+  8
+ ],
+ "torch": "2.10.0"
+}

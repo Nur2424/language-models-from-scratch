@@ -1,0 +1,180 @@
+{
+ "dev_nll": {
+  "gpt2_style": 2.031540535475887,
+  "rnn": 2.0519628472790497,
+  "transformer_2017": 2.058097276648139,
+  "wavenet_d": 2.056238714856897
+ },
+ "pairs": {
+  "gpt2_style - rnn": {
+   "all": {
+    "mean": -0.02042231180316284,
+    "names": 3196,
+    "se_name_clustered": 0.002318339456438196,
+    "se_seed": 0.0016834548992458068,
+    "seeds_first_lower": 10,
+    "targets": 22801
+   },
+   "i<=7": {
+    "mean": -0.02168865804889043,
+    "names": 3196,
+    "se_name_clustered": 0.0023039833213554543,
+    "se_seed": 0.0016448960968362724,
+    "seeds_first_lower": 10,
+    "targets": 22067
+   },
+   "i=8": {
+    "mean": 0.0006963661944674173,
+    "names": 454,
+    "se_name_clustered": 0.023447976532295193,
+    "se_seed": 0.009947427817932666,
+    "seeds_first_lower": 6,
+    "targets": 454
+   },
+   "i>=9": {
+    "mean": 0.04513691245950342,
+    "names": 182,
+    "se_name_clustered": 0.029458267720230774,
+    "se_seed": 0.01319745963990797,
+    "seeds_first_lower": 1,
+    "targets": 280
+   }
+  },
+  "gpt2_style - transformer_2017": {
+   "all": {
+    "mean": -0.026556741172252006,
+    "names": 3196,
+    "se_name_clustered": 0.0018023844502417245,
+    "se_seed": 0.0010410365138698015,
+    "seeds_first_lower": 10,
+    "targets": 22801
+   },
+   "i<=7": {
+    "mean": -0.02633126773137496,
+    "names": 3196,
+    "se_name_clustered": 0.001791219237283179,
+    "se_seed": 0.0011708776694630359,
+    "seeds_first_lower": 10,
+    "targets": 22067
+   },
+   "i=8": {
+    "mean": -0.03493106287082509,
+    "names": 454,
+    "se_name_clustered": 0.014551563364615343,
+    "se_seed": 0.013766021737862611,
+    "seeds_first_lower": 7,
+    "targets": 454
+   },
+   "i>=9": {
+    "mean": -0.030748099631829458,
+    "names": 182,
+    "se_name_clustered": 0.018321312426804452,
+    "se_seed": 0.010604535081093644,
+    "seeds_first_lower": 9,
+    "targets": 280
+   }
+  },
+  "gpt2_style - wavenet_d": {
+   "all": {
+    "mean": -0.024698179381009704,
+    "names": 3196,
+    "se_name_clustered": 0.0021970627521846757,
+    "se_seed": 0.001582755020347817,
+    "seeds_first_lower": 10,
+    "targets": 22801
+   },
+   "i<=7": {
+    "mean": -0.02578777925959222,
+    "names": 3196,
+    "se_name_clustered": 0.0021625802149495984,
+    "se_seed": 0.0016420638760302605,
+    "seeds_first_lower": 10,
+    "targets": 22067
+   },
+   "i=8": {
+    "mean": -0.018347073513640108,
+    "names": 454,
+    "se_name_clustered": 0.022010011960900706,
+    "se_seed": 0.012180770427781677,
+    "seeds_first_lower": 7,
+    "targets": 454
+   },
+   "i>=9": {
+    "mean": 0.05087610082218556,
+    "names": 182,
+    "se_name_clustered": 0.03294040605467393,
+    "se_seed": 0.013528331258438565,
+    "seeds_first_lower": 2,
+    "targets": 280
+   }
+  },
+  "rnn - wavenet_d": {
+   "all": {
+    "mean": -0.00427586757784686,
+    "names": 3196,
+    "se_name_clustered": 0.0018118305079088785,
+    "se_seed": 0.0017403083254781489,
+    "seeds_first_lower": 9,
+    "targets": 22801
+   },
+   "i<=7": {
+    "mean": -0.004099121210701792,
+    "names": 3196,
+    "se_name_clustered": 0.0018334718545032153,
+    "se_seed": 0.0017589560047691572,
+    "seeds_first_lower": 9,
+    "targets": 22067
+   },
+   "i=8": {
+    "mean": -0.019043439708107523,
+    "names": 454,
+    "se_name_clustered": 0.015409645265743847,
+    "se_seed": 0.008904563182046209,
+    "seeds_first_lower": 8,
+    "targets": 454
+   },
+   "i>=9": {
+    "mean": 0.005739188362682138,
+    "names": 182,
+    "se_name_clustered": 0.016527155617115416,
+    "se_seed": 0.017152220321900856,
+    "seeds_first_lower": 5,
+    "targets": 280
+   }
+  },
+  "transformer_2017 - wavenet_d": {
+   "all": {
+    "mean": 0.001858561791242305,
+    "names": 3196,
+    "se_name_clustered": 0.0022576176634430114,
+    "se_seed": 0.001410125494962896,
+    "seeds_first_lower": 4,
+    "targets": 22801
+   },
+   "i<=7": {
+    "mean": 0.0005434884717827348,
+    "names": 3196,
+    "se_name_clustered": 0.0022187852916648377,
+    "se_seed": 0.0014262351979611333,
+    "seeds_first_lower": 5,
+    "targets": 22067
+   },
+   "i=8": {
+    "mean": 0.016583989357184987,
+    "names": 454,
+    "se_name_clustered": 0.01975270072261119,
+    "se_seed": 0.011516051679573577,
+    "seeds_first_lower": 3,
+    "targets": 454
+   },
+   "i>=9": {
+    "mean": 0.08162420045401503,
+    "names": 182,
+    "se_name_clustered": 0.03214059256406557,
+    "se_seed": 0.012839369028576323,
+    "seeds_first_lower": 0,
+    "targets": 280
+   }
+  }
+ }
+}

@@ -211,7 +211,7 @@ Shape trace for d = 30, H = 3, B names: [B, T] → [B, T, 30] → Q, K, V [B, 3,
 
 ## 9. Configuration
 
-`TransformerConfig(variant ∈ {"transformer_2017", "gpt2_style"}, d_model, num_layers, num_heads=3, max_len=16)`, frozen dataclass; d_model divisible by num_heads; d_model even for Model 01. d_ff = 4 d_model, LN ε, activation, LN placement, biases and initialisation are fixed per variant in code. Shape values in the YAML files are provisional until the shape pilot.
+`TransformerConfig(variant ∈ {"transformer_2017", "gpt2_style"}, d_model, num_layers, num_heads=3, max_len=16)`, frozen dataclass; d_model divisible by num_heads; d_model even for Model 01. d_ff = 4 d_model, LN ε, activation, LN placement, biases and initialisation are fixed per variant in code. The YAML files hold the shape chosen by the study's shape pilot: 1 layer, d_model = 42, 3 heads.
 
 ## 10. Numerical stability and edge cases
 
@@ -271,7 +271,7 @@ Checkpoints through `utils.checkpoint`: `model_state_dict`, `TransformerConfig`,
 
 ## 15. Generation or inference behaviour
 
-`generate(num_samples, generator, max_chars=15, temperature=1.0)`: start from BOS; at each step feed the whole prefix, sample from the last row's softmax; stop at EOS. A sample reaching 15 characters without EOS is marked unfinished.
+`generate(num_samples, *, max_length=15, generator=None, temperature=1.0, top_k=None, top_p=None)`: start from BOS; at each step feed the whole prefix and sample from the last row's softmax; EOS finishes a sample. A sample that already has 15 characters gets one further draw: EOS finishes it, anything else leaves it unfinished (the same semantics as the RNN).
 
 ## 16. Implementation scope and boundaries
 
@@ -281,16 +281,16 @@ Checkpoints through `utils.checkpoint`: `model_state_dict`, `TransformerConfig`,
 ## 17. Acceptance criteria
 
 - [x] Specification approved.
-- [ ] All tests of §13 pass in the workspace and natively on the author's Mac.
-- [ ] Reference implementation agreement to 1e-12 for both models and the three shapes.
-- [ ] Parameter counts match §4.3 exactly.
-- [ ] Completion approved by the author before the study runs start.
+- [x] All tests of §13 pass natively on the author's Mac (40 tests).
+- [x] Reference implementation agreement to 1e-12 for both models and the three shapes.
+- [x] Parameter counts match §4.3 exactly.
+- [x] Completion approved by the author before the study runs started.
 
 ## 18. Open decisions
 
 | # | Decision | Proposal |
 |---|---|---|
-| 1 | Position-preserving truncation design | BOS at position 0, removed characters deleted, kept characters at original positions (§12); to confirm |
+| 1 | Position-preserving truncation design | BOS at position 0, removed characters deleted, kept characters at original positions (§12); adopted and used for T-RQ3 |
 | 2 | GPT-2 residual scaling | The paper describes it; reimplementations use 0.02 / √(2L) on W_O and W₂; adopted |
 | 3 | Initial loss above ln 27 | Accepted and recorded (§7); the divergence rule (train NLL > ln 27 at an epoch ≥ 1) is unchanged |
 | 4 | Model 01 LayerNorm ε = 1e-6 | Kept. Consistent with TensorFlow-style reference implementations (ε inside the square root, 1e-6); not confirmed in the tensor2tensor source itself. Immaterial at this scale: LayerNorm inputs have variance of order 1 |

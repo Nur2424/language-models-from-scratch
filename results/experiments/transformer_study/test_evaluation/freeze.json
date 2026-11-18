@@ -1,0 +1,306 @@
+{
+ "analysis": {
+  "endpoint": "test NLL (nats per character, token-weighted, every valid target incl. EOS) of model_best.pt, per seed 0\u20139; mean \u00b1 SE over seeds",
+  "multiplicity": "Holm across the three primary p-values (TOST p = larger one-sided p)",
+  "pairing": "seed s of every arm uses the same name batches (EpochSampler, derive_seed(s, 'data'))",
+  "primary": [
+   {
+    "a": "gpt2_style",
+    "b": "rnn",
+    "id": "T-RQ1a",
+    "test": "paired two-sided t"
+   },
+   {
+    "a": "gpt2_style",
+    "b": "wavenet_d",
+    "id": "T-RQ1b_equivalence",
+    "test": "TOST, margin \u00b10.01"
+   },
+   {
+    "a": "transformer_2017",
+    "b": "gpt2_style",
+    "id": "T-RQ2",
+    "test": "paired two-sided t"
+   }
+  ],
+  "secondary": "every other pair: paired mean difference with 95% t interval, descriptive"
+ },
+ "checkpoints": {
+  "gpt2_style": {
+   "0": {
+    "best_dev_nll": 2.0313545724302573,
+    "best_epoch": 45,
+    "model_best_sha256": "2d9a4134bca419ee1a87bc3527fe91e5b79fb24a7a0682780e642a198020181b",
+    "param_sha256": "7989cdf9d0dff62ce7da8c45eb9397ea2ab499674ad127461fdac7448e00ae80",
+    "run_dir": "results/experiments/transformer_study/final/gpt2_style/seed_0"
+   },
+   "1": {
+    "best_dev_nll": 2.0305952715670523,
+    "best_epoch": 47,
+    "model_best_sha256": "3aadbb9c5ffbef6f2e4535f3df0e2418696939e57cd1aad9b226ed4a9208bf7f",
+    "param_sha256": "0462be03ea40573ae2db9bafa73f3697000cecd7398c0c20d90546c4b3cb253e",
+    "run_dir": "results/experiments/transformer_study/final/gpt2_style/seed_1"
+   },
+   "2": {
+    "best_dev_nll": 2.0322705901621725,
+    "best_epoch": 42,
+    "model_best_sha256": "a21b9554be7f1c512a61acb9291d8e6afbdd0cde97ca3287a5ae28b6ffc6fb92",
+    "param_sha256": "e6b878b22203d088cf0f60b62c0d427eb410734058a27f9f8e308350333334a3",
+    "run_dir": "results/experiments/transformer_study/final/gpt2_style/seed_2"
+   },
+   "3": {
+    "best_dev_nll": 2.0255897612188143,
+    "best_epoch": 48,
+    "model_best_sha256": "d1cc4ced901d85c12bb7c7bd5cddd98352905492ddae3c4a9d15b8860b77132f",
+    "param_sha256": "bd8077b57bea14e6304297f207496b9b647d71f09f1a0db7fa18dad8f278062b",
+    "run_dir": "results/experiments/transformer_study/final/gpt2_style/seed_3"
+   },
+   "4": {
+    "best_dev_nll": 2.0302041070786876,
+    "best_epoch": 43,
+    "model_best_sha256": "018e5698ceb3ea329a0979b0cc83b878d24e803abcc12dc999c15a228f027d69",
+    "param_sha256": "72e33b2d2a421506c2ad100360ce33038d7036e9bea11cb8ce0f644c2200e7f1",
+    "run_dir": "results/experiments/transformer_study/final/gpt2_style/seed_4"
+   },
+   "5": {
+    "best_dev_nll": 2.0319925854357734,
+    "best_epoch": 48,
+    "model_best_sha256": "83171e8496b76f304772a37edb8c7d43b5d7683b59b75afc8f7fdc93aea60232",
+    "param_sha256": "157666e9c4e570f99844ccbbef4ed2666352869cb1d7277ee6cab28264a32dc2",
+    "run_dir": "results/experiments/transformer_study/final/gpt2_style/seed_5"
+   },
+   "6": {
+    "best_dev_nll": 2.0357245788590133,
+    "best_epoch": 44,
+    "model_best_sha256": "3e8adb1bcb2a6109b7bd9f6c030c2562d7b699e3924eb06b9d7720fa7b401dd8",
+    "param_sha256": "9f9703750441b0255f11cb6498052e3c3ff43bc634cfc9a1cd939a0778229eb5",
+    "run_dir": "results/experiments/transformer_study/final/gpt2_style/seed_6"
+   },
+   "7": {
+    "best_dev_nll": 2.0332278754292927,
+    "best_epoch": 41,
+    "model_best_sha256": "93f133323a2278593e3817467281be5d201a71dc728bc96952578e3d9a35df1c",
+    "param_sha256": "55d8804544ba1fd1d0f0038141a1355dac9afb7236fa8aa8f01d7484a9d2cbf7",
+    "run_dir": "results/experiments/transformer_study/final/gpt2_style/seed_7"
+   },
+   "8": {
+    "best_dev_nll": 2.033584787067997,
+    "best_epoch": 46,
+    "model_best_sha256": "83ad459f766e473058865552fd7a87244e92348c22c5909a5f7c21e2a7dbb97d",
+    "param_sha256": "b1b166aef4f874fb414757af3396d52431df87ed0688026bc411097bafb36a98",
+    "run_dir": "results/experiments/transformer_study/final/gpt2_style/seed_8"
+   },
+   "9": {
+    "best_dev_nll": 2.030861225509809,
+    "best_epoch": 46,
+    "model_best_sha256": "d2616d04814b83b1e5f4768b409762f064210b404462d9b3f6f7c90d18e11dc4",
+    "param_sha256": "fd15605f2ed89e4aca60d9a942bd8ea67391463cc031c21c001338c6a451c594",
+    "run_dir": "results/experiments/transformer_study/final/gpt2_style/seed_9"
+   }
+  },
+  "transformer_2017": {
+   "0": {
+    "best_dev_nll": 2.0605097603057185,
+    "best_epoch": 44,
+    "model_best_sha256": "cb11a800cbdd9f1b70729ac2bc41dc459e31cfd37fe9cd2675b7ab451dae513a",
+    "param_sha256": "88f1e6b59d03266daa6d744703be03fbf287a63e172a761bd89788902d652268",
+    "run_dir": "results/experiments/transformer_study/final/transformer_2017/seed_0"
+   },
+   "1": {
+    "best_dev_nll": 2.0526406916493047,
+    "best_epoch": 47,
+    "model_best_sha256": "e8e1604d36358b04932d974328b4151934292237095fd89b844f75558ef25ae6",
+    "param_sha256": "4e62d901d29b3d33ff361cf66b1f671897bd24a29eb5b8a4e9c57a1f1ff8bb87",
+    "run_dir": "results/experiments/transformer_study/final/transformer_2017/seed_1"
+   },
+   "2": {
+    "best_dev_nll": 2.058531463013502,
+    "best_epoch": 52,
+    "model_best_sha256": "9e6dfbfbadca30ab242e7909dddf5ca7d7a204b76c1b3e66ade01ff4586a53a3",
+    "param_sha256": "fa36a2ad86278252cc8ca396c73cf59fd1c2029e096e4b063301b2c1ff4fde42",
+    "run_dir": "results/experiments/transformer_study/final/transformer_2017/seed_2"
+   },
+   "3": {
+    "best_dev_nll": 2.0551059061593477,
+    "best_epoch": 47,
+    "model_best_sha256": "0211d4a2315d42e00c2eee0dc5914ddca8978d82ff805f527be7ca838ef6a393",
+    "param_sha256": "651bf08ff11d492793dc4a668663f50c487409cd660535d761ab441de22121a0",
+    "run_dir": "results/experiments/transformer_study/final/transformer_2017/seed_3"
+   },
+   "4": {
+    "best_dev_nll": 2.062564601597252,
+    "best_epoch": 51,
+    "model_best_sha256": "d97d58d404077bd3d76ffd34dc6946ca3e495d9d8ae87460efcf38a779f02bc6",
+    "param_sha256": "68a8d9e3d8219cbacfb7ed79f59c276739c28ca26ce4856cf7f2de6cd08cbc43",
+    "run_dir": "results/experiments/transformer_study/final/transformer_2017/seed_4"
+   },
+   "5": {
+    "best_dev_nll": 2.0573565369890945,
+    "best_epoch": 51,
+    "model_best_sha256": "834f14fb353da88c11a13adfdcfd8bcbfd513f947c8aa8ce3da5fbd70bd16ab9",
+    "param_sha256": "dab2447114808e67cb3a4dbf84181e90d780bfa4c1ff4e81d9794b66bfca7de0",
+    "run_dir": "results/experiments/transformer_study/final/transformer_2017/seed_5"
+   },
+   "6": {
+    "best_dev_nll": 2.05817000201227,
+    "best_epoch": 51,
+    "model_best_sha256": "b5197116223ab83ba25c3b0b02c3c2c8fc1ba0ecd9e90d27a17627b225666cad",
+    "param_sha256": "699555021da96def92dc169d7c3b74c1b5531fb0bb99fd93ce0d5e66c682a4e3",
+    "run_dir": "results/experiments/transformer_study/final/transformer_2017/seed_6"
+   },
+   "7": {
+    "best_dev_nll": 2.061601207999662,
+    "best_epoch": 53,
+    "model_best_sha256": "5163f9761fa4b59fe09556dc66dc25e17d58f812b443f5d1cdb4fd5dcf985727",
+    "param_sha256": "a378978279846bbf71e56673a71c883227d02731b9dfb6835c739f020594656a",
+    "run_dir": "results/experiments/transformer_study/final/transformer_2017/seed_7"
+   },
+   "8": {
+    "best_dev_nll": 2.059495887635749,
+    "best_epoch": 51,
+    "model_best_sha256": "2bc5bc95309b84f3c8f92f5689d6de4cace325199d5a681d38b9600a19ba8c97",
+    "param_sha256": "968673c0ec2caaf2caa99969f99b5a0f73ae5504f2d5a9f7b6c291a3b8733305",
+    "run_dir": "results/experiments/transformer_study/final/transformer_2017/seed_8"
+   },
+   "9": {
+    "best_dev_nll": 2.054996709119489,
+    "best_epoch": 50,
+    "model_best_sha256": "53b8d09c5510c34dc5428cc6aa17bcd6d3dbfeb7e3e2183972c082050c22d913",
+    "param_sha256": "98e17cc57ee6c8c13d8d602c5a4a99b457fbf4e12792a8e5df81a800ce0577a7",
+    "run_dir": "results/experiments/transformer_study/final/transformer_2017/seed_9"
+   }
+  },
+  "wavenet_d": {
+   "0": {
+    "best_dev_nll": 2.0613143872620894,
+    "best_epoch": 27,
+    "model_best_sha256": "9cb44facc6d1402ac77e851c6ee2599a3954aff90c1f09f7d24ff8c5e22d8d1a",
+    "param_sha256": "e29c033384ddef11dcd202c9b588f8097cc40cc2ec1bc7d5e0a0f4add545d1ce",
+    "run_dir": "results/experiments/transformer_study/wavenet_d/final/seed_0"
+   },
+   "1": {
+    "best_dev_nll": 2.0560991985566277,
+    "best_epoch": 26,
+    "model_best_sha256": "84ef54d72f15df140be84d172ea4aeaff397df9f0de2cdbf50da9b21897db89e",
+    "param_sha256": "39e301e531b56ce0b1e1ad987a058d2d87156b4b29930be0d9c548eebf0da1ef",
+    "run_dir": "results/experiments/transformer_study/wavenet_d/final/seed_1"
+   },
+   "2": {
+    "best_dev_nll": 2.0575505460555017,
+    "best_epoch": 30,
+    "model_best_sha256": "02e87937c689c84b889e375771a6914126af2d7d45167ed51791f0c145d49b20",
+    "param_sha256": "a6f226c80ee785bbd3a36ad89b159a91187a1b1a15caa577f42bd1171bc61e2d",
+    "run_dir": "results/experiments/transformer_study/wavenet_d/final/seed_2"
+   },
+   "3": {
+    "best_dev_nll": 2.06001275505181,
+    "best_epoch": 28,
+    "model_best_sha256": "9a0d67ae63754809616961648221637f5d7719e113fab47498f4e20376e4ab6e",
+    "param_sha256": "ad59156037c81ab06598b43ce222bddd4ea738a63d6e87999a714d09db85f213",
+    "run_dir": "results/experiments/transformer_study/wavenet_d/final/seed_3"
+   },
+   "4": {
+    "best_dev_nll": 2.05451266417401,
+    "best_epoch": 29,
+    "model_best_sha256": "a93222169163f73be2fc4084e097762bf8cd8933d21e16058d61bc250581fbc3",
+    "param_sha256": "7a24790fd278873ffff5907a4ff299056c39383a30ad01f906ca158559d33bcb",
+    "run_dir": "results/experiments/transformer_study/wavenet_d/final/seed_4"
+   },
+   "5": {
+    "best_dev_nll": 2.0490146642590856,
+    "best_epoch": 29,
+    "model_best_sha256": "3873bd57a1a2095335223e478bb63536792cc504256415fa797817f590b0e333",
+    "param_sha256": "b553cfb79361db4a11b158230266843c1521a249822f9597bef169de6037798f",
+    "run_dir": "results/experiments/transformer_study/wavenet_d/final/seed_5"
+   },
+   "6": {
+    "best_dev_nll": 2.055164833465506,
+    "best_epoch": 27,
+    "model_best_sha256": "301601c4e6419c43d833ea73ff7e3d524347f62ff04433fbac46a388cfc50a2a",
+    "param_sha256": "12313689be38d5e2783b9c2298caa641f0766a93d68d9729c0cd7812d5481d0a",
+    "run_dir": "results/experiments/transformer_study/wavenet_d/final/seed_6"
+   },
+   "7": {
+    "best_dev_nll": 2.0589228724906894,
+    "best_epoch": 30,
+    "model_best_sha256": "29ea9ba855071b99f05c8919f475eeb9a3e4ac0309d58d46632dd936c6757333",
+    "param_sha256": "43df3c5ce92cb4983f0d3ef02f57874c9a9aa3031e79ac61b8b57943a7346c9a",
+    "run_dir": "results/experiments/transformer_study/wavenet_d/final/seed_7"
+   },
+   "8": {
+    "best_dev_nll": 2.054482843999876,
+    "best_epoch": 30,
+    "model_best_sha256": "643ca4fab3b99cb02cc3de8f1251eefadab090c7e9fece7f0f0bc35641398468",
+    "param_sha256": "a9c333a503b9da07407b8a284fdf18ffcf5c6a3c61c8c72255cdd0263ef89e55",
+    "run_dir": "results/experiments/transformer_study/wavenet_d/final/seed_8"
+   },
+   "9": {
+    "best_dev_nll": 2.055312383253771,
+    "best_epoch": 25,
+    "model_best_sha256": "fc3846ab3d6ca5fd0004e951c85424784c9d872eafa2dafc97c7e3340a44d98f",
+    "param_sha256": "2d59358994f687dbfdc44e3466189fc67a22818a68e0c94e55da0a5005737a8c",
+    "run_dir": "results/experiments/transformer_study/wavenet_d/final/seed_9"
+   }
+  }
+ },
+ "code_sha256": {
+  "models/attention/transformer.py": "7894c829efe9b8a35db6642ee66dde473a49732a66863df27797d0bb1f48ad1a",
+  "models/hierarchical/wavenet.py": "4094b401f8bc541be4237d56b2afa7935a3fce3895116e10d0135b9d862cbab6",
+  "training/transformer_study/test_evaluation.py": "35b1045c5a8479d174e8c55fded76b2d2e3d6aed1fad920665aecc2925f4681c",
+  "training/transformer_study/transformer_runs.py": "ceb827e44b7f38b168d575021af82c33ee909bf2cd5758eed4c03aacf7d022c8",
+  "training/transformer_study/wavenet_d_arm.py": "d3b19c3a2e65226d0ace7a4000fe63145043f4bb4657910b51204800cc493955",
+  "utils/batching.py": "346b0c85a0cf5860048efc04961b7552ca5ca48b9c743a354b6e735d0e7b268c",
+  "utils/checkpoint.py": "8990ba704469b353e4e0063fb5121e972dd525ba945948e12bedec7c00a50a31",
+  "utils/data.py": "0c2893d21f7ae61a7b322682a379f3814e5aafb4a53ddefc13ac23e92badd61d",
+  "utils/metrics.py": "5cdb400d31cceb35344ecb515a13b74ab9a06d477d5b72198c74b997ef180cf4",
+  "utils/reproducibility.py": "762fca6323fa6b206efe13e2434302add8cf460fb3c071c55bbfddeba816ce9f",
+  "utils/vocabulary.py": "a72b88a357a76cf30202cd2c4e92256a876a80211d0e90ef8b9acd6298d97e81"
+ },
+ "format": "transformer_part1_freeze/1",
+ "rnn_result": {
+  "path": "results/experiments/rnn_study/test_evaluation/result.json",
+  "sha256": "f03ee823a88143928f1b269077a717f5ab6874489f69a472b83d71b108af4579"
+ },
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "settings": {
+  "runs": {
+   "gpt2_style": {
+    "d_model": 42,
+    "lr": 0.1,
+    "max_epochs": 48,
+    "num_layers": 1,
+    "optimizer": "sgd"
+   },
+   "transformer_2017": {
+    "d_model": 42,
+    "lr": 0.1,
+    "max_epochs": 53,
+    "num_layers": 1,
+    "optimizer": "sgd"
+   },
+   "wavenet_d": {
+    "d_model": null,
+    "lr": 0.1,
+    "max_epochs": 30,
+    "num_layers": null,
+    "optimizer": null
+   }
+  },
+  "shape": {
+   "d_model": 42,
+   "lr": 0.1,
+   "num_layers": 1
+  }
+ }
+}
