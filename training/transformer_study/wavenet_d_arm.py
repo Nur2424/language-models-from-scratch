@@ -432,15 +432,17 @@ def main(argv: Sequence[str] | None = None) -> int:
                       f"(SE {r['se_final_dev']:.4f}), statuses {r['statuses']}")
         return 0
 
-    set_threads()
-    data = load_study_data()
-    if args.cmd == "pilot":
-        jobs = [(s, lr, PILOT_EPOCHS, _pilot_dir(root, lr, s)) for lr in args.lrs for s in PILOT_SEEDS]
-    elif args.cmd == "extension":
-        jobs = [(s, args.lr, EXTENSION_EPOCHS, root / "extension" / f"seed_{s}") for s in PILOT_SEEDS]
-    else:
-        jobs = [(s, args.lr, args.epochs, root / "final" / f"seed_{s}") for s in FINAL_SEEDS]
-    _run_many(data, jobs)
+    from training.transformer_study.run_lock import study_lock
+    with study_lock(root):
+        set_threads()
+        data = load_study_data()
+        if args.cmd == "pilot":
+            jobs = [(s, lr, PILOT_EPOCHS, _pilot_dir(root, lr, s)) for lr in args.lrs for s in PILOT_SEEDS]
+        elif args.cmd == "extension":
+            jobs = [(s, args.lr, EXTENSION_EPOCHS, root / "extension" / f"seed_{s}") for s in PILOT_SEEDS]
+        else:
+            jobs = [(s, args.lr, args.epochs, root / "final" / f"seed_{s}") for s in FINAL_SEEDS]
+        _run_many(data, jobs)
     return 0
 
 

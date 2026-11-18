@@ -124,3 +124,29 @@ def test_shape_choice_rule() -> None:
     assert out["tied"] == ["L2_d30", "L3_d24"] and out["chosen"]["num_layers"] == 2
     per[(2, 30)]["selection"] = _sel(0.1, lo=True)                        # a boundary η is not usable yet
     assert tr.choose_shape(per)["chosen"]["num_layers"] == 3
+
+
+def test_study_lock(tmp_path: Path) -> None:
+    import os
+    import subprocess
+    import sys
+
+    from training.transformer_study.run_lock import LOCK_NAME, StudyLocked, study_lock
+
+    with study_lock(tmp_path):
+        assert (tmp_path / LOCK_NAME).read_text() == str(os.getpid())
+        with pytest.raises(StudyLocked, match="another run"):
+            with study_lock(tmp_path):
+                pass
+    assert not (tmp_path / LOCK_NAME).exists()                 # released on exit
+    dead = subprocess.run([sys.executable, "-c", "import os; print(os.getpid())"], capture_output=True, text=True)
+    (tmp_path / LOCK_NAME).write_text(dead.stdout.strip())     # a lock left by a process that has ended
+    with study_lock(tmp_path):                                 # is replaced, not obeyed
+        pass
+
+
+def test_drivers_take_the_lock() -> None:
+    import inspect
+
+    assert "study_lock(root)" in inspect.getsource(tr.main)
+    assert "study_lock(root)" in inspect.getsource(d.main)

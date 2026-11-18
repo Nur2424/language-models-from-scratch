@@ -65,6 +65,7 @@ from training.transformer_study.wavenet_d_arm import (  # noqa: E402  (shared pr
     set_threads,
 )
 from utils.checkpoint import load_checkpoint, save_checkpoint  # noqa: E402
+from training.transformer_study.run_lock import study_lock  # noqa: E402
 from utils.data import NextTokenSequences, load_names, make_next_token_sequences, split_names  # noqa: E402
 from utils.reproducibility import capture_rng_state, derive_seed, make_generator  # noqa: E402
 from utils.vocabulary import Vocabulary  # noqa: E402
@@ -491,6 +492,11 @@ def main(argv: Sequence[str] | None = None) -> int:
             print(json.dumps(summarize_extension(root, args.variant, args.lr), indent=1))
         return 0
 
+    with study_lock(root):
+        return _train_stages(args, root)
+
+
+def _train_stages(args: argparse.Namespace, root: Path) -> int:
     set_threads()
     data = load_study_data()
     jobs: list[dict[str, Any]] = []

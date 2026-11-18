@@ -293,4 +293,4 @@ Checkpoints through `utils.checkpoint`: `model_state_dict`, `TransformerConfig`,
 | 1 | Position-preserving truncation design | BOS at position 0, removed characters deleted, kept characters at original positions (§12); to confirm |
 | 2 | GPT-2 residual scaling | The paper describes it; reimplementations use 0.02 / √(2L) on W_O and W₂; adopted |
 | 3 | Initial loss above ln 27 | Accepted and recorded (§7); the divergence rule (train NLL > ln 27 at an epoch ≥ 1) is unchanged |
-| 4 | Model 01 LayerNorm ε = 1e-6 | tensor2tensor's default as far as known; to confirm against its source before the freeze |
+| 4 | Model 01 LayerNorm ε = 1e-6 | Kept. Consistent with TensorFlow-style reference implementations (ε inside the square root, 1e-6); not confirmed in the tensor2tensor source itself. Immaterial at this scale: LayerNorm inputs have variance of order 1 |
