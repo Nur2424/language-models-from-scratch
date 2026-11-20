@@ -41,7 +41,7 @@ All commands run from the repository root. Pilots use seeds 100–102 and dev da
 | Freeze | `test_evaluation.py freeze` | Re-checks every final checkpoint against its recorded dev NLL and parameter hash; records all hashes once | `freeze.json` |
 | Test | `test_evaluation.py evaluate` | Verifies the frozen hashes, builds the test split and evaluates it once | `result.json` |
 | Analysis | `test_evaluation.py analyze` | The predeclared statistics | `analysis.json` |
-| Position analysis | `position_analysis.py` | Dev NLL differences by position with name-clustered standard errors | `position_paired.json` |
+| Position analysis | `position_analysis.py`, `position_analysis.py --by-position` | Dev NLL differences by position with name-clustered standard errors: grouped (i ≤ 7, i = 8, i ≥ 9), then for every single position, for the figures | `position_paired.json`, `position_by_index.json` |
 
 The 105 training runs (22 for D, 36 shape pilot, 12 Model 01 pilot, 9 AdamW, 6 extension, 20 final) all completed; the only failures are the three Model 01 pilot runs at η = 1.0, which diverged as the rules anticipate. The selection rules, and the four epoch-budget decisions that needed explicit review, are set out in the report (§3).
 

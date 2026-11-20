@@ -10,12 +10,18 @@ This script recomputes them from the same ``model_best.pt`` files, on the dev sp
 * mean, name-clustered SE (the RNN study's ``_clustered``), seed SE, and the count of seeds in which
   the first arm is lower.
 
+With ``--by-position`` it writes the same quantities for every single position i and for the pooled
+group i ≥ 9 to ``position_by_index.json`` instead (for the figures), and leaves ``position_paired.json``
+untouched.
+
 Usage (from the repository root)::
 
-    python3 training/transformer_study/position_analysis.py
+    python3 training/transformer_study/position_analysis.py                 # position_paired.json
+    python3 training/transformer_study/position_analysis.py --by-position   # position_by_index.json
 """
 from __future__ import annotations
 
+import argparse
 import math
 import sys
 from pathlib import Path
@@ -37,6 +43,7 @@ from utils.data import load_names, split_names  # noqa: E402
 PAIRS = (("gpt2_style", "wavenet_d"), ("gpt2_style", "rnn"), ("gpt2_style", "transformer_2017"),
          ("rnn", "wavenet_d"), ("transformer_2017", "wavenet_d"))
 OUT = dd.OUT / "position_paired.json"
+OUT_BY_INDEX = dd.OUT / "position_by_index.json"
 
 
 def groups(positions: torch.Tensor) -> dict[str, torch.Tensor]:
@@ -44,13 +51,22 @@ def groups(positions: torch.Tensor) -> dict[str, torch.Tensor]:
             "all": torch.ones_like(positions, dtype=torch.bool)}
 
 
+def index_groups(positions: torch.Tensor) -> dict[str, torch.Tensor]:
+    """Every position i that has targets, one by one, then the pooled group i ≥ 9 (label "9+")."""
+    out = {str(i): positions == i for i in range(int(positions.max()) + 1) if bool((positions == i).any())}
+    out["9+"] = positions >= 9
+    return out
+
+
 def paired_by_group(nll_a: torch.Tensor, nll_b: torch.Tensor, names: torch.Tensor,
-                    positions: torch.Tensor) -> dict[str, dict[str, Any]]:
-    """``nll_a``, ``nll_b``: [seeds, targets] float64; ``names``, ``positions``: [targets] int64."""
+                    positions: torch.Tensor,
+                    selections: dict[str, torch.Tensor] | None = None) -> dict[str, dict[str, Any]]:
+    """``nll_a``, ``nll_b``: [seeds, targets] float64; ``names``, ``positions``: [targets] int64.
+    ``selections`` defaults to ``groups(positions)``."""
     delta = (nll_a - nll_b).mean(0)
     seeds = nll_a.shape[0]
     out = {}
-    for label, sel in groups(positions).items():
+    for label, sel in (groups(positions) if selections is None else selections).items():
         by_name: dict[int, list[float]] = {}
         for n, d in zip(names[sel].tolist(), delta[sel].tolist()):
             by_name.setdefault(n, []).append(d)
@@ -79,7 +95,11 @@ def per_target_nll(arm: str, seed: int, data: tr.SequenceData, dev_windows: wd.N
         return full[dev.mask].double()
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    parser.add_argument("--by-position", action="store_true",
+                        help="write position_by_index.json (every position) instead of position_paired.json")
+    args = parser.parse_args(argv)
     wd.set_threads()
     data = tr.load_study_data()
     splits = split_names(load_names(), fractions=wd.SPLIT_FRACTIONS, seed=wd.SPLIT_SEED,
@@ -94,14 +114,16 @@ def main() -> int:
     nll = {a: torch.stack([per_target_nll(a, s, data, dev_windows) for s in dd.SEEDS]) for a in arms}
     out: dict[str, Any] = {"dev_nll": {a: float(nll[a].mean()) for a in arms}, "pairs": {}}
     for a, b in PAIRS:
-        res = paired_by_group(nll[a], nll[b], names, positions)
+        res = paired_by_group(nll[a], nll[b], names, positions,
+                              index_groups(positions) if args.by_position else None)
         out["pairs"][f"{a} - {b}"] = res
         print(f"{a} - {b}")
         for label, r in res.items():
+            se_n = "  n/a " if r["se_name_clustered"] is None else f"{r['se_name_clustered']:.4f}"
             print(f"  {label:5s} targets {r['targets']:5d}  diff {r['mean']:+.4f}  "
-                  f"SE(names) {r['se_name_clustered']:.4f}  SE(seeds) {r['se_seed']:.4f}  "
+                  f"SE(names) {se_n}  SE(seeds) {r['se_seed']:.4f}  "
                   f"first lower in {r['seeds_first_lower']}/10")
-    wd._write_json(OUT, out)
+    wd._write_json(OUT_BY_INDEX if args.by_position else OUT, out)
     return 0
 
 
